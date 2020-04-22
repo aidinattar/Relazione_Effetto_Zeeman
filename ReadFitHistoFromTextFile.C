@@ -110,13 +110,17 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
 
   cout << endl << endl;
 
-  vector <double> FWHM;
-  for( int i = 0; i < 3; ++i )
-    FWHM.push_back( 2 * sqrt( 2 * log( 2 ) * gauss[i]->GetParameter( 2 )));
+  vector <double>  FWHM;
+  vector <double> eFWHM;
+  for( int i = 0; i < 3; ++i ){
+     FWHM.push_back( 2 * sqrt( 2 * log( 2 ) * gauss[i]->GetParameter( 2 )));
+    eFWHM.push_back( 2 * sqrt( 2 * log( 2 ) * gauss[i]->GetParError(  2 )));
+  }
 
   for( int i = 0; i < 3; ++i )
-    cout << i << ". FWHM = " << FWHM[i] << endl;
-
+    cout << i << ". FWHM = " <<  FWHM[i] 
+              << " +/- "     << eFWHM[i] << endl;
+  
   TCanvas *canvas = new TCanvas( "canvas", "My ROOT Plots 2", 1280, 720 );
   canvas -> SetGrid(); //griglia
   set_style();
@@ -127,7 +131,7 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
     gauss[i]->Draw("SAME");
 
   cout << endl << endl
-       << "-----------------by aidin attar------------------" 
+       << "----------------by aidin attar & Co----------------" 
        << endl << endl;
 
   return;
