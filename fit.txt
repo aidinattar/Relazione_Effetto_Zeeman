@@ -1,0 +1,336 @@
+Campo Spento
+
+
+
+root [2] ReadFitHistoFromTextFile("Boff.txt")
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 3800 4640
+min e max: 3820  4000
+ FCN=1312.7 FROM MIGRAD    STATUS=CONVERGED      81 CALLS          82 TOTAL
+                     EDM=1.96714e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     7.02539e+01   1.13488e+00   1.38846e-02  -6.34231e-04
+   2  Mean         3.92039e+03   6.62738e-01   1.16931e-02  -4.22336e-04
+   3  Sigma        4.92560e+01   8.28761e-01   7.31279e-05  -4.86762e-02
+min e max: 4200 4340
+ FCN=673.767 FROM MIGRAD    STATUS=CONVERGED      79 CALLS          80 TOTAL
+                     EDM=2.18631e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     8.95143e+01   1.37223e+00   1.26859e-02  -1.39223e-04
+   2  Mean         4.26457e+03   5.20057e-01   6.56224e-03   2.33089e-04
+   3  Sigma        3.85486e+01   5.85257e-01   5.02444e-05  -5.37086e-03
+min e max:  4490 4620
+ FCN=671.409 FROM MIGRAD    STATUS=CONVERGED      93 CALLS          94 TOTAL
+                     EDM=1.53791e-11    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     9.50262e+01   1.45891e+00   1.32782e-02  -3.48451e-06
+   2  Mean         4.56851e+03   5.86565e-01   6.84508e-03   8.47306e-06
+   3  Sigma        3.89478e+01   6.90558e-01   5.65128e-05  -9.55256e-04
+
+
+c1 = 344.183 +/- 0.842426
+c2 = 303.934 +/- 0.783912
+Dx = 324.058 +/- 0.575369
+conversione dλ: 1.34319e-13
+
+0. FWHM = 115.989 +/- 1.95158
+1. FWHM = 90.775 +/- 1.37818
+2. FWHM = 91.7151 +/- 1.62614
+
+FWHM = 96.7513 +/- 0.925602
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+root [3] Info in <TCanvas::Print>: GIF file /home/aidin/Documenti/Laboratorio/esperienza_4/Gruppo14/BoffFit1.gif has been created
+ReadFitHistoFromTextFile("Boff.txt")
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 5500 6120
+min e max: 5540 5660
+ FCN=1153.18 FROM MIGRAD    STATUS=CONVERGED      73 CALLS          74 TOTAL
+                     EDM=1.23197e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.23600e+02   1.94331e+00   2.26398e-02  -9.15285e-05
+   2  Mean         5.59712e+03   3.34910e-01   5.45259e-03   2.51863e-04
+   3  Sigma        2.72547e+01   3.65094e-01   5.10752e-05  -1.53944e-02
+min e max: 5780 5880
+ FCN=467.582 FROM MIGRAD    STATUS=CONVERGED      78 CALLS          79 TOTAL
+                     EDM=4.16653e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.35648e+02   1.96976e+00   1.51777e-02  -1.22438e-04
+   2  Mean         5.82338e+03   3.82582e-01   3.97828e-03   5.03336e-04
+   3  Sigma        2.88904e+01   4.39398e-01   4.31533e-05  -6.64926e-03
+min e max: 5980 6100
+ FCN=899.314 FROM MIGRAD    STATUS=CONVERGED      71 CALLS          72 TOTAL
+                     EDM=4.81666e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.46730e+02   2.12221e+00   2.15225e-02   3.76828e-04
+   2  Mean         6.03680e+03   3.11117e-01   4.55080e-03   2.11826e-03
+   3  Sigma        2.80642e+01   3.57182e-01   4.40631e-05   2.37390e-01
+
+
+c1 = 226.256 +/- 0.508462
+c2 = 213.421 +/- 0.493116
+Dx = 219.839 +/- 0.354153
+conversione dλ: 1.97996e-13
+
+0. FWHM = 64.18 +/- 0.859732
+1. FWHM = 68.0316 +/- 1.0347
+2. FWHM = 66.0861 +/- 0.8411
+
+FWHM = 65.8803 +/- 0.51984
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+root [4] Info in <TCanvas::Print>: GIF file /home/aidin/Documenti/Laboratorio/esperienza_4/Gruppo14/BoffFit2.gif has been created
+ReadFitHistoFromTextFile("Boff.txt")
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 6380 6900
+min e max: 6400 6480
+ FCN=365.946 FROM MIGRAD    STATUS=CONVERGED      73 CALLS          74 TOTAL
+                     EDM=2.1148e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.59703e+02   2.44403e+00   1.65310e-02   3.00088e-04
+   2  Mean         6.43992e+03   2.92786e-01   3.07080e-03   9.27879e-04
+   3  Sigma        2.18740e+01   3.27331e-01   3.64172e-05   1.33281e-01
+min e max: 6600 6680
+ FCN=461.606 FROM MIGRAD    STATUS=CONVERGED      80 CALLS          81 TOTAL
+                     EDM=1.6443e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.41668e+02   2.19624e+00   1.69379e-02  -6.70368e-05
+   2  Mean         6.63405e+03   3.57246e-01   3.72371e-03   1.22132e-04
+   3  Sigma        2.44750e+01   4.14905e-01   4.95195e-05   5.66555e-03
+min e max: 6780 6860
+ FCN=348.559 FROM MIGRAD    STATUS=CONVERGED      84 CALLS          85 TOTAL
+                     EDM=1.74724e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.46607e+02   2.34225e+00   1.53246e-02  -9.26435e-06
+   2  Mean         6.81731e+03   3.12082e-01   3.25075e-03  -3.50085e-05
+   3  Sigma        2.24987e+01   3.66175e-01   3.91871e-05  -2.18618e-03
+
+
+c1 = 194.125 +/- 0.461897
+c2 = 183.264 +/- 0.474363
+Dx = 188.695 +/- 0.331047
+conversione dλ: 2.30675e-13
+
+0. FWHM = 51.5093 +/- 0.770807
+1. FWHM = 57.6342 +/- 0.977026
+2. FWHM = 52.9804 +/- 0.862276
+
+FWHM = 53.5691 +/- 0.495339
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+root [5] Info in <TCanvas::Print>: GIF file /home/aidin/Documenti/Laboratorio/esperienza_4/Gruppo14/BoffFit3.gif has been created
+
+
+
+
+
+
+
+
+Campo massimo
+
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 3760 4700
+min e max: 3800 4020
+valori iniziali IN ORDINE delle due gaussiane: 40 3850 30 40 4100 30
+ FCN=664.861 FROM MIGRAD    STATUS=CONVERGED     321 CALLS         322 TOTAL
+                     EDM=8.08089e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.3 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.05328e+02   1.61869e+00  -7.50936e-04  -3.67467e-04
+   2  p1           3.86209e+03   1.22189e+00   1.85444e-03  -2.59255e-04
+   3  p2           5.44271e+01   1.97856e+00  -7.44574e-04  -4.96642e-04
+   4  p3           1.18771e+02   1.95546e+00  -2.92868e-04   5.15547e-05
+   5  p4           3.99093e+03   8.07855e-01  -1.41238e-04   3.24503e-04
+   6  p5           3.11109e+01   1.43598e+00   1.93267e-04  -4.91122e-04
+min e max: 4120 4360
+valori iniziali IN ORDINE delle due gaussiane: 40 4210 30 40 4320 30
+ FCN=746.63 FROM MIGRAD    STATUS=CONVERGED     283 CALLS         284 TOTAL
+                     EDM=2.61048e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.36003e+02   1.56358e+00   1.47285e-02  -1.16157e-04
+   2  p1           4.20976e+03   9.58170e-01   7.02087e-03   1.84601e-04
+   3  p2           5.10252e+01   1.05877e+00   5.90558e-03  -1.36434e-04
+   4  p3           1.45150e+02   2.32378e+00   2.20749e-02   4.95670e-05
+   5  p4           4.32553e+03   6.13516e-01   6.07981e-03   1.07123e-04
+   6  p5           2.84860e+01   8.09237e-01   5.32512e-03   2.81112e-04
+min e max: 4480 4680
+valori iniziali IN ORDINE delle due gaussiane: 40 4520 30 40 4625 30
+ FCN=452.282 FROM MIGRAD    STATUS=CONVERGED     320 CALLS         321 TOTAL
+                     EDM=1.46494e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.51546e+02   1.96439e+00   1.46445e-02  -9.26780e-06
+   2  p1           4.51143e+03   1.05391e+00   6.68361e-03   1.47666e-05
+   3  p2           4.48656e+01   1.91441e+00   5.73629e-03  -5.07059e-04
+   4  p3           1.58130e+02   2.36066e+00   1.63033e-02  -1.54486e-04
+   5  p4           4.62691e+03   7.12503e-01   3.86176e-03   1.11950e-04
+   6  p5           3.02558e+01   6.80378e-01   3.21299e-03  -1.09304e-03
+
+
+zee1 = -128.843
+zee2 = -115.773
+zee3 = -115.479
+dzee = -120.032
+
+
+
+
+----------------by aidin attar & Co----------------
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 5500 6120
+min e max: 5520 5670    
+valori iniziali IN ORDINE delle due gaussiane: 50 5550 30 50 5615 30
+ FCN=305.992 FROM MIGRAD    STATUS=CONVERGED     443 CALLS         444 TOTAL
+                     EDM=1.00321e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.2 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.22674e+02   2.87122e+00   2.78261e-03  -9.90472e-05
+   2  p1           5.55107e+03   4.72011e-01  -8.09528e-04   6.91208e-04
+   3  p2           2.62322e+01   6.85528e-01  -4.92467e-04   1.93578e-04
+   4  p3           2.26959e+02   2.94911e+00  -6.98535e-03   1.83988e-04
+   5  p4           5.63662e+03   4.46285e-01   2.24878e-05   3.99674e-04
+   6  p5           2.58283e+01   6.89791e-01   1.23345e-03   1.33645e-03
+min e max: 5750 5880
+valori iniziali IN ORDINE delle due gaussiane: 50 5775 30 50 5875 30
+ FCN=227.271 FROM MIGRAD    STATUS=CONVERGED     680 CALLS         681 TOTAL
+                     EDM=6.72228e-09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.5 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.33402e+02   2.89840e+00   2.62608e-03  -6.24260e-06
+   2  p1           5.77828e+03   5.90356e-01   1.36543e-03  -1.11731e-04
+   3  p2           3.28916e+01   1.15901e+00  -5.03345e-04  -7.08996e-05
+   4  p3           2.54486e+02   3.63779e+00   6.56615e-03  -1.76949e-05
+   5  p4           5.85903e+03   4.12289e-01   6.41984e-04   3.75494e-04
+   6  p5           1.93820e+01   6.22305e-01  -9.84865e-05  -9.64529e-05
+min e max: 5960 6100
+valori iniziali IN ORDINE delle due gaussiane: 50 6000 30 50 6080 30
+ FCN=265.485 FROM MIGRAD    STATUS=CONVERGED     477 CALLS         478 TOTAL
+                     EDM=6.33125e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   4.3 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.70304e+02   3.17391e+00   2.31061e-04   4.76379e-05
+   2  p1           5.99213e+03   4.81631e-01  -3.36543e-05   1.11493e-03
+   3  p2           2.28719e+01   5.43420e-01  -3.73200e-05   1.66980e-04
+   4  p3           2.62781e+02   3.31732e+00  -3.80290e-03   1.25966e-04
+   5  p4           6.07242e+03   4.66072e-01  -7.81108e-05  -7.64005e-04
+   6  p5           2.77057e+01   9.13862e-01   5.32602e-04   8.45384e-04
+
+
+zee1 = -85.5468
+zee2 = -80.7488
+zee3 = -80.2985
+dzee = -82.198
+
+
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 6360 6900
+min e max: 6380 6500
+valori iniziali IN ORDINE delle due gaussiane: 50 6400 30 50 6470 30
+ FCN=214.934 FROM MIGRAD    STATUS=CONVERGED    1757 CALLS        1758 TOTAL
+                     EDM=1.09833e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.69732e+02   3.28405e+00   1.72047e-02  -3.66195e-04
+   2  p1           6.40020e+03   5.93913e-01   3.05185e-03  -1.45014e-03
+   3  p2           2.72069e+01   1.14659e+00   2.27658e-03  -2.68850e-03
+   4  p3           2.74516e+02   3.55232e+00   1.84374e-02  -4.55235e-04
+   5  p4           6.47487e+03   4.92510e-01   3.08746e-03   1.27918e-03
+   6  p5           2.13693e+01   6.67943e-01   1.78798e-03  -3.96752e-03
+min e max: 6575 6700
+valori iniziali IN ORDINE delle due gaussiane: 50 6600 30 50 6675 30
+ FCN=203.426 FROM MIGRAD    STATUS=CONVERGED    1169 CALLS        1170 TOTAL
+                     EDM=1.02991e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   1.9 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.79855e+02   3.31098e+00  -1.96664e-03   5.32790e-07
+   2  p1           6.59141e+03   5.59814e-01  -3.91618e-04  -2.03217e-05
+   3  p2           2.35020e+01   8.43136e-01   1.10008e-03   9.26110e-05
+   4  p3           2.72999e+02   3.16419e+00  -1.21808e-03   3.35048e-05
+   5  p4           6.66561e+03   4.11189e-01   8.39145e-04   2.64703e-04
+   6  p5           2.24772e+01   4.83300e-01  -9.64927e-05   6.22251e-04
+min e max: 6750 6870
+valori iniziali IN ORDINE delle due gaussiane: 50 6780 30 50 6850 30
+ FCN=235.876 FROM MIGRAD    STATUS=CONVERGED     726 CALLS         727 TOTAL
+                     EDM=8.56616e-09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.0 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.75199e+02   3.27646e+00   1.90513e-03   4.79893e-05
+   2  p1           6.78131e+03   4.47653e-01   3.23643e-04   1.56583e-04
+   3  p2           2.17202e+01   5.09471e-01   1.42211e-04   4.55380e-04
+   4  p3           2.66644e+02   3.59939e+00   5.16779e-04   4.83683e-05
+   5  p4           6.84830e+03   4.01826e-01   4.11856e-04  -7.68035e-05
+   6  p5           2.07270e+01   7.00247e-01   2.96900e-04   3.73890e-04
+
+
+zee1 = -74.6724
+zee2 = -74.2001
+zee3 = -66.9964
+dzee = -71.9563
+
+
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
