@@ -396,3 +396,108 @@ Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
 
 ----------------by aidin attar & Co----------------
 
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 5500 6120
+min e max: 5520 5670    
+valori iniziali IN ORDINE delle due gaussiane: 2.22674e+02  5.55107e+03  2.62322e+01  2.26959e+02  5.63662e+03   2.58283e+01   
+ FCN=440.829 FROM MIGRAD    STATUS=CONVERGED     425 CALLS         426 TOTAL
+                     EDM=2.39267e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.5 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c1           4.96354e+01   3.71067e+00  -2.87174e-04   8.16847e-05
+   2  μ1          5.56217e+03   6.71055e-01   9.17937e-04   4.88531e-04
+   3  σ1          8.36317e+00   6.65016e-01   1.89662e-03   1.18440e-04
+   4  c2           1.39327e+02   1.78012e+00  -2.95257e-03  -4.51557e-04
+   5  μ2          5.60114e+03   5.15209e-01  -3.96526e-04  -8.09150e-05
+   6  σ2          3.90773e+01   4.36419e-01   1.07861e-03  -1.08362e-03
+min e max: 5780
+5860
+valori iniziali IN ORDINE delle due gaussiane: 2.33402e+02  5.77828e+03  3.28916e+01  2.54486e+02 5.85903e+03  1.93820e+01  
+ FCN=113.687 FROM MIGRAD    STATUS=CONVERGED     907 CALLS         908 TOTAL
+                     EDM=4.39716e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.1 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c1           8.88097e+01   2.20909e+01  -2.39967e-02   4.14025e-07
+   2  μ1          5.78701e+03   1.59948e+00   1.18427e-03  -2.13776e-04
+   3  σ1          1.48509e+01   3.12752e+00  -5.09655e-03  -4.45361e-04
+   4  c2           1.58323e+02   3.00021e+00   2.93985e-03  -3.30570e-05
+   5  μ2          5.83397e+03   2.88337e+00  -4.12441e-03   4.54964e-04
+   6  σ2          3.00310e+01   4.27336e+00   3.43241e-03  -7.55057e-06
+min e max: 6000 6070
+valori iniziali IN ORDINE delle due gaussiane: 2.70304e+02  5.99213e+03   2.28719e+01  2.62781e+02  6.07242e+03   2.77057e+01  
+ FCN=69.9743 FROM MIGRAD    STATUS=CONVERGED     883 CALLS         884 TOTAL
+                     EDM=1.93607e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.1 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c1           1.18247e+02   1.12194e+01   6.70650e-03  -8.06971e-07
+   2  μ1          6.00459e+03   1.05171e+00  -9.83195e-04   1.86717e-05
+   3  σ1          1.05691e+01   1.56265e+00   7.28859e-04   1.15391e-04
+   4  c2           1.90356e+02   3.12470e+00   1.19443e-03   4.84005e-05
+   5  μ2          6.04533e+03   1.05148e+00   3.87599e-04  -2.75182e-04
+   6  σ2          2.36526e+01   1.66764e+00  -7.09439e-04   8.51225e-05
+
+
+zee1 = 38.9697 +/- 0.846023
+zee2 = 46.9567 +/- 3.29729
+zee3 = 40.7418 +/- 1.48718
+dzee = 42.2227 +/- 1.23826
+
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 6360 6900
+min e max: 6390 6470
+valori iniziali IN ORDINE delle due gaussiane: 2.69732e+02 6.40020e+03   2.72069e+01   2.74516e+02 6.47487e+03  2.13693e+01 
+ FCN=132.36 FROM MIGRAD    STATUS=CONVERGED     569 CALLS         570 TOTAL
+                     EDM=5.09199e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c1           1.24220e+02   1.83133e+01   1.34739e-02   7.54640e-05
+   2  μ1          6.41051e+03   1.52565e+00   3.05677e-03   1.43566e-03
+   3  σ1          1.37575e+01   1.07438e+00   1.80872e-03   1.04791e-03
+   4  c2           1.85265e+02   3.55115e+00   1.25070e-02   2.24033e-04
+   5  μ2          6.45001e+03   1.74386e+00   3.07560e-03  -8.09448e-04
+   6  σ2          2.17675e+01   2.52382e+00   2.04691e-03   9.03286e-04
+min e max: 6590 6670
+valori iniziali IN ORDINE delle due gaussiane: 2.79855e+02 6.59141e+03  2.35020e+01  2.72999e+02 6.66561e+03   2.24772e+01
+ FCN=83.0889 FROM MIGRAD    STATUS=CONVERGED     683 CALLS         684 TOTAL
+                     EDM=8.9353e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c1           9.95598e+01   1.27475e+01   1.25842e-02   2.19896e-04
+   2  μ1          6.60060e+03   6.92886e-01   3.14741e-03   4.42867e-04
+   3  σ1          1.12806e+01   1.35244e+00   2.13430e-03   1.42000e-03
+   4  c2           1.83323e+02   2.90959e+00   8.61893e-03  -2.51836e-04
+   5  μ2          6.64236e+03   1.33116e+00   3.16732e-03  -1.37261e-03
+   6  σ2          2.67953e+01   2.04690e+00   1.86138e-03   1.03621e-03
+min e max: 6780 6850
+valori iniziali IN ORDINE delle due gaussiane: 2.75199e+02 6.78131e+03  2.17202e+01    2.66644e+02   6.84830e+03   2.07270e+01 
+ FCN=100.852 FROM MIGRAD    STATUS=CONVERGED     580 CALLS         581 TOTAL
+                     EDM=1.34239e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.3 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  c1           1.09680e+02   1.25498e+01   1.16764e-02  -5.12651e-05
+   2  μ1          6.78691e+03   9.08413e-01  -2.89311e-04   6.61036e-05
+   3  σ1          1.09962e+01   1.50462e+00   2.86953e-03   7.57044e-05
+   4  c2           1.98601e+02   3.24952e+00  -4.34119e-03  -7.07647e-06
+   5  μ2          6.82443e+03   1.22876e+00   1.30727e-03  -1.00908e-04
+   6  σ2          2.21303e+01   1.53747e+00  -1.22628e-03  -4.01623e-04
+
+
+zee1 = 39.4935 +/- 2.31704
+zee2 = 41.7545 +/- 1.50069
+zee3 = 37.5195 +/- 1.52809
+dzee = 39.5892 +/- 1.05176
+
