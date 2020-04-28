@@ -209,10 +209,12 @@ valori iniziali IN ORDINE delle due gaussiane: 40 4520 30 40 4625 30
    6  p5           3.02558e+01   6.80378e-01   3.21299e-03  -1.09304e-03
 
 
-zee1 = -128.843
-zee2 = -115.773
-zee3 = -115.479
-dzee = -120.032
+
+zee1 = 128.843 +/- 1.4648
+zee2 = 115.773 +/- 1.13776
+zee3 = 115.479 +/- 1.27216
+dzee = 120.032 +/- 0.749705
+
 
 
 
@@ -265,11 +267,10 @@ valori iniziali IN ORDINE delle due gaussiane: 50 6000 30 50 6080 30
    6  p5           2.77057e+01   9.13862e-01   5.32602e-04   8.45384e-04
 
 
-zee1 = -85.5468
-zee2 = -80.7488
-zee3 = -80.2985
-dzee = -82.198
-
+zee1 = 85.5468 +/- 0.649588
+zee2 = 80.7488 +/- 0.720071
+zee3 = 80.2985 +/- 0.670218
+dzee = 82.198 +/- 0.392946
 
 Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
 
@@ -323,10 +324,71 @@ valori iniziali IN ORDINE delle due gaussiane: 50 6780 30 50 6850 30
    6  p5           2.07270e+01   7.00247e-01   2.96900e-04   3.73890e-04
 
 
-zee1 = -74.6724
-zee2 = -74.2001
-zee3 = -66.9964
-dzee = -71.9563
+zee1 = 74.6724 +/- 0.771556
+zee2 = 74.2001 +/- 0.6946
+zee3 = 66.9964 +/- 0.601545
+dzee = 71.9563 +/- 0.399948
+
+
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+
+B acceso a metà
+********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi:  3760 4700
+min e max: 3800 4020
+valori iniziali IN ORDINE delle due gaussiane: 40 3850 30 40 4100 30
+ FCN=1133.53 FROM MIGRAD    STATUS=CONVERGED     597 CALLS         598 TOTAL
+                     EDM=5.4416e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.4 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.21443e+01   3.80443e+00   2.31882e-03   1.12102e-04
+   2  p1           3.96502e+03   1.50509e+00  -7.25734e-04  -1.17610e-04
+   3  p2          -2.58996e+01   9.99862e-01  -1.74937e-03  -2.01685e-04
+   4  p3           6.38359e+01   1.43535e+00  -1.19549e-03   1.09832e-04
+   5  p4           3.89216e+03   2.65204e+00  -2.77409e-03   4.11177e-04
+   6  p5          -4.36234e+01   1.78254e+00   1.67174e-03   3.39895e-04
+min e max:  4120 4360
+valori iniziali IN ORDINE delle due gaussiane: 40 4210 30 40 4320 30
+ FCN=1558.5 FROM MIGRAD    STATUS=CONVERGED     278 CALLS         279 TOTAL
+                     EDM=1.22447e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.51298e+01   1.69110e+00   1.84646e-02   1.41687e-05
+   2  p1           4.24194e+03   2.59148e+00   1.06831e-02   1.80301e-04
+   3  p2           4.35542e+01   1.63234e+00   7.47595e-03   1.75766e-04
+   4  p3           5.19685e+01   5.34282e+00   2.52947e-02   5.04219e-05
+   5  p4           4.30371e+03   1.03691e+00   1.26039e-02   3.49908e-06
+   6  p5           2.21329e+01   1.16278e+00   8.58185e-03   7.45710e-04
+min e max: 4480 4680
+valori iniziali IN ORDINE delle due gaussiane: 40 4520 30 40 4625 30
+ FCN=918.723 FROM MIGRAD    STATUS=CONVERGED     410 CALLS         411 TOTAL
+                     EDM=5.33233e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           6.39445e+01   4.86965e+00   1.95678e-02   7.79604e-05
+   2  p1           4.52532e+03   1.38310e+00   8.60288e-03  -5.73689e-04
+   3  p2           2.30109e+01   1.10430e+00   7.25841e-03  -8.32355e-05
+   4  p3           9.46727e+01   2.03255e+00   1.62802e-02  -6.70454e-04
+   5  p4           4.58750e+03   2.09646e+00   7.39670e-03  -2.47653e-04
+   6  p5           3.69849e+01   1.26829e+00   5.28509e-03   1.40698e-04
+
+
+zee1 = -72.8634 +/- 3.04936
+zee2 = 61.7623 +/- 2.79122
+zee3 = 62.1834 +/- 2.5116
+dzee = 17.0274 +/- 1.61237
 
 
 Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
