@@ -501,3 +501,38 @@ zee2 = 41.7545 +/- 1.50069
 zee3 = 37.5195 +/- 1.52809
 dzee = 39.5892 +/- 1.05176
 
+
+
+
+FIT INDICI DI RIFRAZIONE
+
+file con i dati sperimentali: prova/n.dat
+asse x: x
+asse y: y
+
+****************************************
+Minimizer is Linear
+Chi2                      =  1.62138e-07
+NDf                       =            1
+offset                    =      1.49971   +/-   0.000940569 
+slope                     =       420488   +/-   28984.3     
+A:	 1.49971	 +/- 	0.000940569	 	 	 0.06%
+B:	 420488	 +/- 	28984.3	 	 	 6.89%
+
+
+COVARIANCE MATRIX :
+ 
+2x2 matrix is as follows
+
+     |      0    |      1    |
+-------------------------------
+   0 |  8.847e-07      -26.42 
+   1 |     -26.42   8.401e+08 
+
+chi2:		1.62138e-07
+rho:		0.997633
+t: 		14.5075
+comp:		0.707107
+sigma:		0.000402663
+
+
