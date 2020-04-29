@@ -14,11 +14,14 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
-double  dlambda = 0.043527207; // nm
-double edlambda = 0.000160081307397 ; // nm
+double  h = 6.62607015E-34; // Js
+double  c = 299792458; // m/s
+double μB = 9.27400949E-28; // J/G
+double  λ = 585.3E-9; // m
 
 
 void set_style(){
@@ -51,7 +54,7 @@ double err (vector <double> errori){
 	return error;
 }
 
-void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool draw=1) {
+void MagneticField(const char *fname, const char *histname=NULL, bool draw=1) {
 
   cout << "*********************************************************" << endl
        << "-------Inserire il minimo e massimo per ogni range-------" << endl
@@ -86,83 +89,103 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
 
   if (gROOT->FindObject(hname)) gROOT->FindObject(hname)->Delete();
 
-  TH1F *h = new TH1F(hname,hname,nbins,0,nbins);
+  TH1F *hg = new TH1F(hname,hname,nbins,0,nbins);
   for (int i=1; i<=nbins; i++) {
-    h->SetBinContent(i,binc[i-1]);
+    hg->SetBinContent(i,binc[i-1]);
   }
 
   delete [] binc;
 
-  h->SetEntries(h->Integral());
+  hg->SetEntries(hg->Integral());
 
   vector <TF1*> gauss;
   int min, max;
 
   cout << "massimo e minimo dei 3 picchi: ";
   cin  >>  min  >>  max;
-  h->GetXaxis()->SetRange( min, max );
+  hg->GetXaxis()->SetRange( min, max );
 
+  double c1, c2, μ1, μ2, σ1, σ2;
   for( int i = 0; i < 3; ++i ){
     cout << "min e max: ";
     cin  >>  min  >>  max;
     string name = "gauss" + to_string(i);
-    gauss.push_back( new TF1 ( name.c_str(), "gaus", min, max ) );
+    gauss.push_back( new TF1 ( name.c_str(), "gaus(0) + gaus(3)", min, max ) );
 
-    h->Fit( gauss[i], "R0" ); 
+    cout << "valori iniziali IN ORDINE delle due gaussiane: ";
+    cin  >> c1 >> μ1 >> σ1
+         >> c2 >> μ2 >> σ2;
+    gauss[i]->SetParameters( c1, μ1, σ1,
+                             c2, μ2, σ2 );
+
+    hg->Fit( gauss[i], "R0" ); 
   }
 
   cout << endl << endl;
 
-  double c1  = gauss[1]->GetParameter( 1 ) -
-               gauss[0]->GetParameter( 1 );
-  double ec1 = sqrt( pow( gauss[1]->GetParError( 1 ), 2 ) +
-                     pow( gauss[0]->GetParError( 1 ), 2 ) );
+  double F, eF; // nm/pixel
+  cout << "inserire il fattore di conversione con errore: ";
+  cin  >> F >> eF;
 
-  cout << "c1 = " << c1 << " +/- " << ec1 << endl;
+  double G;
+  cout << "inserire il valore di campo magnetico in gauss: ";
+  cin  >> G;
 
-  double c2  = gauss[2]->GetParameter( 1 ) -
-               gauss[1]->GetParameter( 1 );
-  double ec2 = sqrt( pow( gauss[2]->GetParError( 1 ), 2 ) +
-                     pow( gauss[1]->GetParError( 1 ), 2 ) );
+  cout << endl;
 
-  cout << "c2 = " << c2 << " +/- " << ec2 << endl;
+  double zee1  =       gauss[0]->GetParameter( 4 ) -
+                       gauss[0]->GetParameter( 1 );
+  double ezee1 = sqrt( pow( gauss[0]->GetParError( 4 ), 2 ) +
+                       pow( gauss[0]->GetParError( 1 ), 2 ) );
 
-  double  Dx = ( c1 + c2 ) / 2;
-  double eDx = sqrt( ec1 * ec1 + ec2 * ec2 ) / 2;
+  cout << "zee1 = " <<  zee1 
+       <<  " +/- "  << ezee1 << endl;
 
-  cout << "Dx = " << Dx << " +/- " << eDx << endl;
+  double zee2  = gauss[1]->GetParameter( 4 ) -
+                 gauss[1]->GetParameter( 1 );
+  double ezee2 = sqrt( pow( gauss[1]->GetParError( 4 ), 2 ) +
+                       pow( gauss[1]->GetParError( 1 ), 2 ) );
 
+  cout << "zee2 = " <<  zee2 
+       <<  " +/- "  << ezee2 << endl;
+
+  double zee3  = gauss[2]->GetParameter( 4 ) -
+                 gauss[2]->GetParameter( 1 );
+  double ezee3 = sqrt( pow( gauss[2]->GetParError( 4 ), 2 ) +
+                       pow( gauss[2]->GetParError( 1 ), 2 ) );
+
+  cout << "zee3 = " << zee3 << " +/- " << ezee3 << endl;
+
+
+  double dzee  = ( zee1 + zee2 + zee3 ) / 3;
+  double edzee = sqrt( ezee1 * ezee1 + 
+                       ezee2 * ezee2 +
+                       ezee3 * ezee3 ) / 3;
+
+  cout << "dzee = " <<  dzee 
+       <<  " +/- "  << edzee 
+       << endl      << endl;
+
+  double  dlzee = F * dzee;
+  double edlzee = dlzee * sqrt( pow( eF / F, 2 ) + pow( edzee / dzee, 2 ));
+
+  cout << "dlzee = " <<  dlzee 
+       <<  " +/- "   << edlzee 
+       << endl;
   cout << endl << endl;
 
-  vector <double>  FWHM;
-  vector <double> eFWHM;
-  for( int i = 0; i < 3; ++i ){
-     FWHM.push_back( 2 * sqrt( 2 * log( 2 ) ) * gauss[i]->GetParameter( 2 ));
-    eFWHM.push_back( 2 * sqrt( 2 * log( 2 ) ) * gauss[i]->GetParError(  2 ));
-  }
+  double  g = h * c * dlzee * pow( 10, -9 ) /
+            ( 2 * μB * G * λ * λ );
+  double eg = g * sqrt( 0.0001 + pow( edlzee / dlzee, 2 ));
 
-  for( int i = 0; i < 3; ++i )
-    cout << i << ". FWHM = " <<  FWHM[i] 
-              << " +/- "     << eFWHM[i] << endl;
-
-  double meaFWHM = mediapesata( FWHM, eFWHM );
-  double rmsFWHM = err(               eFWHM );
-  cout << endl << "FWHM = " << meaFWHM 
-               <<  " +/- "  << rmsFWHM
-               <<   endl;
-
-
-  double  F = dlambda / Dx;
-  double eF = F * sqrt( pow( edlambda / dlambda, 2 ) + pow( eDx / Dx, 2 ));
-  cout <<   endl  << endl 
-       <<  "F = " << F 
-       << " +/- " << eF << endl;
+  cout << "g =  " <<  g
+       << " +/- " << eg << endl;
 
   TCanvas *canvas = new TCanvas( "canvas", "My ROOT Plots 2", 1280, 720 );
   canvas -> SetGrid(); //griglia
   set_style();
 
-  h->Draw();
+  hg->Draw();
 
   for( int i = 0; i < 3; ++i )
     gauss[i]->Draw("SAME");
