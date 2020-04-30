@@ -1,0 +1,128 @@
+\documentclass{article}  
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[italian]{babel}
+\usepackage{listings}
+\usepackage[usenames]{color}
+\usepackage{natbib}
+\usepackage{siunitx}
+\usepackage[strict]{changepage}
+\usepackage{physics}
+\usepackage{wrapfig}
+\usepackage[a4paper, top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
+\usepackage{array}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{multirow}
+
+
+
+\title{Effetto Zeeman}
+\author{Docente: dott. Garfagnini, dott. Lunardon \\
+Gruppo 14}
+\date{Anno accademico 2019/20}
+
+\begin{document}
+
+
+
+\maketitle
+
+    \begin{itemize}
+        \item[$\circ$] Aidin Attar - 1170698 - aidin.attar@studenti.unipd.it
+        \item[$\circ$] Ema Baci - 1171107 – ema.baci@studenti.unipd.it
+        \item[$\circ$] Alessandro Bianchetti – 1162147 – alessandro.bianchetti@studenti.unipd.it
+    \end{itemize}
+
+\vspace{3 cm}
+\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman per atomo di Neon} 
+\end{large}
+\vspace{8.5cm}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.5, angle=0]{unipd_logo.png}
+%\end{figure}
+
+%\newpage \tableofcontents \newpage
+
+\twocolumn
+
+\subsection*{Descrizione dell'apparato} 
+
+L'apparato sperimentale si compone di una lampada  scarica in gas di Neon.
+In particolare siamo interessati alla transizione da 585.3 nm 
+$^1S^0 \xrightarrow[]{}  ^1P^1$ 
+Ci si aspetta quindi la comparsa di tre transizioni di lunghezza d'onda molto vicina nello stato di arrivo, ma considerando la polarizzazione delle righe, possiamo “sopprimere” la transizione centrale e vedere solo due transizioni marginali, orientando il magnete in modo che la visione sia proprio lungo la direzione del campo magnetico.
+
+Il raggio di luce passa quindi per una lente condensante, necessaria per concentrare su di essa la maggior quantità di luce possibile.
+La luce passa quindi per una fenditura e successivamente attraverso un prisma, necessario per ruotare di $90\deg$ la luce e dividerla nelle sue componenti principali. Il fascio entra quindi nella lamina di Lummer-Gehrcke e viene infine focalizzato sul dispositivo ottico di lettura (un CCD monodimensionale) attraverso la lente di camera.
+
+La presa dati di questa esperienza è stata svolta interamente da remoto; in particolare La connessione al PC del laboratorio avviene tramite l'esportazione dello schermo via VNC Viewer.
+
+Una volta effettuato il collegamento, si fa partire il programma di acquisizione dati che permette di controllare i diversi elementi appena citati che componngono l'apparato sperimentale dell'esperienza.
+
+Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel.
+
+%\begin{center}
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[scale=0.28, angle=0]{alimentazione.pdf}
+%\caption{ schema per l'alimentazione dell'operazionale }
+%\label{fig:alimentazione}
+%\end{figure}
+%\end{center} 
+
+\section{Conclusioni}
+
+
+
+\newpage
+\appendix
+\section{Appendici}
+\label{appendice}
+\subsection{Costruzione dell'errore sulle misure}
+\label{Calcerr}
+
+\subsection{Tabella delle compatibilità}
+\medskip
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c}
+        %\hline
+        \begin{Large}
+        $\lambda=\frac{|a-b|}{\sqrt{\sigma_a^2+\sigma_b^2}}$
+        \end{Large}\\
+        %\hline
+    \end{tabular}
+    \hspace{0.5cm}
+    \begin{tabular}{cc}
+        \toprule
+        &       \textbf{Compatibilità   }       \\
+        \midrule
+        0$\leq \lambda$<1   &Ottima                 \\
+        1$\leq \lambda$<2   &Buona                  \\
+        2$\leq \lambda$<3   &Accettabile            \\
+        3$\leq\lambda$<5   &Pessima                \\
+        $ \lambda \geq $  5     &Non compatibile        \\
+        \bottomrule
+    \end{tabular}
+    \caption{indicazioni lettura compatibilità}
+    \label{tab:compatibilità}
+\end{table}
+
+\subsection{Dati sperimentali}
+
+
+   
+\end{document}
