@@ -188,7 +188,15 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
                     sqrt( n*n - pow( sin( i ), 2 ) ) /
                   ( n*n - pow( sin( i ), 2 )         -
                     n * lambda * dndl              );
-  double edlambda = 0.000160081307397 ; // nm
+  
+  double deri = lambda*lambda / (2*d) * sin(i) / sqrt (n*n -pow(sin(i), 2)) / 
+                (n*n -pow(sin(i), 2) - n * lambda * dndl) 
+                * (n^2 - pow(sin(i), 2) + n * lambda * dndl);
+
+  double ederi = deri * cos(i) * ei;
+
+  double edlambda = sqrt( pow(0.000160081307397,2) + pow( ederi, 2) )  ; // nm
+
 
   double  F = dlambda / Dx;
   double eF = F * sqrt( pow( edlambda / dlambda, 2 ) + pow( eDx / Dx, 2 ));
