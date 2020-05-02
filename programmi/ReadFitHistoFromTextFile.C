@@ -23,7 +23,7 @@ double edlambda = 0.000160081307397 ; // nm
 
 void set_style(){
     // setup graphics
-    //gStyle -> SetOptTitle   (   kFALSE   );
+    gStyle -> SetOptTitle   (   kFALSE   );
     gStyle -> SetOptStat    (      0     );
     gStyle -> SetLabelOffset( 0.01 , "x" );
     gStyle -> SetLabelOffset( 0.005, "y" );
@@ -102,6 +102,11 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
   cout << "massimo e minimo dei 3 picchi: ";
   cin  >>  min  >>  max;
   h->GetXaxis()->SetRangeUser( min, max );
+
+  h->GetXaxis()->SetTitle( "CCD position" );
+  h->GetYaxis()->SetTitle( "counts" );
+  h->GetXaxis()->CenterTitle();
+  h->GetYaxis()->CenterTitle();
 
   int j = 0;
   double  par[9];
@@ -182,7 +187,35 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
   for( int i = 0; i < 3; ++i )
     gauss[i]->Draw("SAME");
 
-  vector <TLegend*> legend;
+  vector <TPaveText*> legend;
+  string name;
+  int k = 0;
+
+  legend.push_back( new TPaveText( .05, .80, .20, .95, "NDC" ));
+  legend.push_back( new TPaveText( .35, .80, .50, .95, "NDC" ));
+  legend.push_back( new TPaveText( .70, .80, .85, .95, "NDC" ));
+
+  for( int i = 0; i < 3; ++i ){
+    name = "c = "       + to_string(  par[k] ) +
+           " #pm "      + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "#mu = "     + to_string(  par[k] ) +
+           " #pm "      + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "#sigma = "  + to_string(  par[k] ) +
+           " #pm "      + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+    
+    legend[i]->Draw( );
+  }
+
+
+/*  vector <TLegend*> legend;
   string name;
   int k = 0;
 
@@ -206,7 +239,8 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
 
     legend[i]->Draw( "SAME" );
   }
-  
+*/
+
   cout << endl << endl
        << "----------------by aidin attar & Co----------------" 
        << endl << endl;

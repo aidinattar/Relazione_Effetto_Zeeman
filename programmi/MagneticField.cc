@@ -26,7 +26,7 @@ double  λ = 585.3E-9; // m
 
 void set_style(){
     // setup graphics
-    //gStyle -> SetOptTitle   (   kFALSE   );
+    gStyle -> SetOptTitle   (   kFALSE   );
     gStyle -> SetOptStat    (      0     );
     gStyle -> SetLabelOffset( 0.01 , "x" );
     gStyle -> SetLabelOffset( 0.005, "y" );
@@ -97,13 +97,23 @@ void MagneticField(const char *fname, const char *histname=NULL, bool draw=1) {
   delete [] binc;
 
   hg->SetEntries(hg->Integral());
+  hg->Rebin( 4 );
 
   vector <TF1*> gauss;
   int min, max;
 
   cout << "massimo e minimo dei 3 picchi: ";
   cin  >>  min  >>  max;
-  hg->GetXaxis()->SetRange( min, max );
+  hg->GetXaxis()->SetRangeUser( min, max );
+
+  hg->GetXaxis()->SetTitle( "CCD position" );
+  hg->GetYaxis()->SetTitle( "counts" );
+  hg->GetXaxis()->CenterTitle();
+  hg->GetYaxis()->CenterTitle();
+  
+  int j = 0;
+  double  par[18];
+  double epar[18];
 
   double c1, c2, μ1, μ2, σ1, σ2;
   for( int i = 0; i < 3; ++i ){
@@ -118,7 +128,15 @@ void MagneticField(const char *fname, const char *histname=NULL, bool draw=1) {
     gauss[i]->SetParameters( c1, μ1, σ1,
                              c2, μ2, σ2 );
 
-    hg->Fit( gauss[i], "R0" ); 
+    hg->Fit( gauss[i], "R0+" ); 
+
+    gauss[i]->GetParameters( &par[j] );
+    epar[j++] = gauss[i]->GetParError( 0 );
+    epar[j++] = gauss[i]->GetParError( 1 );
+    epar[j++] = gauss[i]->GetParError( 2 );
+    epar[j++] = gauss[i]->GetParError( 3 );
+    epar[j++] = gauss[i]->GetParError( 4 );
+    epar[j++] = gauss[i]->GetParError( 5 );
   }
 
   cout << endl << endl;
@@ -185,10 +203,99 @@ void MagneticField(const char *fname, const char *histname=NULL, bool draw=1) {
   canvas -> SetGrid(); //griglia
   set_style();
 
+  gPad   -> SetTopMargin   ( 0.01  );
+  gPad   -> SetBottomMargin( 0.09  );
+  gPad   -> SetRightMargin ( 0.01  );
+  gPad   -> SetLeftMargin  ( 0.075 );
+
   hg->Draw();
 
   for( int i = 0; i < 3; ++i )
     gauss[i]->Draw("SAME");
+
+
+  vector <TPaveText*> legend;
+  string name;
+  int k = 0;
+
+  legend.push_back( new TPaveText( .05, .75, .25, .95, "NDC" ));
+  legend.push_back( new TPaveText( .35, .75, .55, .95, "NDC" ));
+  legend.push_back( new TPaveText( .65, .75, .85, .95, "NDC" ));
+
+  for( int i = 0; i < 3; ++i ){
+    name = "c_{1} = " + to_string(  par[k] ) +
+           " #pm "       + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "#mu_{1} = "     + to_string(  par[k] ) +
+           " #pm "       + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "#sigma_{1} = "    + to_string(  par[k] ) +
+           " #pm "       + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "c_{2} = " + to_string(  par[k] ) +
+           " #pm "       + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "#mu_{2} = "     + to_string(  par[k] ) +
+           " #pm "       + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    name = "#sigma_{2} = "    + to_string(  par[k] ) +
+           " #pm "       + to_string( epar[k] );
+    legend[i]->AddText( name.c_str() );
+    k++;
+
+    legend[i]->Draw();
+  }
+
+/*  vector <TLegend*> legend;
+  string name;
+  int k = 0;
+
+  for( int i = 0; i < 3; ++i ){
+    legend.push_back( new TLegend );
+
+    name = "Constant1  " + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Mean1  "     + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Sigma1  "    + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Constant2  " + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Mean2  "     + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Sigma2  "    + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    legend[i]->Draw( "SAME" );
+  }
+*/
 
   cout << endl << endl
        << "----------------by aidin attar & Co----------------" 
