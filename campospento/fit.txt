@@ -1,0 +1,323 @@
+GRUPPO1
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 3300
+4400
+min e max: 3470
+3600
+ FCN=158.017 FROM MIGRAD    STATUS=CONVERGED     130 CALLS         131 TOTAL
+                     EDM=2.06927e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     4.35779e+04   7.62269e+02   3.40394e+00   8.22906e-07
+   2  Mean         3.53612e+03   8.17132e-01   5.02774e-03   5.08782e-04
+   3  Sigma        4.60724e+01   1.14152e+00   4.43009e-05  -2.99951e-02
+min e max: 3870
+3980
+ FCN=77.8623 FROM MIGRAD    STATUS=CONVERGED     128 CALLS         129 TOTAL
+                     EDM=4.17179e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.24561e+04   1.12396e+03   2.72774e+00  -2.77214e-07
+   2  Mean         3.92391e+03   8.15718e-01   3.52705e-03  -7.95354e-05
+   3  Sigma        4.34969e+01   1.31928e+00   3.16696e-05   3.71669e-02
+min e max: 4200
+4330
+ FCN=132.637 FROM MIGRAD    STATUS=CONVERGED     140 CALLS         141 TOTAL
+                     EDM=1.25832e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.65142e+04   7.54932e+02   3.47298e+00   7.06215e-08
+   2  Mean         4.26443e+03   5.96160e-01   3.36342e-03   3.12958e-05
+   3  Sigma        4.18263e+01   7.81606e-01   3.33524e-05  -6.63429e-03
+
+
+c1 = 387.79 +/- 1.1546
+c2 = 340.519 +/- 1.01035
+Dx = 364.154 +/- 0.767122
+
+
+0. FWHM = 108.492 +/- 2.68808
+1. FWHM = 102.427 +/- 3.10668
+2. FWHM = 98.4934 +/- 1.84054
+
+FWHM = 101.828 +/- 1.36437
+
+
+F = 0.00011953 +/- 5.06605e-07
+
+
+GRUPPO2
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 4400
+5250
+min e max: 4525
+4620
+ FCN=33.3175 FROM MIGRAD    STATUS=CONVERGED     128 CALLS         129 TOTAL
+                     EDM=6.81242e-11    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.59408e+04   1.00604e+03   1.83175e+00   9.37389e-09
+   2  Mean         4.56933e+03   6.32497e-01   2.17882e-03  -1.08257e-05
+   3  Sigma        3.66955e+01   9.19834e-01   1.92374e-05  -1.41583e-03
+min e max: 4820
+4890
+ FCN=15.5577 FROM MIGRAD    STATUS=CONVERGED     120 CALLS         121 TOTAL
+                     EDM=5.85504e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.32909e+04   1.16217e+03   1.26895e+00   1.76940e-07
+   2  Mean         4.85111e+03   5.77323e-01   2.31319e-03  -1.82433e-03
+   3  Sigma        2.96080e+01   8.89810e-01   1.43472e-05  -9.06243e-03
+min e max: 5070
+5160
+ FCN=106.211 FROM MIGRAD    STATUS=CONVERGED     139 CALLS         140 TOTAL
+                     EDM=1.45886e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.72281e+04   7.76974e+02   3.14722e+00  -5.49689e-08
+   2  Mean         5.11494e+03   4.31166e-01   2.43899e-03   5.86942e-05
+   3  Sigma        2.93185e+01   5.46943e-01   2.93918e-05  -1.67209e-03
+
+
+c1 = 281.783 +/- 0.856362
+c2 = 263.832 +/- 0.72056
+Dx = 272.808 +/- 0.55959
+
+
+0. FWHM = 86.4114 +/- 2.16604
+1. FWHM = 69.7216 +/- 2.09534
+2. FWHM = 69.0397 +/- 1.28795
+
+FWHM = 72.7359 +/- 0.97882
+
+
+F = 0.000159553 +/- 6.7189e-07
+
+
+GRUPPO3
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 5250
+5950
+min e max: 5325
+5400
+ FCN=72.4723 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=5.78029e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.5 per cent
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.15899e+04   7.59996e+02   4.31206e+00   1.03041e-06
+   2  Mean         5.36185e+03   4.11429e-01   1.13806e-04  -1.57159e-03
+   3  Sigma        2.59264e+01   5.24842e-01   1.43121e-04  -1.81989e-01
+min e max: 5570
+5640
+ FCN=64.623 FROM MIGRAD    STATUS=CONVERGED     117 CALLS         118 TOTAL
+                     EDM=1.25133e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.33482e+04   9.41232e+02   2.47031e+00  -1.71808e-07
+   2  Mean         5.59877e+03   4.91853e-01   2.66970e-03   1.21708e-04
+   3  Sigma        2.69376e+01   6.34411e-01   2.59227e-05   2.33092e-02
+min e max: 5780
+5860
+ FCN=96.5519 FROM MIGRAD    STATUS=CONVERGED     135 CALLS         136 TOTAL
+                     EDM=1.32158e-06    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.82165e+04   7.84375e+02   3.01971e+00   3.44708e-07
+   2  Mean         5.82214e+03   3.95056e-01   2.77621e-03   3.55060e-04
+   3  Sigma        2.69542e+01   5.07758e-01   2.78933e-05  -2.46229e-01
+
+
+c1 = 236.922 +/- 0.641244
+c2 = 223.364 +/- 0.630863
+Dx = 230.143 +/- 0.449773
+
+
+0. FWHM = 61.052 +/- 1.23591
+1. FWHM = 63.4332 +/- 1.49392
+2. FWHM = 63.4724 +/- 1.19568
+
+FWHM = 62.5834 +/- 0.744897
+
+
+F = 0.000189131 +/- 7.87681e-07
+
+
+GRUPPO4 
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 5950
+6550
+min e max: 6005
+6065
+ FCN=27.2007 FROM MIGRAD    STATUS=CONVERGED     116 CALLS         117 TOTAL
+                     EDM=1.6154e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     6.00243e+04   1.19353e+03   1.74703e+00   3.41014e-07
+   2  Mean         6.03420e+03   4.30368e-01   2.87733e-03   6.37428e-04
+   3  Sigma        2.43133e+01   6.73676e-01   1.75940e-05   1.17713e-02
+min e max: 6210
+6270
+ FCN=26.8662 FROM MIGRAD    STATUS=CONVERGED     124 CALLS         125 TOTAL
+                     EDM=3.17357e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.48855e+04   8.92072e+02   1.60715e+00  -1.00785e-06
+   2  Mean         6.24127e+03   3.57940e-01   2.97607e-03  -1.27540e-03
+   3  Sigma        2.15225e+01   4.88970e-01   1.66142e-05   6.79809e-02
+min e max: 6415
+6475
+ FCN=48.3568 FROM MIGRAD    STATUS=CONVERGED     110 CALLS         111 TOTAL
+                     EDM=7.68859e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.49254e+04   9.93216e+02   2.17980e+00   1.05408e-06
+   2  Mean         6.43856e+03   4.17547e-01   3.07014e-03  -1.26511e-03
+   3  Sigma        2.25041e+01   5.46290e-01   2.25367e-05  -1.80647e-01
+
+
+c1 = 207.068 +/- 0.559766
+c2 = 197.29 +/- 0.54997
+Dx = 202.179 +/- 0.392366
+
+
+0. FWHM = 57.2535 +/- 1.58639
+1. FWHM = 50.6817 +/- 1.15144
+2. FWHM = 52.993 +/- 1.28641
+
+FWHM = 52.9643 +/- 0.754659
+
+
+F = 0.000215291 +/- 8.95256e-07
+
+
+GRUPPO5
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 6550
+7075
+min e max: 6600
+6666
+ FCN=85.8033 FROM MIGRAD    STATUS=CONVERGED     128 CALLS         129 TOTAL
+                     EDM=8.59223e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     5.21841e+04   8.26331e+02   2.75305e+00   1.40049e-06
+   2  Mean         6.63204e+03   3.81358e-01   3.16240e-03  -2.30968e-03
+   3  Sigma        2.32114e+01   5.09977e-01   2.94582e-05  -2.85725e-02
+min e max: 6788
+6850
+ FCN=86.6167 FROM MIGRAD    STATUS=CONVERGED     132 CALLS         133 TOTAL
+                     EDM=3.85312e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     4.99157e+04   7.57350e+02   2.67216e+00   8.69570e-07
+   2  Mean         6.81682e+03   3.46826e-01   3.25051e-03   1.91642e-03
+   3  Sigma        2.19073e+01   4.70151e-01   2.99225e-05  -8.86289e-02
+min e max: 6960
+7020
+ FCN=88.9318 FROM MIGRAD    STATUS=CONVERGED     126 CALLS         127 TOTAL
+                     EDM=8.36361e-09    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     3.68443e+04   7.70027e+02   2.39286e+00  -2.34443e-07
+   2  Mean         6.99267e+03   4.81821e-01   3.33437e-03  -7.18059e-05
+   3  Sigma        2.22179e+01   6.32809e-01   3.64453e-05   1.22135e-02
+
+
+c1 = 184.78 +/- 0.515483
+c2 = 175.853 +/- 0.593666
+Dx = 180.317 +/- 0.393116
+
+
+0. FWHM = 54.6588 +/- 1.2009
+1. FWHM = 51.5878 +/- 1.10712
+2. FWHM = 52.3191 +/- 1.49015
+
+FWHM = 52.8425 +/- 0.714361
+
+
+F = 0.000241393 +/- 1.03204e-06
+
+
+GRUPPO6
+
+
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+massimo e minimo dei 3 picchi: 7075
+7600
+min e max: 7140
+7185
+ FCN=6.46262 FROM MIGRAD    STATUS=CONVERGED     102 CALLS         103 TOTAL
+                     EDM=9.44836e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  12.7 per cent
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     2.70926e+04   6.49487e+02   2.97657e+00   3.44575e-07
+   2  Mean         7.16373e+03   4.13976e-01  -8.18409e-04   1.29243e-03
+   3  Sigma        1.75851e+01   5.93770e-01   5.61730e-05   5.55084e-04
+min e max: 7307
+7355
+ FCN=9.52253 FROM MIGRAD    STATUS=CONVERGED     119 CALLS         120 TOTAL
+                     EDM=1.8941e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     2.00563e+04   5.65590e+02   6.04747e-01  -4.46464e-07
+   2  Mean         7.32690e+03   5.31056e-01   3.49374e-03  -4.31729e-05
+   3  Sigma        1.71398e+01   6.36482e-01   1.62218e-05   1.73594e-02
+min e max: 7470
+7520
+ FCN=46.0611 FROM MIGRAD    STATUS=CONVERGED     108 CALLS         109 TOTAL
+                     EDM=2.91906e-08    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  Constant     1.75978e+04   5.73318e+02   1.21167e+00  -2.87112e-07
+   2  Mean         7.49443e+03   5.88135e-01   3.57362e-03   3.79277e-04
+   3  Sigma        1.86392e+01   8.36497e-01   4.00298e-05   5.36492e-03
+
+
+c1 = 163.171 +/- 0.673347
+c2 = 167.527 +/- 0.792416
+Dx = 165.349 +/- 0.519933
+
+
+0. FWHM = 41.4098 +/- 1.39822
+1. FWHM = 40.3612 +/- 1.4988
+2. FWHM = 43.8919 +/- 1.9698
+
+FWHM = 41.5522 +/- 0.907449
+
+F = 0.000263245 +/- 1.27377e-06
