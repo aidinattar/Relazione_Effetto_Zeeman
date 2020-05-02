@@ -94,21 +94,31 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
   delete [] binc;
 
   h->SetEntries(h->Integral());
+  h->Rebin( 6 );
 
   vector <TF1*> gauss;
   int min, max;
 
   cout << "massimo e minimo dei 3 picchi: ";
   cin  >>  min  >>  max;
-  h->GetXaxis()->SetRange( min, max );
+  h->GetXaxis()->SetRangeUser( min, max );
+
+  int j = 0;
+  double  par[9];
+  double epar[9];
 
   for( int i = 0; i < 3; ++i ){
     cout << "min e max: ";
     cin  >>  min  >>  max;
     string name = "gauss" + to_string(i);
-    gauss.push_back( new TF1 ( name.c_str(), "gaus", min, max ) );
+    gauss.push_back( new TF1 ( name.c_str(), "gausn", min, max ) );
 
-    h->Fit( gauss[i], "R0" ); 
+    h->Fit( gauss[i], "R0+" ); 
+    gauss[i]->GetParameters( &par[j] );
+    epar[j++] = gauss[i]->GetParError( 0 );
+    epar[j++] = gauss[i]->GetParError( 1 );
+    epar[j++] = gauss[i]->GetParError( 2 );
+
   }
 
   cout << endl << endl;
@@ -161,12 +171,42 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
   TCanvas *canvas = new TCanvas( "canvas", "My ROOT Plots 2", 1280, 720 );
   canvas -> SetGrid(); //griglia
   set_style();
+  
+  gPad   -> SetTopMargin   ( 0.01  );
+  gPad   -> SetBottomMargin( 0.09  );
+  gPad   -> SetRightMargin ( 0.01  );
+  gPad   -> SetLeftMargin  ( 0.075 );
 
   h->Draw();
 
   for( int i = 0; i < 3; ++i )
     gauss[i]->Draw("SAME");
 
+  vector <TLegend*> legend;
+  string name;
+  int k = 0;
+
+  for( int i = 0; i < 3; ++i ){
+    legend.push_back( new TLegend );
+
+    name = "Constant  " + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Mean  "     + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    name = "Sigma  "    + to_string(  par[k] ) +
+           " +/- "      + to_string( epar[k] );
+    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
+    k++;
+
+    legend[i]->Draw( "SAME" );
+  }
+  
   cout << endl << endl
        << "----------------by aidin attar & Co----------------" 
        << endl << endl;
