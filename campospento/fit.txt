@@ -321,3 +321,16 @@ Dx = 165.349 +/- 0.519933
 FWHM = 41.5522 +/- 0.907449
 
 F = 0.000263245 +/- 1.27377e-06
+
+
+
+************************************************************
+Deltaxru VS ccd position
+
+ FCN=293.126 FROM MIGRAD    STATUS=CONVERGED     106 CALLS         107 TOTAL
+                     EDM=1.51355e-07    STRATEGY= 1      ERROR MATRIX ACCURATE
+  EXT PARAMETER                                   STEP         FIRST
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE
+   1  p0           9.16147e+02   6.37422e+00   1.62879e-03   7.24343e-04
+   2  p1          -1.88398e-01   2.23714e-03   2.63929e-07   2.16303e+00
+   3  p2           1.17824e-05   1.92813e-07   4.11261e-11   2.83761e+03
