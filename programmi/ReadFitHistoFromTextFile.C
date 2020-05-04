@@ -191,7 +191,7 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
   
   double deri = lambda*lambda / (2*d) * sin(i) / sqrt (n*n -pow(sin(i), 2)) / 
                 (n*n -pow(sin(i), 2) - n * lambda * dndl) 
-                * (n^2 - pow(sin(i), 2) + n * lambda * dndl);
+                * (n*n - pow(sin(i), 2) + n * lambda * dndl);
 
   double ederi = deri * cos(i) * ei;
 
