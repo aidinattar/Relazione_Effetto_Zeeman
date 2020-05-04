@@ -19,10 +19,10 @@ using namespace std;
 
 
 const double lambda =              585.3E-9;
-const double      d =                250E-3;
+const double      d =               3.47E-3;
 const double      n =      1.51198429503326;
 const double     en =     0.001265109776924;
-const double   dndl = -4.19418931599459E-05;
+const double   dndl = -4.19418931599459E-16;
 const double  edndl =  2.89106089571122E-07;
 
 
@@ -183,32 +183,38 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
 //  NANOMETRI, LE VARIABILI CON LE COSTANTI E GLI ERRORI SONO
 //  IN CIMA. BUON LAVORO :)
 
+  double num = lambda*lambda * sqrt( n*n - pow( sin( i ), 2 ) ) ;
+  double den = ( ( 2 * d ) * ( n*n - pow( sin( i ), 2  ) -n * lambda * dndl)   );
 
-  double  dlambda =  lambda*lambda * sqrt( n*n - pow( sin( i ), 2 ) ) /  ( ( 2 * d ) * ( n*n - pow( sin( i ), 2  ) -n * lambda * dndl)   );
+  //cout << "den = " << den << endl;
+  //cout << "num = " << num << endl;
 
-  cout << "sini = " << sin(i) << endl;
 
-  cout << "lambda = " << lambda << endl;
-  cout << "d = " << d << endl;
-  cout << "n = " << n << endl;
-  cout << "dndl = " << dndl << endl; 
+  double  dlambda = num / den ;
 
-  cout << "dlambdaru = " << dlambda << endl;
+  //cout << "sini = " << sin(i) << endl;
+
+  //cout << "lambda = " << lambda << endl;
+  //cout << "d = " << d << endl;
+  //cout << "n = " << n << endl;
+  //cout << "dndl = " << dndl << endl; 
+
+  //cout << "dlambdaru = " << dlambda << endl;
   
   double deri = lambda*lambda / (2*d) * sin(i) / sqrt (n*n -pow(sin(i), 2)) / 
                 (n*n -pow(sin(i), 2) - n * lambda * dndl) 
                 * (n*n - pow(sin(i), 2) + n * lambda * dndl);
 
-  double ederi = deri * cos(i) * ei;
+  double ederi = deri * cos(i) * ei; //nm
 
-  double edlambda = sqrt( pow(0.000160081307397,2) + pow( ederi, 2) )  ; // nm
+  double edlambda = sqrt( pow(0.000160081307397,2) + pow( ederi, 2) ); // nm
 
 
-  double  F = dlambda / Dx;
+  double  F = dlambda / Dx; //nm
   double eF = F * sqrt( pow( edlambda / dlambda, 2 ) + pow( eDx / Dx, 2 ));
   cout <<   endl  << endl 
-       <<  "F = " << F 
-       << " +/- " << eF << endl;
+       <<  "F = " << F*1e9 
+       << " +/- " << eF << " nm/pixel "<< endl;
 
   TCanvas *canvas = new TCanvas( "canvas", "My ROOT Plots 2", 1280, 720 );
   canvas -> SetGrid(); //griglia
