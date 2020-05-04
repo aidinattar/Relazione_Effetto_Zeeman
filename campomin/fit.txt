@@ -1,0 +1,441 @@
+GRUPPO 1
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+Warning in <TH1F::Rebin>: ngroup=4 is not an exact divider of nbins=7926.
+massimo e minimo dei 3 picchi: 3300 4400
+min e max: 3460 3600
+valori iniziali IN ORDINE delle due gaussiane: 4.19622e+02  3.45988e+03 5.09823e+01  3.65303e+02 3.61598e+03  4.73770e+01 
+ FCN=89.2731 FROM MIGRAD    STATUS=CONVERGED     728 CALLS         729 TOTAL
+                     EDM=2.80159e-09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.5 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.64767e+02   5.80405e+00   8.43042e-04   1.58039e-05
+   2  p1           3.48579e+03   1.72597e+00  -5.30757e-04   3.77722e-05
+   3  p2           3.07564e+01   3.07945e+00   1.22250e-03   4.36209e-05
+   4  p3           2.23627e+02   7.08184e+00  -4.91428e-03  -4.23448e-06
+   5  p4           3.56811e+03   2.31245e+00   9.58869e-04  -3.11315e-05
+   6  p5           2.86214e+01   2.46531e+00  -3.32123e-04   7.69641e-05
+min e max: 3860 3980
+valori iniziali IN ORDINE delle due gaussiane: 4.31702e+02  3.85804e+03  4.95844e+01  4.69421e+02    3.99120e+03  3.84295e+01 
+ FCN=60.0646 FROM MIGRAD    STATUS=CONVERGED     773 CALLS         774 TOTAL
+                     EDM=5.8671e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.36374e+02   2.51853e+01   2.11687e-02  -3.27142e-05
+   2  p1           3.88012e+03   1.73143e+00   2.95918e-03   2.11561e-04
+   3  p2           2.09300e+01   2.10627e+00   2.68629e-03   8.35346e-05
+   4  p3           3.00905e+02   6.65819e+00   1.67664e-02  -5.87275e-06
+   5  p4           3.94972e+03   2.22751e+00   3.30106e-03  -1.24502e-05
+   6  p5           3.66844e+01   4.62990e+00   3.01435e-03  -5.32272e-05
+min e max: 4200 4320 
+valori iniziali IN ORDINE delle due gaussiane: 5.73964e+02 4.20774e+03  4.32522e+01 5.97038e+02 4.32351e+03  3.25499e+01  
+ FCN=52.6411 FROM MIGRAD    STATUS=CONVERGED     821 CALLS         822 TOTAL
+                     EDM=1.62387e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.45900e+02   1.80027e+01   2.13046e-02   6.38638e-05
+   2  p1           4.22098e+03   2.18903e+00   2.42727e-03   3.53578e-05
+   3  p2           2.45230e+01   2.43857e+00   2.17267e-03   9.39449e-05
+   4  p3           3.69084e+02   8.95172e+00   1.88338e-02  -1.03719e-05
+   5  p4           4.28972e+03   2.40087e+00   2.35298e-03  -4.25847e-04
+   6  p5           2.97867e+01   3.12560e+00   2.19770e-03   1.51704e-04
+
+
+inserire il fattore di conversione con errore: 0.00011953 5.06605e-07
+inserire il valore di campo magnetico in gauss: 2610
+
+zee1 = 82.3252 +/- 2.88555
+zee2 = 69.6062 +/- 2.82129
+zee3 = 68.7408 +/- 3.249
+dzee = 73.5574 +/- 1.72698
+
+dlzee = 0.00879232 +/- 0.000209762
+
+
+g =  1.05314 +/- 0.027243
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+
+GRUPPO2
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+Warning in <TH1F::Rebin>: ngroup=4 is not an exact divider of nbins=7926.
+massimo e minimo dei 3 picchi: 4400
+5250
+min e max: 4510 4620
+valori iniziali IN ORDINE delle due gaussiane: 6.19438e+02  4.51644e+03  3.86443e+01 6.60041e+02  4.62476e+03    2.96766e+01 
+ FCN=46.7152 FROM MIGRAD    STATUS=CONVERGED     761 CALLS         762 TOTAL
+                     EDM=1.27956e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.4 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.51023e+02   2.51388e+01   3.97610e-02   4.88758e-05
+   2  p1           4.52847e+03   2.71468e+00   3.78313e-03   3.18033e-04
+   3  p2           2.38018e+01   2.78661e+00   8.68959e-03   8.35230e-04
+   4  p3           4.00044e+02   1.30885e+01  -4.03709e-02   7.80355e-05
+   5  p4           4.59151e+03   2.89647e+00   7.96698e-03  -7.22501e-04
+   6  p5           2.82077e+01   3.23440e+00  -5.07902e-03   4.81541e-04
+min e max: 4795 4895
+valori iniziali IN ORDINE delle due gaussiane: 7.32383e+02 4.80215e+03  3.63886e+01  7.50138e+02 4.90116e+03 2.58322e+01 
+ FCN=43.8759 FROM MIGRAD    STATUS=CONVERGED     942 CALLS         943 TOTAL
+                     EDM=4.07515e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.48115e+02   1.55091e+01   2.33787e-02  -2.75573e-05
+   2  p1           4.81629e+03   1.65277e+00   2.29658e-03  -3.01998e-05
+   3  p2           2.05062e+01   1.97280e+00   1.56098e-03   6.55369e-06
+   4  p3           4.86886e+02   1.35258e+01   2.26335e-02   5.10697e-05
+   5  p4           4.87067e+03   1.72590e+00   2.32252e-03   6.18752e-04
+   6  p5           2.18848e+01   1.79685e+00   1.39082e-03  -2.65085e-04
+min e max: 5060 5150
+valori iniziali IN ORDINE delle due gaussiane: 8.80067e+02  5.06566e+03  2.82432e+01   8.21964e+02  5.16000e+03  2.99370e+01   
+ FCN=35.2569 FROM MIGRAD    STATUS=CONVERGED     646 CALLS         647 TOTAL
+                     EDM=5.20894e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.27716e+02   1.85475e+01   2.25892e-02  -5.33309e-05
+   2  p1           5.08237e+03   1.79729e+00   2.42347e-03   1.03295e-03
+   3  p2           1.96434e+01   1.73531e+00   1.16190e-03  -1.00112e-03
+   4  p3           5.27950e+02   1.56348e+01   2.30935e-02   1.07278e-05
+   5  p4           5.13305e+03   1.64993e+00   2.44763e-03  -3.18253e-04
+   6  p5           1.99323e+01   2.06973e+00   1.26252e-03  -6.21883e-04
+
+
+inserire il fattore di conversione con errore: 0.000159553 6.7189e-07
+inserire il valore di campo magnetico in gauss: 2610
+
+zee1 = 63.0459 +/- 3.96977
+zee2 = 54.3836 +/- 2.38964
+zee3 = 50.6755 +/- 2.43978
+dzee = 56.035 +/- 1.74553
+
+dlzee = 0.00894055 +/- 0.000281038
+
+
+g =  1.07089 +/- 0.0353249
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+GRUPPO3
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+Warning in <TH1F::Rebin>: ngroup=4 is not an exact divider of nbins=7926.
+massimo e minimo dei 3 picchi: 5250
+5950
+min e max: 5320 5400
+valori iniziali IN ORDINE delle due gaussiane: 8.18016e+02 5.31513e+03   3.15658e+01  8.90240e+02  5.40475e+03 2.44420e+01 
+ FCN=53.9251 FROM MIGRAD    STATUS=CONVERGED     855 CALLS         856 TOTAL
+                     EDM=1.17387e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.5 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.43228e+02   3.84674e+01  -1.68336e-02  -3.24449e-05
+   2  p1           5.32907e+03   1.51587e+00  -8.28313e-04   9.89031e-05
+   3  p2           1.64042e+01   2.15971e+00  -2.32286e-03   1.59359e-04
+   4  p3           5.69056e+02   1.13578e+01   1.48868e-02   5.80685e-05
+   5  p4           5.37967e+03   1.62422e+00  -3.08169e-03   3.36216e-04
+   6  p5           2.45172e+01   2.87667e+00   1.44008e-03  -8.66666e-06
+min e max:  5555 5635
+valori iniziali IN ORDINE delle due gaussiane: 8.91968e+02 5.55127e+03  2.68074e+01  9.16612e+02   5.63628e+03  2.49477e+01 
+ FCN=19.6248 FROM MIGRAD    STATUS=CONVERGED     843 CALLS         844 TOTAL
+                     EDM=1.08634e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.97704e+02   3.40891e+01   2.16416e-02  -1.97271e-05
+   2  p1           5.56254e+03   1.77584e+00   2.65243e-03  -1.82435e-03
+   3  p2           1.78195e+01   3.29902e+00   1.03461e-03  -2.50474e-03
+   4  p3           5.78842e+02   1.69367e+01   1.68385e-02  -5.30590e-05
+   5  p4           5.61289e+03   2.26587e+00   2.67644e-03   2.57166e-03
+   6  p5           2.20788e+01   2.45574e+00   9.12118e-04  -1.61977e-03
+min e max: 5780 5855
+valori iniziali IN ORDINE delle due gaussiane:   9.43000e+02   5.77909e+03 3.09232e+01 1.02454e+03 5.85869e+03  2.00834e+01 
+ FCN=16.8775 FROM MIGRAD    STATUS=CONVERGED     810 CALLS         811 TOTAL
+                     EDM=8.60706e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.37553e+02   1.07837e+02   2.07344e-02   1.22413e-05
+   2  p1           5.78770e+03   2.43055e+00   2.75979e-03  -1.38200e-03
+   3  p2           1.66845e+01   3.89061e+00   1.14025e-03  -1.37678e-03
+   4  p3           6.35790e+02   1.83809e+01   1.59723e-02  -3.65807e-05
+   5  p4           5.83570e+03   3.75159e+00   2.78268e-03   8.43316e-04
+   6  p5           2.61238e+01   5.34122e+00   9.92516e-04  -4.18758e-04
+
+
+inserire il fattore di conversione con errore:  0.000189131 7.87681e-07
+inserire il valore di campo magnetico in gauss: 2610
+
+zee1 = 50.5947 +/- 2.2217
+zee2 = 50.3557 +/- 2.87885
+zee3 = 47.9934 +/- 4.47012
+dzee = 49.648 +/- 1.92081
+
+dlzee = 0.00938997 +/- 0.000365384
+
+
+g =  1.12472 +/- 0.0451875
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+
+GRUPPO4
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+Warning in <TH1F::Rebin>: ngroup=4 is not an exact divider of nbins=7926.
+massimo e minimo dei 3 picchi: 5950
+6550
+min e max: 5990   6070
+valori iniziali IN ORDINE delle due gaussiane:  1.06406e+03   5.99224e+03  2.69485e+01   1.06619e+03   6.07224e+03  2.35701e+01 
+ FCN=14.2781 FROM MIGRAD    STATUS=CONVERGED     653 CALLS         654 TOTAL
+                     EDM=2.61273e-08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.2 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.95899e+02   3.64869e+01   1.87909e-02  -2.43887e-05
+   2  p1           6.00238e+03   8.44582e-01   4.52737e-04   1.30611e-04
+   3  p2           1.31002e+01   1.00392e+00  -2.01969e-03  -3.09180e-04
+   4  p3           7.57182e+02   1.21321e+01   1.49949e-02  -7.26952e-06
+   5  p4           6.04617e+03   1.05996e+00  -9.34826e-04   2.47986e-04
+   6  p5           2.33752e+01   1.50609e+00  -2.13917e-04  -4.02462e-04
+min e max: 6200  6275
+valori iniziali IN ORDINE delle due gaussiane:  1.09920e+03  6.20026e+03  2.53208e+01   1.13253e+03   6.27620e+03   2.15195e+01 
+ FCN=41.5387 FROM MIGRAD    STATUS=CONVERGED     746 CALLS         747 TOTAL
+                     EDM=8.79661e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.11656e+02   6.32792e+01   3.75885e-02   3.63249e-06
+   2  p1           6.20794e+03   1.05084e+00   2.96017e-03   7.38339e-05
+   3  p2           1.23451e+01   1.57580e+00   1.62565e-03   8.44067e-06
+   4  p3           7.47082e+02   1.24837e+01   2.49152e-02  -7.16203e-07
+   5  p4           6.25174e+03   1.37338e+00   2.98106e-03  -1.24399e-04
+   6  p5           2.85611e+01   2.76665e+00   1.54957e-03   1.88451e-05
+min e max:  6400  6470
+valori iniziali IN ORDINE delle due gaussiane: 1.07377e+03   6.40022e+03    2.91949e+01   1.09884e+03   6.47481e+03    1.98193e+01 
+ FCN=13.2773 FROM MIGRAD    STATUS=CONVERGED    1208 CALLS        1209 TOTAL
+                     EDM=3.85906e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.16413e+02   7.99312e+01   2.09478e-02  -4.60164e-05
+   2  p1           6.40941e+03   1.01434e+00   3.05625e-03   3.52744e-04
+   3  p2           1.24762e+01   1.66708e+00   9.51710e-04   2.55053e-04
+   4  p3           7.43901e+02   1.33736e+01   1.51987e-02   4.38744e-05
+   5  p4           6.44862e+03   1.84224e+00   3.07494e-03   3.50355e-04
+   6  p5           2.50752e+01   2.77442e+00   7.88184e-04  -8.71286e-04
+
+
+inserire il fattore di conversione con errore:  0.000215291 8.95256e-07
+inserire il valore di campo magnetico in gauss:  2610
+
+zee1 = 43.7934 +/- 1.3553
+zee2 = 43.8082 +/- 1.72928
+zee3 = 39.2104 +/- 2.10303
+dzee = 42.2707 +/- 1.01379
+
+dlzee = 0.00910049 +/- 0.000221517
+
+
+g =  1.09005 +/- 0.028685
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+
+GRUPPO5
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+Warning in <TH1F::Rebin>: ngroup=4 is not an exact divider of nbins=7926.
+massimo e minimo dei 3 picchi: 6550
+7075
+min e max: 6595 6665
+valori iniziali IN ORDINE delle due gaussiane:  1.11165e+03   6.59317e+03   2.45511e+01  1.13078e+03   6.66414e+03   1.90241e+01 
+ FCN=15.9256 FROM MIGRAD    STATUS=CONVERGED     728 CALLS         729 TOTAL
+                     EDM=6.89111e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.12064e+02   7.83610e+01   2.67105e-02   1.03924e-05
+   2  p1           6.60035e+03   1.59571e+00   3.14729e-03  -1.04892e-04
+   3  p2           1.12894e+01   2.55502e+00   1.00062e-03  -8.69653e-05
+   4  p3           7.36357e+02   1.27957e+01   1.62205e-02  -1.61171e-05
+   5  p4           6.64248e+03   1.59649e+00   3.16738e-03  -3.66951e-04
+   6  p5           2.68223e+01   3.27569e+00   9.94224e-04   6.40131e-05
+min e max: 6780 6840
+valori iniziali IN ORDINE delle due gaussiane:  1.08009e+03 6.77983e+03  2.59655e+01  1.06049e+03 6.84954e+03  1.92117e+01  
+ FCN=12.5032 FROM MIGRAD    STATUS=CONVERGED     798 CALLS         799 TOTAL
+                     EDM=9.67558e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.85404e+02   9.37802e+01   2.14832e-02  -3.94325e-05
+   2  p1           6.78750e+03   1.39501e+00   3.23653e-03  -1.04501e-03
+   3  p2           1.19911e+01   2.16983e+00   8.05546e-04   8.53329e-05
+   4  p3           8.00901e+02   1.49669e+01   1.75661e-02   5.22610e-05
+   5  p4           6.82517e+03   1.67077e+00   3.25449e-03   3.03409e-04
+   6  p5           2.04804e+01   3.31243e+00   6.46607e-04  -1.20276e-03
+min e max: 6960 7020
+valori iniziali IN ORDINE delle due gaussiane: 8.30465e+02  6.95945e+03   2.18922e+01  8.70072e+02     7.02503e+03  1.80979e+01  
+ FCN=48.7454 FROM MIGRAD    STATUS=CONVERGED     671 CALLS         672 TOTAL
+                     EDM=9.62825e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.81452e+02   6.84005e+01   3.13327e-02   2.02696e-05
+   2  p1           6.97245e+03   4.06948e+00   3.32472e-03   4.60507e-04
+   3  p2           1.48497e+01   3.80051e+00   1.44950e-03   2.75372e-04
+   4  p3           5.23721e+02   4.24573e+01   3.24902e-02   2.94087e-05
+   5  p4           7.00973e+03   3.39966e+00   3.34250e-03  -2.09811e-04
+   6  p5           1.58729e+01   4.86294e+00   1.41770e-03   5.01734e-04
+
+
+inserire il fattore di conversione con errore: 0.000215291 8.95256e-07
+inserire il valore di campo magnetico in gauss: 2610
+
+zee1 = 42.132 +/- 2.25722
+zee2 = 37.6737 +/- 2.17658
+zee3 = 37.2779 +/- 5.30267
+dzee = 39.0279 +/- 2.05348
+
+dlzee = 0.00840235 +/- 0.000443473
+
+
+g =  1.00643 +/- 0.0540639
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+
+
+GRUPPO6
+*********************************************************
+-------Inserire il minimo e massimo per ogni range-------
+*********************************************************
+
+
+creating new histo with 7926 bins...
+Warning in <TH1F::Rebin>: ngroup=4 is not an exact divider of nbins=7926.
+massimo e minimo dei 3 picchi:  7075 7600
+min e max: 7125  7195
+valori iniziali IN ORDINE delle due gaussiane:  6.92335e+02   7.12967e+03  10  6.34659e+02    7.19166e+03   10
+ FCN=41.4036 FROM MIGRAD    STATUS=CONVERGED     441 CALLS         442 TOTAL
+                     EDM=1.11959e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.10169e+02   8.84408e+01   2.37490e-02   5.50276e-05
+   2  p1           7.14046e+03   4.79021e+00   3.40484e-03   4.38115e-05
+   3  p2           1.44162e+01   2.99768e+00   1.58199e-03   3.97867e-04
+   4  p3           4.05758e+02   4.03615e+01   2.25386e-02   2.18581e-06
+   5  p4           7.17520e+03   5.12293e+00   3.42140e-03  -6.56205e-04
+   6  p5           1.79992e+01   3.91781e+00   1.35712e-03   6.64693e-04
+min e max: 7300 7350
+valori iniziali IN ORDINE delle due gaussiane: 4.89641e+02    7.29557e+03   2.03524e+01    5.24701e+02    7.35753e+03    1.53984e+01  
+ FCN=2.72439 FROM MIGRAD    STATUS=CONVERGED     777 CALLS         778 TOTAL
+                     EDM=2.04306e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   3.8 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.57604e+02   2.32435e+01   1.30795e-02  -5.27859e-05
+   2  p1           7.30581e+03   9.77585e-01   2.73209e-04  -6.86485e-04
+   3  p2           9.10575e+00   2.00771e+00  -2.83073e-04  -6.82479e-04
+   4  p3           3.30982e+02   1.04347e+01  -1.07616e-02  -3.95713e-05
+   5  p4           7.33918e+03   1.08528e+00   3.02211e-04   1.08067e-03
+   6  p5           1.55543e+01   2.49416e+00   1.12444e-04  -5.98011e-04
+min e max: 7460 7520
+valori iniziali IN ORDINE delle due gaussiane:  3.67890e+02    7.45935e+03  1.63467e+01   3.68984e+02   7.51946e+03     1.60574e+01 
+ FCN=22.2001 FROM MIGRAD    STATUS=CONVERGED     601 CALLS         602 TOTAL
+                     EDM=6.50523e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.88859e+02   1.20620e+01   1.44264e-02   8.41815e-05
+   2  p1           7.47056e+03   2.00844e+00   3.56224e-03   4.27249e-04
+   3  p2           1.25316e+01   2.61621e+00   1.43889e-03  -4.69080e-05
+   4  p3           2.44480e+02   1.13247e+01   1.46071e-02  -1.08639e-04
+   5  p4           7.50424e+03   1.78405e+00   3.57830e-03  -5.72462e-04
+   6  p5           1.32122e+01   1.92336e+00   1.03808e-03   5.50407e-04
+
+
+inserire il fattore di conversione con errore:  0.000263245  1.27377e-06
+inserire il valore di campo magnetico in gauss:  2610
+
+zee1 = 34.7395 +/- 7.01359
+zee2 = 33.3704 +/- 1.46065
+zee3 = 33.681 +/- 2.68638
+dzee = 33.9303 +/- 2.5504
+
+dlzee = 0.00893197 +/- 0.000672768
+
+
+g =  1.06987 +/- 0.0812908
+Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+
+
+----------------by aidin attar & Co----------------
+
+
+
+
+
+FIT FIT FIT FIT FIT FIT FIT FIT FIT FIT FIT FIT 
+
+file con i dati sperimentali: campomin/xzee.dat
+asse x: CCD position
+asse y: #Deltax_{zee.}/#Deltax_{r.u.}
+ FCN=1.34544 FROM MIGRAD    STATUS=CONVERGED      48 CALLS          49 TOTAL
+                     EDM=2.27942e-12    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  offset       1.89634e-01   1.33658e-02   2.04164e-06   7.81219e-04
+   2  slope        3.34194e-06   2.50445e-06   3.82558e-10   4.12038e+00
+A:	 0.189634	 +/- 	0.0133658	 	 	 7.05%
+B:	 3.34194e-06	 +/- 	2.50445e-06	 	 	 74.94%
+
+
+COVARIANCE MATRIX :
+ 
+2x2 matrix is as follows
+
+     |      0    |      1    |
+-------------------------------
+   0 |  0.0001786  -3.277e-08 
+   1 | -3.277e-08   6.272e-12 
+
+chi2:		1.34544
+rho:		0.451768
+t: 		1.01278
+comp:		0.938528
+sigma:		0.0061839
+
