@@ -17,8 +17,13 @@
 
 using namespace std;
 
-double  dlambda = 0.043527207; // nm
-double edlambda = 0.000160081307397 ; // nm
+
+const double lambda =              585.3E-9;
+const double      d =                250E-3;
+const double      n =      1.51198429503326;
+const double     en =     0.001265109776924;
+const double   dndl = -4.19418931599459E-05;
+const double  edndl =  2.89106089571122E-07;
 
 
 void set_style(){
@@ -166,6 +171,38 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
                <<  " +/- "  << rmsFWHM
                <<   endl;
 
+  double i, ei;
+  cout << "inserire l'angolo i e il suo errore: ";
+  cin  >>  i  >>  ei;
+
+
+//  GUARDA QUI
+//  CONTROLLA CHE dlambda ABBIA L'ORDINE DI GRANDEZZA GIUSTO
+//  E IMPLEMENTA IL CALCOLO DELL'ERRORE SOSTITUENDO IL VALORE
+//  SCRITTO IN PRECEDENZA: IL CALCOLO DEVE ESSERE IN 
+//  NANOMETRI, LE VARIABILI CON LE COSTANTI E GLI ERRORI SONO
+//  IN CIMA. BUON LAVORO :)
+
+
+  double  dlambda =  lambda*lambda * sqrt( n*n - pow( sin( i ), 2 ) ) /  ( ( 2 * d ) * ( n*n - pow( sin( i ), 2  ) -n * lambda * dndl)   );
+
+  cout << "sini = " << sin(i) << endl;
+
+  cout << "lambda = " << lambda << endl;
+  cout << "d = " << d << endl;
+  cout << "n = " << n << endl;
+  cout << "dndl = " << dndl << endl; 
+
+  cout << "dlambdaru = " << dlambda << endl;
+  
+  double deri = lambda*lambda / (2*d) * sin(i) / sqrt (n*n -pow(sin(i), 2)) / 
+                (n*n -pow(sin(i), 2) - n * lambda * dndl) 
+                * (n*n - pow(sin(i), 2) + n * lambda * dndl);
+
+  double ederi = deri * cos(i) * ei;
+
+  double edlambda = sqrt( pow(0.000160081307397,2) + pow( ederi, 2) )  ; // nm
+
 
   double  F = dlambda / Dx;
   double eF = F * sqrt( pow( edlambda / dlambda, 2 ) + pow( eDx / Dx, 2 ));
@@ -214,32 +251,6 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
     legend[i]->Draw( );
   }
 
-
-/*  vector <TLegend*> legend;
-  string name;
-  int k = 0;
-
-  for( int i = 0; i < 3; ++i ){
-    legend.push_back( new TLegend );
-
-    name = "Constant  " + to_string(  par[k] ) +
-           " +/- "      + to_string( epar[k] );
-    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
-    k++;
-
-    name = "Mean  "     + to_string(  par[k] ) +
-           " +/- "      + to_string( epar[k] );
-    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
-    k++;
-
-    name = "Sigma  "    + to_string(  par[k] ) +
-           " +/- "      + to_string( epar[k] );
-    legend[i]->AddEntry(( TObject* )0, name.c_str(), "");
-    k++;
-
-    legend[i]->Draw( "SAME" );
-  }
-*/
 
   cout << endl << endl
        << "----------------by aidin attar & Co----------------" 
