@@ -53,10 +53,12 @@ zee2 = 69.6062 +/- 2.82129
 zee3 = 68.7408 +/- 3.249
 dzee = 73.5574 +/- 1.72698
 
-dlzee = 0.00879232 +/- 0.000209762
+dlzee = 0.00879195 +/- 0.000208934
 
 
-g =  1.05314 +/- 0.027243
+g =  1.05309 +/- 0.0271514
+
+
 
 
 ----------------by aidin attar & Co----------------
@@ -121,11 +123,12 @@ zee2 = 54.3836 +/- 2.38964
 zee3 = 50.6755 +/- 2.43978
 dzee = 56.035 +/- 1.74553
 
-dlzee = 0.00894055 +/- 0.000281038
+dlzee = 0.00893999 +/- 0.000280422
 
 
-g =  1.07089 +/- 0.0353249
-Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+g =  1.07083 +/- 0.0352544
+
+
 
 
 ----------------by aidin attar & Co----------------
@@ -189,11 +192,10 @@ zee2 = 50.3557 +/- 2.87885
 zee3 = 47.9934 +/- 4.47012
 dzee = 49.648 +/- 1.92081
 
-dlzee = 0.00938997 +/- 0.000365384
+dlzee = 0.00938912 +/- 0.00036489
 
 
-g =  1.12472 +/- 0.0451875
-Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+g =  1.12462 +/- 0.04513
 
 
 ----------------by aidin attar & Co----------------
@@ -258,11 +260,10 @@ zee2 = 43.8082 +/- 1.72928
 zee3 = 39.2104 +/- 2.10303
 dzee = 42.2707 +/- 1.01379
 
-dlzee = 0.00910049 +/- 0.000221517
+dlzee = 0.00909943 +/- 0.000220787
 
 
-g =  1.09005 +/- 0.028685
-Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+g =  1.08992 +/- 0.0286036
 
 
 ----------------by aidin attar & Co----------------
@@ -327,11 +328,11 @@ zee2 = 37.6737 +/- 2.17658
 zee3 = 37.2779 +/- 5.30267
 dzee = 39.0279 +/- 2.05348
 
-dlzee = 0.00840235 +/- 0.000443473
+dlzee = 0.00941969 +/- 0.000496832
 
 
-g =  1.00643 +/- 0.0540639
-Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+g =  1.12828 +/- 0.0605704
+
 
 
 ----------------by aidin attar & Co----------------
@@ -396,11 +397,11 @@ zee2 = 33.3704 +/- 1.46065
 zee3 = 33.681 +/- 2.68638
 dzee = 33.9303 +/- 2.5504
 
-dlzee = 0.00893197 +/- 0.000672768
+dlzee = 0.00893041 +/- 0.000672065
 
 
-g =  1.06987 +/- 0.0812908
-Warning in <TCanvas::Constructor>: Deleting canvas with same name: canvas
+g =  1.06968 +/- 0.081207
+
 
 
 ----------------by aidin attar & Co----------------
@@ -438,4 +439,71 @@ rho:		0.451768
 t: 		1.01278
 comp:		0.938528
 sigma:		0.0061839
+mean:		0.207093 +/- 0.00273022
+
+
+
+dlambda
+file con i dati sperimentali: campomin/dlambda.dat
+asse x: CCD position
+asse y: #Delta#lambda_{zee.} (nm)
+ FCN=1.33841 FROM MIGRAD    STATUS=CONVERGED      49 CALLS          50 TOTAL
+                     EDM=4.20003e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  offset       8.25569e-03   5.85641e-04   8.92991e-08  -2.41530e+00
+   2  slope        1.45090e-07   1.09693e-07   1.10446e-10  -1.28391e+04
+A:	 0.00825569	 +/- 	0.000585641	 	 	 7.09%
+B:	 1.4509e-07	 +/- 	1.09693e-07	 	 	 75.6%
+
+
+COVARIANCE MATRIX :
+ 
+2x2 matrix is as follows
+
+     |      0    |      1    |
+-------------------------------
+   0 |   3.43e-07  -6.289e-11 
+   1 | -6.289e-11   1.203e-14 
+
+chi2:		1.33841
+rho:		0.450326
+t: 		1.00872
+comp:		0.941014
+sigma:		0.000269177
+mean:		0.00901401 +/- 0.000119596
+
+
+
+
+FATTORE DI LANDE G
+
+file con i dati sperimentali: campomin/g.dat
+asse x: CCD position
+asse y: Lande' g-factor
+ FCN=1.2644 FROM MIGRAD    STATUS=CONVERGED      39 CALLS          40 TOTAL
+                     EDM=7.8677e-11    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  offset       9.89480e-01   7.49779e-02   1.12069e-05  -8.18162e-04
+   2  slope        1.73199e-05   1.39833e-05   1.03801e-07  -4.38646e+00
+A:	 0.98948	 +/- 	0.0749779	 	 	 7.58%
+B:	 1.73199e-05	 +/- 	1.39833e-05	 	 	 80.74%
+
+
+COVARIANCE MATRIX :
+ 
+2x2 matrix is as follows
+
+     |      0    |      1    |
+-------------------------------
+   0 |   0.005622  -1.027e-06 
+   1 | -1.027e-06   1.955e-10 
+
+chi2:		1.2644
+rho:		0.450348
+t: 		1.00878
+comp:		0.967182
+sigma:		0.0322204
+mean:		1.08041 +/- 0.0152525
 
