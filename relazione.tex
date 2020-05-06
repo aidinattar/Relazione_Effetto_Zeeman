@@ -60,17 +60,33 @@ Gruppo 14}
 
 \subsection*{Descrizione dell'apparato} 
 
-L'apparato sperimentale si compone di una lampada  scarica in gas di Neon.
-In particolare siamo interessati alla transizione da 585.3 nm 
+L'apparato sperimentale si compone di una lampada al Neon, capace di emettere
+radiazione elettromagnetica associta principlamente a transizioni tra 3p e 2p.
+In particolare siamo interessati alla transizione da $\lambda = $585.3 nm, 
+associata ai termini spettroscopici
 $^1S^0 \xrightarrow[]{}  ^1P^1$ 
-Ci si aspetta quindi la comparsa di tre transizioni di lunghezza d'onda molto vicina nello stato di arrivo, ma considerando la polarizzazione delle righe, possiamo “sopprimere” la transizione centrale e vedere solo due transizioni marginali, orientando il magnete in modo che la visione sia proprio lungo la direzione del campo magnetico.
+Tale lampada è inserita all'interno di una cavità magnetica, per cui ci si 
+aspetta la comparsa di righe di emissione: tuttavia, considerando la 
+polarizzazione delle righe, possiamo “sopprimere” la transizione centrale
+orientando il campo magnetico in modo longitudinale alla linea di 
+osservazione, in modo tale da vedere solo le due righe marginali. 
 
-Il raggio di luce passa quindi per una lente condensante, necessaria per concentrare su di essa la maggior quantità di luce possibile.
-La luce passa quindi per una fenditura e successivamente attraverso un prisma, necessario per ruotare di $90\deg$ la luce e dividerla nelle sue componenti principali. Il fascio entra quindi nella lamina di Lummer-Gehrcke e viene infine focalizzato sul dispositivo ottico di lettura (un CCD monodimensionale) attraverso la lente di camera.
+Il raggio di luce emessa passa quindi per una lente condensante, necessaria 
+per concentrare quanto più possibile il fascio, che passa quindi per una 
+fenditura e successivamente attraverso un prisma, necessario per ruotare di 
+$90\deg$ la luce e dividerla nelle sue componenti principali. 
 
-La presa dati di questa esperienza è stata svolta interamente da remoto; in particolare La connessione al PC del laboratorio avviene tramite l'esportazione dello schermo via VNC Viewer.
+A questo punto i raggi incidono sulla lamina di Lummer-Gehrcke in modo quasi
+radente (faremo in seguito una stima dell'angolo di incidenza) e il fascio 
+emergente viene infine focalizzato sul dispositivo ottico di lettura (un CCD
+monodimensionale) attraverso la lente di camera.
 
-Una volta effettuato il collegamento, si fa partire il programma di acquisizione dati che permette di controllare i diversi elementi appena citati che componngono l'apparato sperimentale dell'esperienza.
+%La presa dati di questa esperienza è stata svolta interamente da remoto; in 
+%particolare la connessione al PC del laboratorio avviene tramite 
+%l'esportazione dello schermo via VNC Viewer.
+
+L'acquisizione dei dati è avvenutatramite il l'interfaccia di controllo dell'
+apparato, che permette di controllare le diverse componenti appena citate.
 
 Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel.
 
