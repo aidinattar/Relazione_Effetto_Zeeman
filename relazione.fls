@@ -238,8 +238,14 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmrc8t.vf
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8t.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
@@ -250,14 +256,13 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.aux
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.out
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.out
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
@@ -276,3 +281,5 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmr8a.pfb
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmri8a.pfb
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\urw\times\utmri8a.pfb

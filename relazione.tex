@@ -62,9 +62,7 @@ Gruppo 14}
 
 L'apparato sperimentale si compone di una lampada al Neon, capace di emettere
 radiazione elettromagnetica associta principlamente a transizioni tra 3p e 2p.
-In particolare siamo interessati alla transizione da $\lambda = $585.3 nm, 
-associata ai termini spettroscopici
-$^1S^0 \xrightarrow[]{}  ^1P^1$ 
+In particolare siamo interessati alla transizione da $\lambda = $585.3 nm.
 Tale lampada è inserita all'interno di una cavità magnetica, per cui ci si 
 aspetta la comparsa di righe di emissione: tuttavia, considerando la 
 polarizzazione delle righe, possiamo “sopprimere” la transizione centrale
@@ -76,7 +74,8 @@ per concentrare quanto più possibile il fascio, che passa quindi per una
 fenditura e successivamente attraverso un prisma, necessario per ruotare di 
 $90\deg$ la luce e dividerla nelle sue componenti principali. 
 
-A questo punto i raggi incidono sulla lamina di Lummer-Gehrcke in modo quasi
+A questo punto i raggi incidono sulla lamina di Lummer-Gehrcke, dispositivo
+interferenziale ad alta risoluzione, in modo quasi
 radente (faremo in seguito una stima dell'angolo di incidenza) e il fascio 
 emergente viene infine focalizzato sul dispositivo ottico di lettura (un CCD
 monodimensionale) attraverso la lente di camera.
@@ -97,7 +96,77 @@ Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel
 %\caption{ schema per l'alimentazione dell'operazionale }
 %\label{fig:alimentazione}
 %\end{figure}
-%\end{center} 
+%\end{center}
+
+\subsection*{Compendio di teoria}
+
+L'esperienza è incentrata sull'identificare e misurare lo splitting 
+Zeeman dei livelli di energia e confrontarli con le previsioni teoriche.
+L'effetto Zeeman è il fenomeno che si verifica nel momento in cui gli
+atomi di una certa sostanza vengono sottoposti a un campo magnetico 
+esterno, che suddivide i livelli energetici permessi per gli elettroni.
+In tal modo confrontando lo spettro della prima riga di transizione 
+($\lambda = $585.3 nm, associata ai termini spettroscopici
+$^1S^0 \xrightarrow[]{}  ^1P^1$ ) a campo magnetico spento e a campo 
+acceso vedremo 
+il biforcarsi delle campane in due ulteriori picchi. Misurando la
+distanza che separa i due picchi causati dalla presenza del campo,
+otterremo il doppio dello splitting $\Delta\lambda_{Zee} $.
+
+In particolare, si sceglie la transizione indicata sopra perché connette
+stati con spin nullo e con $\Delta L = 1$, per cui ci assicura l'effetto
+Zeeman cosiddetto \textit{normale}, cioè quello previsto anche dalla 
+teoria classica, dove il fattore giromagnetico presente nella formula 
+generale (effetto Zeeman \textit{anomalo}) sarà dunque semplicemente
+$g_l = 1$. Pertanto
+
+\[
+\Delta E_{Zee} = g_l m \mu_B B = \pm \mu_B B
+\]
+
+dato che nel nostro caso le due proiezioni del momento angolare totale
+dello stato di arrivo possibili sono $m = \pm 1$ (0 è escluso grazie all'
+orientazione del campo magnetico, come accennato sopra).
+
+Inoltre
+
+\[
+\Delta\lambda_{Zee} = \frac{\lambda^2}{hc}\Delta E_{Zee}
+\]
+
+rappresenta la formula con cui confronteremo il dato sperimentale
+ricavato.
+
+Inoltre da opportuni fit dei picchi ricaveremo una stima della larghezza
+delle campane, da cui ricaveremo il potere risolvente come rapporto
+
+\[
+R = \frac{\lambda}{\Delta\lambda}    
+\]
+
+che sarà ben coperto dalla risoluzione dell'apparato, cioè dalla
+risoluzione offerta dalla lamina di Lummer-Gehrcke, che segue l'ordine
+del rapporto L/$\lambda$, dove L è la lunghezza della lamina.
+Un altro parametro importante della lamina è il \textit{range di 
+lunghezza d'onda utile} $\Delta\lambda_{r.u.}$, che rappresenta la
+massima differenza tra due lunghezze d'onda tale che i due massimi 
+consecutivi restino distinguibili. In particolare
+
+\[
+\Delta\lambda_{r.u.} = \frac{\lambda^2}{2d}\frac{\sqrt{n^2-\sin(i)^2}}{n^2-\sin(i)^2-n\lambda\frac{dn}{d\lambda}}
+\]
+
+dove la derivata $dn/d\lambda$ è stata ottenura fittando alcuni punti 
+n($\lambda$) rappresentativi dell'andamento dell'indice di rifrazione
+della lamina in funzione della lunghezza d'onda. Nello specifico si è
+scelto il modello della legge di Cauchy fermandosi al primo ordine:
+
+\[
+n(\lambda) = A + \frac{B}{\lambda^2}    
+\]
+
+
+%RIPORTARE RISULTATI FIT E GRAFICO INDICE DI RIFRAZIONE ZIONE ZIONE ZIONE ZIONE ZIONE ZIO PAPERONE PEPERONI PIZZA DI CAZZI
 
 \section{Conclusioni}
 

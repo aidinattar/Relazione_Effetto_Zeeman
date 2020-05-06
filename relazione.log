@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.5)  5 MAY 2020 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.5)  6 MAY 2020 23:05
 entering extended mode
 **"c:/Users/User/Desktop/UniPD/Universit√†/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/relazione.tex"
 ("c:/Users/User/Desktop/UniPD/Universit√†/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/relazione.tex"
@@ -554,29 +554,56 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
- [2
+Overfull \hbox (3.20937pt too wide) in paragraph at lines 63--71
+\T1/ptm/m/n/10 L'apparato spe-ri-men-ta-le si com-po-ne di una lam-pa-da al Neon,
+ []
+
+
+Overfull \hbox (3.35837pt too wide) in paragraph at lines 63--71
+\T1/ptm/m/n/10 ca-pa-ce di emet-te-re ra-dia-zio-ne elet-tro-ma-gne-ti-ca as-so-ci-ta prin-
+ []
+
+
+Overfull \hbox (1.14893pt too wide) in paragraph at lines 77--82
+[]\T1/ptm/m/n/10 A que-sto pun-to i rag-gi in-ci-do-no sul-la la-mi-na di Lummer-
+ []
+
+
+Overfull \hbox (1.57832pt too wide) in paragraph at lines 103--115
+\T1/ptm/m/n/10 L'esperienza Ë in-cen-tra-ta sul-l'i-den-ti-fi-ca-re e mi-su-ra-re lo split-
+ []
+
+
+Overfull \hbox (1.77922pt too wide) in paragraph at lines 147--154
+[]\T1/ptm/m/n/10 che sa-r‡ ben co-per-to dal-la ri-so-lu-zio-ne del-l'ap-pa-ra-to, cioË
+ []
+
+[2
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+ [3
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  ("c:/Users\User\Desktop\UniPD\Universit√†\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: B08CA35AF135A2223E1394A08DD1B996;352.
  ) 
 Here is how much of TeX's memory you used:
- 14878 strings out of 480896
- 259744 string characters out of 2898649
- 540179 words of memory out of 3000000
- 30502 multiletter control sequences out of 15000+200000
- 573010 words of font info for 88 fonts, out of 3000000 for 9000
+ 14883 strings out of 480896
+ 259788 string characters out of 2898649
+ 544179 words of memory out of 3000000
+ 30503 multiletter control sequences out of 15000+200000
+ 575858 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,12n,48p,902b,725s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "c:/Users\User\Desktop\UniPD\Universit√†\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.pdf" (2 pages, 98312 bytes).
+{C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users\User\Desktop\UniPD\Universit√†\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.pdf" (3 pages, 125557 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
