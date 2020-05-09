@@ -45,14 +45,14 @@ Gruppo 14}
     \end{itemize}
 
 \vspace{3 cm}
-\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman per atomo di Neon} 
+\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman per atomo di Neon, stima del fattore di Landè} 
 \end{large}
 \vspace{8.5cm}
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics[scale=0.5, angle=0]{unipd_logo.png}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\section{Conclusioni}\includegraphics[scale = 0.5 , angle=0]{unipd_logo.png}
+\end{figure}
 
 %\newpage \tableofcontents \newpage
 
@@ -84,7 +84,7 @@ monodimensionale) attraverso la lente di camera.
 %particolare la connessione al PC del laboratorio avviene tramite 
 %l'esportazione dello schermo via VNC Viewer.
 
-L'acquisizione dei dati è avvenutatramite il l'interfaccia di controllo dell'
+L'acquisizione dei dati è avvenutatramite l'interfaccia di controllo dell'
 apparato, che permette di controllare le diverse componenti appena citate.
 
 Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel.
@@ -165,10 +165,38 @@ scelto il modello della legge di Cauchy fermandosi al primo ordine:
 n(\lambda) = A + \frac{B}{\lambda^2}    
 \]
 
+ottenendo il seguente andamento:
+%\begin{center}
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[scale=0.28, angle=0]{nFit}
+%\caption{ Indice di rifrazione }
+%\label{fig:alimentazione}
+%\end{figure}
+%\end{center}
 
-%RIPORTARE RISULTATI FIT E GRAFICO INDICE DI RIFRAZIONE ZIONE ZIONE ZIONE ZIONE ZIONE ZIO PAPERONE PEPERONI PIZZA DI CAZZI
+Ottenendo quindi per $\lambda= 585.3 nm$ l'indice di rifrazione $n(\lambda)= 1.5119 \pm  $
 
-\section{Conclusioni}
+\section*{Aquisizione ed analisi dati}
+\paragraph{calibrazione}
+Prima di procedere con la presa dati si è eseguita una calibrazione dell'apparato; in particolare è stato necessario regolare la posizione della sorgente rispetto all'apertura della fenditura.
+Il primo passaggio è stato quindi impostare l'apertura della fenditura a $24 \mu m$ ed aquisire un primo spettro, zoomando sui primi 3/4 picchi dello spettro.
+Successivamente si regola la posizione della sorgente cercando quella che massimizzi l'intensità della luce.
+Si è quindi fissata la posizione: 0.93 mm.
+Per regolare invece la larghezza dei picchi si è impostato l'apertura della fenditura a $18 \mu m$.
+Infine si sono regolate le posizioni della lente focale e della lente condensante, scegliendo come posizioni ottimali rispettivamente 15.36 mm e 14.62 mm.
+
+
+\subsection*{Campo magnetico spento}
+
+Si quindi procede con l'acquisizione del primo spettro a campo magnetico spento: dopo aver selezionato il picco di interesse si inserisce la lamina di Lummer-Gerhcker, si seleziona quindi con i cursori il range dello scanning e si ruota la posizione del CCD in verticale.
+Infine si imposta il tempo di integrazione a 600 ms e si avvia lo scanning, dopo aver salvato il file nell'opportuna cartella.
+
+\paragraph{analisi dello spettro}
+
+
+
+\section*{Conclusioni}
 
 
 
