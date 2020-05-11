@@ -175,26 +175,52 @@ ottenendo il seguente andamento:
 %\end{figure}
 %\end{center}
 
-Ottenendo quindi per $\lambda= 585.3 nm$ l'indice di rifrazione $n(\lambda)= 1.5119 \pm  $
+In particolare poi $\lambda= 585.3 nm$ 
+e l'indice di rifrazione $n(\lambda)= 1.512 \pm 0.001 $
 
 \section*{Aquisizione ed analisi dati}
-\paragraph{calibrazione}
-Prima di procedere con la presa dati si è eseguita una calibrazione dell'apparato; in particolare è stato necessario regolare la posizione della sorgente rispetto all'apertura della fenditura.
-Il primo passaggio è stato quindi impostare l'apertura della fenditura a $24 \mu m$ ed aquisire un primo spettro, zoomando sui primi 3/4 picchi dello spettro.
-Successivamente si regola la posizione della sorgente cercando quella che massimizzi l'intensità della luce.
-Si è quindi fissata la posizione: 0.93 mm.
-Per regolare invece la larghezza dei picchi si è impostato l'apertura della fenditura a $18 \mu m$.
-Infine si sono regolate le posizioni della lente focale e della lente condensante, scegliendo come posizioni ottimali rispettivamente 15.36 mm e 14.62 mm.
+\paragraph{Calibrazione}
+Prima di procedere con la presa dati si è eseguita una calibrazione 
+dell'apparato; in particolare occorre regolare la posizione 
+della sorgente rispetto all'apertura della fenditura.
+Il primo passaggio è stato quindi impostare l'apertura della fenditura 
+a $24 \mu m$ ed aquisire un primo spettro a lamina disinserita, con il 
+CCD orizzontale. Zoomando sui primi 3/4 picchi dello spettro, saremo
+in grado di individuare il nostro picco di interesse.
+Successivamente si regola ulteriormente la posizione della sorgente 
+cercando quella che massimizzi l'intensità e la forma del picco di 
+interesse.
+Si è quindi fissata la posizione del CCD a 0.93 mm e impostato l'apertura 
+della fenditura a $18 \mu m$.
+Infine si sono regolate le posizioni della lente focale e della lente 
+condensante, scegliendo come posizioni ottimali rispettivamente 15.36 mm 
+e 14.62 mm.
 
 
 \subsection*{Campo magnetico spento}
 
-Si quindi procede con l'acquisizione del primo spettro a campo magnetico spento: dopo aver selezionato il picco di interesse si inserisce la lamina di Lummer-Gerhcker, si seleziona quindi con i cursori il range dello scanning e si ruota la posizione del CCD in verticale.
-Infine si imposta il tempo di integrazione a 600 ms e si avvia lo scanning, dopo aver salvato il file nell'opportuna cartella.
+Dopo la calibrazione si può proseguire con l'acquisizione del primo 
+spettro a campo magnetico spento: dopo aver selezionato il picco di 
+interesse si inserisce la lamina di Lummer-Gerhcker, si seleziona 
+con i cursori il range dello scanning e si ruota la posizione del CCD
+in verticale.
+Infine si imposta un tempo di integrazione di 600 ms e si avvia lo 
+scanning, dopo aver salvato il file nell'opportuna cartella.
 
-\paragraph{analisi dello spettro}
+\paragraph{Analisi dello spettro}
 
+Per fornire un'analisi estesa dello spettro si è scelto di raggruppare
+i picchi in 6 terne di picchi consecutivi, e per ciascuna terna
+l'obiettivo è studiare le spaziature tra i picchi e caratterizzarne in
+qualche modo la larghezza. 
+In particolare si è scelto di eseguire un fit gaussiano sui picchi
+per poter individuare con precisione l'ordinata di massimo e per
+poter dare una stima della larghezza del picco come FWHM.
 
+Per prima cosa, studiamo l'andamento delle spaziature tra i picchi. 
+Per ciascuna terna, si sono calcolate le due distanze tra i valori medi
+delle tre gaussiane, considerandone poi la media aritmetica, disponendo
+così di un valore univoco per caiscuna terna.
 
 \section*{Conclusioni}
 
