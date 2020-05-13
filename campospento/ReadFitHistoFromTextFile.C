@@ -171,9 +171,11 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
                <<  " +/- "  << rmsFWHM
                <<   endl;
 
-  double i, ei;
-  cout << "inserire l'angolo i e il suo errore: ";
-  cin  >>  i  >>  ei;
+  double i = 1.56783426923292;
+  double ei = 0.00296473979053
+;
+  //cout << "inserire l'angolo i e il suo errore: ";
+  //cin  >>  i  >>  ei;
 
 
 //  GUARDA QUI
