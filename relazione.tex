@@ -121,9 +121,10 @@
 	generale (effetto Zeeman \textit{anomalo}) sarà dunque semplicemente
 	$g_l = 1$. Pertanto
 	
-	\[
-	\Delta E_{Zee} = g_l m \mu_B B = \pm \mu_B B
-	\]
+	\begin{equation}
+		\Delta E_{Zee} = g_l m \mu_B B = \pm \mu_B B
+	\end{equation}
+	
 	
 	dato che nel nostro caso le due proiezioni del momento angolare totale
 	dello stato di arrivo possibili sono $m = \pm 1$ (0 è escluso grazie all'
@@ -131,9 +132,9 @@
 	
 	Inoltre
 	
-	\[
-	\Delta\lambda_{Zee} = \frac{\lambda^2}{hc}\Delta E_{Zee}
-	\]
+	\begin{equation}
+		\Delta\lambda_{Zee} = \frac{\lambda^2}{hc}\Delta E_{Zee}
+	\end{equation}
 	
 	rappresenta la formula con cui confronteremo il dato sperimentale
 	ricavato.
@@ -141,9 +142,9 @@
 	Inoltre da opportuni fit dei picchi ricaveremo una stima della larghezza
 	delle campane, da cui ricaveremo il potere risolvente come rapporto
 	
-	\[
-	R = \frac{\lambda}{\Delta\lambda}    
-	\]
+	\begin{equation}
+		R = \frac{\lambda}{\Delta\lambda}    
+	\end{equation}
 	
 	che sarà ben coperto dalla risoluzione dell'apparato, cioè dalla
 	risoluzione offerta dalla lamina di Lummer-Gehrcke, che segue l'ordine
@@ -153,20 +154,22 @@
 	massima differenza tra due lunghezze d'onda tale che i due massimi 
 	consecutivi restino distinguibili. In particolare
 	
-	\[
-	\Delta\lambda_{r.u.} = \frac{\lambda^2}{2d}\frac{\sqrt{n^2-\sin(i)^2}}{n^2-\sin(i)^2-n\lambda\frac{dn}{d\lambda}}
-	\]
+	\begin{equation}
+		\label{eqn:dlru}
+		\Delta\lambda_{r.u.} = \frac{\lambda^2}{2d}\frac{\sqrt{n^2-\sin(i)^2}}{n^2-\sin(i)^2-n\lambda\frac{dn}{d\lambda}}
+	\end{equation}
 	
 	dove la derivata $dn/d\lambda$ è stata ottenura fittando alcuni punti 
 	n($\lambda$) rappresentativi dell'andamento dell'indice di rifrazione
 	della lamina in funzione della lunghezza d'onda. Nello specifico si è
 	scelto il modello della legge di Cauchy fermandosi al primo ordine:
 
-\[
-n(\lambda) = A + \frac{B}{\lambda^2}    
-\]
+	\begin{equation}
+		n(\lambda) = A + \frac{B}{\lambda^2}    
+	\end{equation}
 
-ottenendo il seguente andamento:
+
+	ottenendo il seguente andamento:
 %\begin{center}
 %\begin{figure}[ht]
 %\centering
@@ -176,108 +179,154 @@ ottenendo il seguente andamento:
 %\end{figure}
 %\end{center}
 
-I parametri del fit sono :
-$$ A= 1.4997 \pm 0.0009 \quad B= (42 \pm 3 )10^4 \quad m^2$$
- Per $\lambda= 585.3 nm$ si ottiene quindi :
-$$n(\lambda)= 1.512 \pm 0.001  $$
-$$  \frac{dn}{d\lambda} = (-4.19 \pm 0.03 )\cdot 10^{-5} $$
+	I parametri del fit sono :
+	$$ A= 1.4997 \pm 0.0009 \quad B= (42 \pm 3 )10^4 \quad m^2$$
+	Per $\lambda= 585.3 nm$ si ottiene quindi :
+	$$n(\lambda)= 1.512 \pm 0.001  $$
+	$$  \frac{dn}{d\lambda} = (-4.19 \pm 0.03 )\cdot 10^{-5} $$
 
-\section*{Aquisizione ed analisi dati}
-\paragraph{Calibrazione}
-Prima di procedere con la presa dati si è eseguita una calibrazione 
-dell'apparato; in particolare occorre regolare la posizione 
-della sorgente rispetto all'apertura della fenditura.
-Il primo passaggio è stato quindi impostare l'apertura della fenditura 
-a $24 \mu m$ ed aquisire un primo spettro a lamina disinserita, con il 
-CCD orizzontale. Zoomando sui primi 3/4 picchi dello spettro, saremo
-in grado di individuare il nostro picco di interesse.
-Successivamente si regola ulteriormente la posizione della sorgente 
-cercando quella che massimizzi l'intensità e la forma del picco di 
-interesse.
-Si è quindi fissata la posizione del CCD a 0.93 mm e impostato l'apertura 
-della fenditura a $18 \mu m$.
-Infine si sono regolate le posizioni della lente focale e della lente 
-condensante, scegliendo come posizioni ottimali rispettivamente 15.36 mm 
-e 14.62 mm.
-
-
-\subsection*{Campo magnetico spento}
-
-Dopo la calibrazione si può proseguire con l'acquisizione del primo 
-spettro a campo magnetico spento: dopo aver selezionato il picco di 
-interesse si inserisce la lamina di Lummer-Gerhcker, si seleziona 
-con i cursori il range dello scanning e si ruota la posizione del CCD
-in verticale.
-Infine si imposta un tempo di integrazione di 600 ms e si avvia lo 
-scanning, dopo aver salvato il file nell'opportuna cartella.
+	\section*{Aquisizione dati}
+	
+	\paragraph{Calibrazione}
+	Prima di procedere con la presa dati si è eseguita una calibrazione 
+	dell'apparato; in particolare occorre regolare la posizione 
+	della sorgente rispetto all'apertura della fenditura.
+	Il primo passaggio è stato quindi impostare l'apertura della fenditura 
+	a $24 \mu m$ ed aquisire un primo spettro a lamina disinserita, con il 
+	CCD orizzontale. Zoomando sui primi 3/4 picchi dello spettro, saremo
+	in grado di individuare il nostro picco di interesse.
+	Successivamente si è regolata ulteriormente la posizione della sorgente 
+	cercando quella che massimizzi l'intensità e la forma del picco di 
+	interesse.
+	Si è quindi fissata la posizione del CCD a 0.93 mm e impostato l'apertura 
+	della fenditura a $18 \mu m$.
+	Infine si sono regolate le posizioni della lente focale e della lente 
+	condensante, scegliendo come posizioni ottimali rispettivamente 15.36 mm 
+	e 14.62 mm.
 
 
-\paragraph{Analisi dello spettro}
-Per procedere con l'analisi dello spettro, si procede caricando su root la macro ReadZeemanImage.C++ ed eseguendola. Si ottiene quindi un istogramma bidimensionale, al quale si sottrae il segnale di fondo riferendosi alla sua proiezione sull’asse x.
-Dopo aver sottratto il fondo, migliorando la nitidezza dell'immagine, si registrano i limiti della zona del segnale. 
-Si ottiene quindi anche la proiezione di tale regione sull’asse y, in cui si osservano una serie di picchi, di cui si migliora la pulizia dell'immagine mediante un rebin.
+	\subsection*{Campo magnetico spento}
 
-\paragraph{Analisi dei picchi}
+	Dopo la calibrazione si è proseguito con l'acquisizione del primo 
+	spettro a campo magnetico spento: dopo aver selezionato il picco di 
+	interesse si è inserito la lamina di Lummer-Gerhcker, e, selezionato 
+	con i cursori il range dello scanning, si è ruotata il CCD
+	in posizione verticale.
+	Infine si è impostato un tempo di integrazione di 600 ms e si è avviato
+	lo scanning, dopo aver salvato il file nell'opportuna cartella.
 
 
-Per fornire un'analisi estesa dello spettro si è scelto di raggruppare
-i picchi in 6 terne di picchi consecutivi, e per ciascuna terna
-l'obiettivo è studiare le spaziature tra i picchi e caratterizzarne in
-qualche modo la larghezza. 
-In particolare si è scelto di eseguire un fit gaussiano sui picchi
-per poter individuare con precisione l'ordinata di massimo e per
-poter dare una stima della larghezza del picco come FWHM.
-
-Per prima cosa, studiamo l'andamento delle spaziature tra i picchi. 
-Per ciascuna terna, si sono calcolate le due distanze tra i valori medi
-delle tre gaussiane, considerandone poi la media aritmetica, disponendo
-così di un valore univoco per caiscuna terna.
-
-In particolare ci si aspetta un andamento quadratico in funzione della posizione del CCD.
+	\paragraph{Analisi dello spettro}
+	Per procedere con l'analisi dello spettro, si è caricata ed eseguita su root la macro ReadZeemanImage.C++. 
+	Si è ottenuto quindi un istogramma bidimensionale, al quale si è sottratto il segnale di fondo riferendosi alla sua proiezione sull’asse x.
+	Dopo aver sottratto il fondo, migliorando la nitidezza dell'immagine, si sono registrati i limiti della zona del segnale. 
+	In questo modo si è quindi ottenuta anche la proiezione di tale regione sull’asse y, in cui si osservano una serie di picchi, 
+	di cui si può migliorare la pulizia dell'immagine mediante un rebin.
 
 
 
+	\paragraph{Analisi dei picchi}
 
 
-\section*{Conclusioni}
+	Per fornire un'analisi estesa dello spettro si è scelto di raggruppare
+	i picchi in 6 terne di picchi consecutivi, e per ciascuna terna
+	l'obiettivo è studiare le spaziature tra i picchi e caratterizzarne in
+	qualche modo la larghezza. 
+	In particolare si è scelto di eseguire un fit gaussiano sui picchi
+	per poter individuare con precisione l'ordinata di massimo e per
+	poter dare una stima della larghezza del picco come FWHM.
+
+	Per prima cosa, studiamo l'andamento delle spaziature tra i picchi. 
+	Per ciascuna terna, si sono calcolate le due distanze tra i valori medi
+	delle tre gaussiane, considerandone poi la media aritmetica $\Delta x_{ru}$,
+	disponendo così di un valore univoco per caiscuna terna.
+	In particolare ci si aspetta per queste distanze un andamento quadratico 
+	in funzione della posizione del CCD. Si è effettuata dunque un'interpolazione
+	parabolica, con il fine di stimarne poi l'ordinata di vertice che 
+	costituirebbe la distanza minima efficace da usare per la stima
+	corretta dell'angolo di incidenza i. Tale stima corretta di i
+	permette di calcolare $\Delta\lambda_{ru}$ evitando l'approssimnazione $i \approx \pi$/2. 
+	Maggiori dettagli sono riportati alla fine di questa sezione.
+	Avendo a disposizione il valore medio della spaziatura tra i picchi per ciascuna
+	terna, si è calcolato il fattore di calibrazione valido per quella regione
+	di spettro, secondo il rapporto
+
+	\begin{equation}
+		F = \frac{\Delta\lambda_{ru}}{\Delta x_{ru}}.
+	\end{equation}
+
+	Il fattore di calibrazione F rappresenta il fattore di conversione da pixel, 
+	ossia l'unità di misura caratteristica del CCD, in metri.
+
+	%CONTINUO QUI NESSUNO SI PERMETTA
+s
 
 
 
-\newpage
-\appendix
-\section{Appendici}
-\label{appendice}
-\subsection{Costruzione dell'errore sulle misure}
-\label{Calcerr}
 
-\subsection{Tabella delle compatibilità}
-\medskip
-\begin{table}[H]
-    \centering
-    \begin{tabular}{c}
-        %\hline
-        \begin{Large}
-        $\lambda=\frac{|a-b|}{\sqrt{\sigma_a^2+\sigma_b^2}}$
-        \end{Large}\\
-        %\hline
-    \end{tabular}
-    \hspace{0.5cm}
-    \begin{tabular}{cc}
-        \toprule
-        &       \textbf{Compatibilità   }       \\
-        \midrule
-        0$\leq \lambda$<1   &Ottima                 \\
-        1$\leq \lambda$<2   &Buona                  \\
-        2$\leq \lambda$<3   &Accettabile            \\
-        3$\leq\lambda$<5   &Pessima                \\
-        $ \lambda \geq $  5     &Non compatibile        \\
-        \bottomrule
-    \end{tabular}
-    \caption{indicazioni lettura compatibilità}
-    \label{tab:compatibilità}
-\end{table}
 
-\subsection{Dati sperimentali}
+	\paragraph{Stima dell'angolo di incidenza sulla lamina di Lummer-Gehrcker}
+	Si è accennato in precedenza che i raggi di luce incidono quasi radenti
+	alla lamina. In particolare è possibile efettuare una stima precisa dell'
+	angolo di incidenza. Occorre innanzitutto calcolare l'apertura angolare
+	$\Delta i$, calcolata dal rapporto $\Delta x_{ru}$/f, dove f = 0.25 m è la distanza
+	focale della lente e il valore di $\Delta x_{ru}$ è ottenuto dall'ordinata 
+	di vertice del fit parabolico. Successivamente si applica la relazione
+
+	\begin{equation}
+		\sin(2i) = - \frac{\lambda \sqrt{n^2-1}}{d \Delta i}
+	\end{equation}
+
+	da cui si è potuto ottenere una stima dell'angolo i, in particolare
+
+	\[
+		i = 1.568 pm 0.003 rad = ( 89.8 \pm 0.2 ) ^{°}
+	\]
+
+	Il valore è compatibile con l'approssimazione a 90°, e inserendolo in \ref{eqn:dlru}
+	si otterrà la miglior stima del range di lunghezza d'onda efficace usata
+	nel calcolo dei fattori di calibrazione.
+
+
+	\section*{Conclusioni}
+
+
+
+	\newpage
+	\appendix
+	\section{Appendici}
+	\label{appendice}
+	\subsection{Costruzione dell'errore sulle misure}
+	\label{Calcerr}
+
+	\subsection{Tabella delle compatibilità}
+	\medskip
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{c}
+			%\hline
+			\begin{Large}
+			$\lambda=\frac{|a-b|}{\sqrt{\sigma_a^2+\sigma_b^2}}$
+			\end{Large}\\
+			%\hline
+		\end{tabular}
+		\hspace{0.5cm}
+		\begin{tabular}{cc}
+			\toprule
+			&       \textbf{Compatibilità   }       \\
+			\midrule
+			0$\leq \lambda$<1   &Ottima                 \\
+			1$\leq \lambda$<2   &Buona                  \\
+			2$\leq \lambda$<3   &Accettabile            \\
+			3$\leq\lambda$<5   &Pessima                \\
+			$ \lambda \geq $  5     &Non compatibile        \\
+			\bottomrule
+		\end{tabular}
+		\caption{indicazioni lettura compatibilità}
+		\label{tab:compatibilità}
+	\end{table}
+
+	\subsection{Dati sperimentali}
 
 
    
