@@ -172,7 +172,8 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
                <<   endl;
 
   double i = 1.56783426923292;
-  double ei = 0.00296473979053
+  double ei = 0.00380753978208
+
 ;
   //cout << "inserire l'angolo i e il suo errore: ";
   //cin  >>  i  >>  ei;
@@ -199,24 +200,32 @@ void ReadFitHistoFromTextFile(const char *fname, const char *histname=NULL, bool
   //cout << "lambda = " << lambda << endl;
   //cout << "d = " << d << endl;
   //cout << "n = " << n << endl;
-  //cout << "dndl = " << dndl << endl; 
-
-  //cout << "dlambdaru = " << dlambda << endl;
+  //cout << "dndl = " << dndl << endl;
   
-  double deri = lambda*lambda / (2*d) * sin(i) / sqrt (n*n -pow(sin(i), 2)) / 
+  double dersin = lambda*lambda / (2*d) * sin(i) / sqrt (n*n -pow(sin(i), 2)) / 
                 (n*n -pow(sin(i), 2) - n * lambda * dndl) 
                 * (n*n - pow(sin(i), 2) + n * lambda * dndl);
 
-  double ederi = deri * cos(i) * ei; //nm
+  double edersin = dersin * cos(i) * ei; //m
 
-  double edlambda = sqrt( pow(0.000160081307397,2) + pow( ederi, 2) ); // nm
+  double dern = dlambda / (n*n - pow(sin(i), 2)) * (-pow(n,3) + pow(sin(i), 2)*(n - lambda * dndl));// m
+
+  //cout << "dern = " <<dern<< endl;
+
+  double derdn = dlambda * n * lambda / (n*n - pow(sin(i), 2) -n*lambda*dndl);// m
+
+  //cout << "derdn = " <<derdn<< endl;
+
+  double edlambda = sqrt( pow(dern * en ,2) + pow( derdn * edndl, 2) + pow(edersin, 2)); // m
+
+  cout << "dlambdaru = " << dlambda << "+/-" << edlambda << endl;// m
 
 
-  double  F = dlambda / Dx; //nm
+  double  F = dlambda / Dx; //m
   double eF = F * sqrt( pow( edlambda / dlambda, 2 ) + pow( eDx / Dx, 2 ));
   cout <<   endl  << endl 
        <<  "F = " << F*1e9 
-       << " +/- " << eF << " nm/pixel "<< endl;
+       << " +/- " << eF*1e9 << " nm/pixel "<< endl;
 
   TCanvas *canvas = new TCanvas( "canvas", "My ROOT Plots 2", 1280, 720 );
   canvas -> SetGrid(); //griglia
