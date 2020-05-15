@@ -259,16 +259,20 @@
 	ossia l'unità di misura caratteristica del CCD, in metri.
 
 	%CONTINUO QUI NESSUNO SI PERMETTA
-s
 
 
 
 	\paragraph{Stima dell'angolo di incidenza sulla lamina di Lummer-Gehrcker}
 	Si è accennato in precedenza che i raggi di luce incidono quasi radenti
-	alla lamina. In particolare è possibile effettuare una stima precisa dell'angolo di incidenza. Occorre innanzitutto calcolare l'apertura angolare
+	alla lamina. In particolare è possibile effettuare una stima precisa dell'angolo
+	di incidenza. Occorre innanzitutto calcolare l'apertura angolare
 	$\Delta i$, pari al rapporto $\Delta x_{ru}$/f, dove f = 0.25 m è la distanza
 	focale della lente e il valore di $\Delta x_{ru}$ è ottenuto dall'ordinata 
-	di vertice del fit parabolico. Successivamente si applica la relazione
+	di vertice del fit parabolico. Si precisa che per calcolare l'errore su tale 
+	minimo si è tenuto conto, nella propagazione degli erorri, dei termini di 
+	covarianza tra i parametri del fit parabolico.
+	
+	Successivamente si applica la relazione
 
 	\begin{equation}
 		\sin(2i) = - \frac{\lambda \sqrt{n^2-1}}{d \Delta i}
@@ -283,6 +287,12 @@ s
 	Il valore è compatibile con l'approssimazione a 90°, e inserendolo in \ref{eqn:dlru}
 	si otterrà la miglior stima del range di lunghezza d'onda efficace usata
 	nel calcolo dei fattori di calibrazione.
+
+	In particolare si è ottenuto
+
+	\[
+		\Delta\lambda_{ru} = (0.04353 \pm 0.00008) nm 
+	\]	
 
 
 	\section*{Conclusioni}
