@@ -282,8 +282,32 @@ si riporta inoltre anche il grafico dei residui:
 	di incidenza. Occorre innanzitutto calcolare l'apertura angolare
 	$\Delta i$, pari al rapporto $\Delta x_{ru}$/f, dove f = 0.25 m è la distanza
 	focale della lente e il valore di $\Delta x_{ru}$ è ottenuto dall'ordinata 
-	di vertice del fit parabolico. Si precisa che per calcolare l'errore su tale 
-	minimo si è tenuto conto, nella propagazione degli erorri, dei termini di 
+	di vertice del fit parabolico, cioè $y_{min} = a - b^2\backslash 4c$ nella 
+	parabola $y = a +bx + cx^2$.
+
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campospento/deltaxruBoff.pdf}
+			\caption{Andamento delle spaziature tra i picchi rispetto alla posizione del CCD}
+			\label{fig:deltaxruBoff}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campospento/deltaxruBoffres.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:deltaxruBoffres}
+		\end{figure}
+	\end{center}
+	
+
+	
+	Si precisa che per calcolare l'errore su tale 
+	minimo si è tenuto conto, nella propagazione degli errori, dei termini di 
 	covarianza tra i parametri del fit parabolico.
 	
 	Successivamente si applica la relazione
@@ -295,7 +319,7 @@ si riporta inoltre anche il grafico dei residui:
 	da cui si è potuto ottenere una stima dell'angolo i, in particolare
 
 	\[
-		i = 1.568 \pm 0.003 \quad \text{rad} = ( 89.8 \pm 0.2 ) ^{\circ}
+		i = (1.568 \pm 0.003)\text{rad} = ( 89.8 \pm 0.2 ) ^{\circ}
 	\]
 
 	Il valore è compatibile con l'approssimazione a 90°, e inserendolo in \ref{eqn:dlru}
@@ -308,7 +332,7 @@ si riporta inoltre anche il grafico dei residui:
 		\Delta\lambda_{ru} = (0.04353 \pm 0.00008) nm 
 	\]	
 
-	\subsection*{Campo magneti acceso}
+	\subsection*{Campo magnetico acceso}
 	
 	Si è proceduto quindi accendendo il campo magnetico: inizialmente si è impostato il valore massimo consentito regolando la corrente in modo da ottenere B= 4950 Guass. 
 	Dopodichè si è eseguita nuovamente una calibrazione della posizione della sorgente, ripetendo i passaggi elencati in precedenza, necessaria poichè la presenza del campo magnetico comporta uno shift dello spettro.
