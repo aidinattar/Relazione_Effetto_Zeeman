@@ -90,15 +90,6 @@
 	
 	Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel.
 	
-	%\begin{center}
-	%\begin{figure}[ht]
-	%\centering
-	%\includegraphics[scale=0.28, angle=0]{alimentazione.pdf}
-	%\caption{ schema per l'alimentazione dell'operazionale }
-	%\label{fig:alimentazione}
-	%\end{figure}
-	%\end{center}
-	
 	\subsection*{Compendio di teoria}
 	
 	L'esperienza è incentrata sull'identificare e misurare lo splitting 
@@ -170,20 +161,31 @@
 
 
 	ottenendo il seguente andamento:
-%\begin{center}
-%\begin{figure}[ht]
-%\centering
-%\includegraphics[scale=0.28, angle=0]{nFit}
-%\caption{ Indice di rifrazione }
-%\label{fig:alimentazione}
-%\end{figure}
-%\end{center}
+	
+\begin{center}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.28, angle=0]{nFit.pdf}
+		\caption{ indice di rifrazione}
+		\label{fig:nFit}
+	\end{figure}
+\end{center}
+
+si riporta inoltre anche il grafico dei residui:
+\begin{center}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.28, angle=0]{nFitRes.pdf}
+		\caption{ Andamento dei residui}
+		\label{fig:nFitRes}
+	\end{figure}
+\end{center}
 
 	I parametri del fit sono :
 	$$ A= 1.4997 \pm 0.0009 \quad B= (42 \pm 3 )10^4 \quad m^2$$
 	Per $\lambda= 585.3 nm$ si ottiene quindi :
 	$$n(\lambda)= 1.512 \pm 0.001  $$
-	$$  \frac{dn}{d\lambda} = (-4.19 \pm 0.03 )\cdot 10^{-5} $$
+	$$  \frac{dn}{d\lambda} = (-4.19 \pm 0.03 )\cdot 10^{-5} \text{m}^{-1}$$
 
 	\section*{Aquisizione dati}
 	
@@ -235,6 +237,18 @@
 	In particolare si è scelto di eseguire un fit gaussiano sui picchi
 	per poter individuare con precisione l'ordinata di massimo e per
 	poter dare una stima della larghezza del picco come FWHM.
+	
+	Riportiamo come esempio il seguente grafico in cui si è scelto di fittare solo uno dei  tre picchi per semplicità:
+	
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campospento/singolo.pdf}
+			\caption{ Esempio di fit gaussiano nel caso senza campo magnetico}
+			\label{fig:singoloBoff}
+		\end{figure}
+	\end{center}
+	
 
 	Per prima cosa, studiamo l'andamento delle spaziature tra i picchi. 
 	Per ciascuna terna, si sono calcolate le due distanze tra i valori medi
@@ -294,6 +308,45 @@
 		\Delta\lambda_{ru} = (0.04353 \pm 0.00008) nm 
 	\]	
 
+	\subsection*{Campo magneti acceso}
+	
+	Si è proceduto quindi accendendo il campo magnetico: inizialmente si è impostato il valore massimo consentito regolando la corrente in modo da ottenere B= 4950 Guass. 
+	Dopodichè si è eseguita nuovamente una calibrazione della posizione della sorgente, ripetendo i passaggi elencati in precedenza, necessaria poichè la presenza del campo magnetico comporta uno shift dello spettro.
+
+	Si è quindi proceduto con l'acquisizione dello spettro inserendo la lamina, ruotando il CCD in verticale, selezionando con i cursori il range e avviando lo scanning, dopo aver un tempo di integrazione pari a 600 ms.
+	
+	Si riperte quindi  la stessa procedura dopo aver modificato il valore della corrente in modo che il campo magnetico abbia un'intensità circa dimezzata rispetto al valore precedente (B= 2610 Gauss).
+	
+	\subsubsection*{Campo magnetico massimo}
+	Si procede quindi con l'analisi dello spettro.
+	In particolare, come anticipato nel compendio teorico, ci si aspetta che ogni picco subisca uno splitting dando luogo a due nuove campane, la cui distanza tra i picchi è indicata con $\Delta \lambda_{Zee} $ .
+	 
+	 Come prima cosa si ripete la procedura di sottrazione del fondo e di rebin della proiezione dell'istogramma bidimensionale sull'asse y, si ottiene quindi lo spettro.
+	 
+	Dunque si individua il range (in pixel) scelto per l'analisi a campo spento e si suddivide nuovamente in sei gruppi, questa volta ciascun gruppo contiene a sua volta sei campane e non tre a causa dell'effetto Zeeman.
+	
+	Si fitta ciascuna campana con una gaussiana, come si vede nel seguente grafico:
+	
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/singolo.pdf}
+			\caption{ Esempio di fit gaussiano nel caso con campo magnetico B= 4950 Gauss}
+			\label{fig:singoloBonMax}
+		\end{figure}
+	\end{center}
+	 
+	\subsubsection*{Campo magnetico dimezzato}
+	
+	
+	\begin{center}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.38, angle=0]{campomin/singolo.pdf}
+		\caption{ Esempio di fit gaussiano nel caso con campo magnetico B= 2610 Gauss}
+		\label{fig:singoloBonMin}
+	\end{figure}
+\end{center}
 
 	\section*{Conclusioni}
 
