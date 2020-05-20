@@ -282,7 +282,7 @@ si riporta inoltre anche il grafico dei residui:
 	di incidenza. Occorre innanzitutto calcolare l'apertura angolare
 	$\Delta i$, pari al rapporto $\Delta x_{ru}$/f, dove f = 0.25 m è la distanza
 	focale della lente e il valore di $\Delta x_{ru}$ è ottenuto dall'ordinata 
-	di vertice del fit parabolico, cioè $y_{min} = a - b^2\backslash 4c$ nella 
+	di vertice del fit parabolico, cioè $y_{min} = a - b^2 / 4c$ nella 
 	parabola $y = a +bx + cx^2$.
 
 
@@ -332,24 +332,92 @@ si riporta inoltre anche il grafico dei residui:
 		\Delta\lambda_{ru} = (0.04353 \pm 0.00008) nm 
 	\]	
 
+
+	\paragraph{Calcolo della risoluzione}
+
+	Il campo magnetico che è possibile sviluppare con l'apparato sperimentale
+	arriva fino a un massimo di circa 0.5 T, che genera uno splitting
+	di energia di circa $\Delta E_{Zee} = \mu_B B \approx 3\cdot 10^{-5}$ eV.
+	Tale separazione corrisponde a una variazione della lunghezza d'onda
+	pari a $\Delta \lambda_{Zee} \approx 8 \cdot 10^{-3}$ nm. Sapendo che 
+	si è scelto di disporre l'esperimento oscurando la linea di transizione
+	centrale, allora per vedere bene lo spitting ci occorrerà una risoluzione
+	di almeno
+
+	\[
+		R_{th}(\lambda) = \frac{\lambda}{2\Delta\lambda_{Zee}}	\approx 36000
+	\]
+
+	Per calcolare la risoluzione effettiva dell'apparato sperimentale
+	calcoleremo il rapporto R = $\lambda$ / $\Delta\lambda$ dove 
+	$\Delta\lambda$ è dato dalla FWHM dei fit gaussiani effettuati sui 
+	picchi. In particolare la FWHM è stata convertita utilizzando la 
+	larghezza del pixel in nm, corrispondente a 0.6875$\cdot 10^{-6}$ m.
+	Eseguendo dunque i vari rapporti per ciascun fit e calcolando infine
+	la media pesata si ottiene
+
+	\[
+		R_{sper} = 49015 \pm 637	\quad > R_{th}	
+	\]
+
+	che è quindi ben compatibile con la richiesta di minima risoluzione
+	necessaria per vedere lo splitting Zeeman con campi magnetici a questo 
+	ordine di grandezza.
+
+	Riportiamo in grafico le risoluzioni.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campospento/ris.pdf}
+			\caption{Andamento delle risoluzioni rispetto alla posizione sul CCD}
+			\label{fig:deltaxruBoff}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campospento/resris.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:deltaxruBoffres}
+		\end{figure}
+	\end{center}
+
+
+
+
 	\subsection*{Campo magnetico acceso}
 	
-	Si è proceduto quindi accendendo il campo magnetico: inizialmente si è impostato il valore massimo consentito regolando la corrente in modo da ottenere B= 4950 Guass. 
-	Dopodichè si è eseguita nuovamente una calibrazione della posizione della sorgente, ripetendo i passaggi elencati in precedenza, necessaria poichè la presenza del campo magnetico comporta uno shift dello spettro.
+	Si è proceduto quindi accendendo il campo magnetico: inizialmente si è impostato il valore massimo 
+	consentito regolando la corrente in modo da ottenere B= 4950 Gauss. 
+	Dopodichè si è eseguita nuovamente una calibrazione della posizione della sorgente, ripetendo i 
+	passaggi elencati in precedenza, necessaria poichè la presenza del campo magnetico 
+	comporta uno shift dello spettro.
 
-	Si è quindi proceduto con l'acquisizione dello spettro inserendo la lamina, ruotando il CCD in verticale, selezionando con i cursori il range e avviando lo scanning, dopo aver un tempo di integrazione pari a 600 ms.
+	Si è quindi proceduto con l'acquisizione dello spettro inserendo la lamina, ruotando il CCD 
+	in verticale, selezionando con i cursori il range e avviando lo scanning, dopo aver un tempo 
+	di integrazione pari a 600 ms.
 	
-	Si riperte quindi  la stessa procedura dopo aver modificato il valore della corrente in modo che il campo magnetico abbia un'intensità circa dimezzata rispetto al valore precedente (B= 2610 Gauss).
+	Si ripete quindi  la stessa procedura dopo aver modificato il valore della corrente in modo 
+	che il campo magnetico abbia un'intensità circa dimezzata rispetto al valore precedente 
+	(B= 2610 Gauss).
 	
 	\subsubsection*{Campo magnetico massimo}
 	Si procede quindi con l'analisi dello spettro.
-	In particolare, come anticipato nel compendio teorico, ci si aspetta che ogni picco subisca uno splitting dando luogo a due nuove campane, la cui distanza tra i picchi è indicata con $\Delta \lambda_{Zee} $ .
+	In particolare, come anticipato nel compendio teorico, ci si aspetta che ogni picco subisca uno 
+	splitting dando luogo a due nuove campane, la cui distanza tra i picchi è indicata con 
+	$\Delta \lambda_{Zee} $ .
 	 
-	 Come prima cosa si ripete la procedura di sottrazione del fondo e di rebin della proiezione dell'istogramma bidimensionale sull'asse y, si ottiene quindi lo spettro.
+	Come prima cosa si ripete la procedura di sottrazione del fondo e di rebin della proiezione 
+	dell'istogramma bidimensionale sull'asse y, si ottiene quindi lo spettro.
 	 
-	Dunque si individua il range (in pixel) scelto per l'analisi a campo spento e si suddivide nuovamente in sei gruppi, questa volta ciascun gruppo contiene a sua volta sei campane e non tre a causa dell'effetto Zeeman.
+	Dunque si individua il range (in pixel) scelto per l'analisi a campo spento e si suddivide 
+	nuovamente in sei gruppi, questa volta ciascun gruppo contiene a sua volta sei campane e 
+	non tre a causa dell'effetto Zeeman.
 	
-	Si fitta ciascuna campana con una gaussiana, come si vede nel seguente grafico:
+	Si è scelto di fittare ciascuna coppia di picchi con una somma di gaussiane, come 
+	si vede nel seguente grafico:
 	
 	\begin{center}
 		\begin{figure}[H]
