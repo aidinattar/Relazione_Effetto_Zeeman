@@ -404,6 +404,7 @@ si riporta inoltre anche il grafico dei residui:
 	(B= 2610 Gauss).
 	
 	\subsubsection*{Campo magnetico massimo}
+
 	Si procede quindi con l'analisi dello spettro.
 	In particolare, come anticipato nel compendio teorico, ci si aspetta che ogni picco subisca uno 
 	splitting dando luogo a due nuove campane, la cui distanza tra i picchi è indicata con 
@@ -427,8 +428,120 @@ si riporta inoltre anche il grafico dei residui:
 			\label{fig:singoloBonMax}
 		\end{figure}
 	\end{center}
+
+	Ripetuto questo tipo di interpolazione per le coppie di picchi splittati, si è calcolata di volta 
+	in volta la distanza in pixel $\Delta x_{Zee}$ come la differenza tra le ascisse dei centri delle due
+	gaussiane. Tale differenza corrisponde in realtà a due volte lo splitting fisico, per via della 
+	configurazione dell'apparato che sopprime la riga centrale.
+
+	Riportiamo di seguito un plot dei rapporti $\Delta x_{Zee}$/$\Delta x_{ru}$, usando le $\Delta x_{ru}$
+	calcolate nel caso a campo spento, rispetto alla posizione sul CCD: vediamo come tale quantità resti 
+	costante.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/fit.pdf}
+			\caption{Andamento del rapporto $\Delta x_{Zee}$/$\Delta x_{ru}$}
+			\label{fig:fit_rapporto}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/residuals.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:fit_rapporto_res}
+		\end{figure}
+	\end{center}
+
+	La pendenza della retta con cui si è fittata la distribuzione dei rapporti è effettivamente
+	compatibile con lo zero entro 2$\sigma$. Questo autorizza il calcolo della media pesata, per cui 
+	la miglior stima del rapporto in questione è data da 
+
+	\[
+		\frac{\Delta x_{Zee}}{\Delta x_{ru}} = 0.3714 \pm 0.0009	
+	\]
+
+	Mostriamo anche un grafico equivalente con l'andamento di $\Delta\lambda_{Zee}$, ossia 
+	$\Delta x_{Zee}$ opportunamente convertito con il fattore F caratteristico della relativa regione
+	dello spettro.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/dlambdazee.pdf}
+			\caption{Andamento dello shifting Zeeman}
+			\label{fig:fit_dlambdazee}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/residuals.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:fit_dlambdazee_res}
+		\end{figure}
+	\end{center}
+
+	Da cui si ricava per media pesata la miglior stima dello shifting Zeeman
+
+	\[
+		\Delta\lambda_{Zee} = (0.01616 \pm 0.00004) nm	
+	\]
+
+	che corrisponde al valore del rapporto precedentemente fornito moltiplicato per $\Delta\lambda_{ru}$.
+
+	si diponde dunque tutti gli elementi per calcolare finalmente il fattore di Landé. In particolare
+
+	\begin{equation}
+		\Delta E_{Zee} = g \mu_B B
+	\end{equation}
+
+	dove $\mu_B$ è il magnetone di Bohr.
+	Dal momento che $\Delta E = h\Delta\nu = hc\Delta(1/\lambda) = (hc / \lambda^2) \Delta\lambda$, 
+	allora vale 
+
+	\begin{equation}
+		g = \frac{hc}{\mu_B B \lambda^2} \frac{\Delta\lambda_{Zee}}{2}
+	\end{equation}
+
+	Applicando quest'ultima formula si sono calcolate delle stime del fattore giromagnetico per ciascun
+	valore dello splitting Zeeman. Si presentano i risultati in grafico.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/g.pdf}
+			\caption{Andamento del fattore giromagnetico}
+			\label{fig:g}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomax/g_residuals.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:g_res}
+		\end{figure}
+	\end{center}
+
+	Si vede subito che la pendenza del fit lineare è compatibile con lo zero entro 1$\sigma$. E' dunque
+	possibile effettuare il calcolo della media pesata, che resituisce il valore finalmente
+
+	\[
+		g = 1.021 \pm 0.005	
+	\]
+	
+	che è ampiamente compatibile con il valore atteso g = 1.
+
 	 
 	\subsubsection*{Campo magnetico dimezzato}
+
+	Si ripete un'analisi del tutto analogo anche per il caso con campo magnetico di intensità dimezzata.
 	
 	
 	\begin{center}
@@ -438,7 +551,98 @@ si riporta inoltre anche il grafico dei residui:
 		\caption{ Esempio di fit gaussiano nel caso con campo magnetico B= 2610 Gauss}
 		\label{fig:singoloBonMin}
 	\end{figure}
-\end{center}
+	\end{center}
+
+	Riportiamo di nuovo un plot dei rapporti $\Delta x_{Zee}$/$\Delta x_{ru}$, usando le $\Delta x_{ru}$
+	calcolate nel caso a campo spento, rispetto alla posizione sul CCD: vediamo come tale quantità resti 
+	costante.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomin/fit.pdf}
+			\caption{Andamento del rapporto $\Delta x_{Zee}$/$\Delta x_{ru}$}
+			\label{fig:fit_rapporto_min}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomin/residuals.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:fit_rapporto_min_res}
+		\end{figure}
+	\end{center}
+
+	La pendenza della retta con cui si è fittata la distribuzione dei rapporti è effettivamente
+	compatibile con lo zero entro 2$\sigma$. Questo autorizza il calcolo della media pesata, per cui 
+	la miglior stima del rapporto in questione è data da 
+
+	\[
+		\frac{\Delta x_{Zee}}{\Delta x_{ru}} = 0.207 \pm 0.003	
+	\]
+
+	Mostriamo anche un grafico equivalente con l'andamento di $\Delta\lambda_{Zee}$, ossia 
+	$\Delta x_{Zee}$ opportunamente convertito con il fattore F caratteristico della relativa regione
+	dello spettro.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomin/dlambdazee.pdf}
+			\caption{Andamento dello shifting Zeeman}
+			\label{fig:fit_dlambdazee_min}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomin/residuals.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:fit_dlambdazee_min_res}
+		\end{figure}
+	\end{center}
+
+	Da cui si ricava per media pesata la miglior stima dello shifting Zeeman
+
+	\[
+		\Delta\lambda_{Zee} = (0.0090 \pm 0.0001) nm	
+	\]
+
+	che corrisponde al valore del rapporto precedentemente fornito moltiplicato per $\Delta\lambda_{ru}$.
+
+	Infine è possibile calcolare il fattore di Landè, di cui riportiamo i risultati in grafico.
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomin/g.pdf}
+			\caption{Andamento del fattore giromagnetico}
+			\label{fig:g_min}
+		\end{figure}
+	\end{center}
+
+	\begin{center}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.38, angle=0]{campomin/g_residuals.pdf}
+			\caption{Andamento dei residui}
+			\label{fig:g_res_min}
+		\end{figure}
+	\end{center}
+
+	Si vede subito che la pendenza del fit lineare è compatibile con lo zero entro 1$\sigma$. E' dunque
+	possibile effettuare il calcolo della media pesata, che resituisce il valore finalmente
+
+	\[
+		g = 1.08 \pm 0.02	
+	\]
+	
+	che presenta una compatibilità con il valore atteso pari a $\lambda = 5.27$, pertanto il valore 
+	sperimentale risulta essere incompatibile.
+
 
 	\section*{Conclusioni}
 
