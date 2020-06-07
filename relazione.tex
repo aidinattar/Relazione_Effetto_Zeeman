@@ -165,7 +165,7 @@
 \begin{center}
 	\begin{figure}[ht]
 		\centering
-		\includegraphics[scale=0.28, angle=0]{nFit.pdf}
+		\includegraphics[scale=0.38, angle=0]{nFit.pdf}
 		\caption{ indice di rifrazione}
 		\label{fig:nFit}
 	\end{figure}
@@ -175,7 +175,7 @@ si riporta inoltre anche il grafico dei residui:
 \begin{center}
 	\begin{figure}[ht]
 		\centering
-		\includegraphics[scale=0.28, angle=0]{nFitRes.pdf}
+		\includegraphics[scale=0.38, angle=0]{nFitRes.pdf}
 		\caption{ Andamento dei residui}
 		\label{fig:nFitRes}
 	\end{figure}
@@ -249,6 +249,16 @@ si riporta inoltre anche il grafico dei residui:
 		\end{figure}
 	\end{center}
 	
+	Si noti il valore del $\chi^{(2)}$ incompatibile con il valore di aspettazione, 
+	con compatibilità $\lambda \approx 6.5$. Si è notato che il valore del $\chi^{(2)}$
+	risulta molto influenzato dalla scelta del range di interpolazione. Alla luce di questa
+	dipendenza, si è cercato di trovare il giusto equilibrio tra una sufficiente
+	larghezza di range e un buon valore di $\chi^{(2)}$, per evitare di fare fit troppo
+	stretti che avrebbero sì migliorato il valore dell'estimatore ma al contempo avrebbero 
+	perso informazioni sulla stima della larghezza.
+	Infatti i valori dell'estimatore ottenuti dai vari picchi suggeriscono compatibilità 
+	in alcuni casi e non in altri.
+
 
 	Per prima cosa, studiamo l'andamento delle spaziature tra i picchi. 
 	Per ciascuna terna, si sono calcolate le due distanze tra i valori medi
@@ -303,9 +313,15 @@ si riporta inoltre anche il grafico dei residui:
 			\label{fig:deltaxruBoffres}
 		\end{figure}
 	\end{center}
+
+	E' evidente che il fit parabolico non può considerarsi ben riuscito: la causa primaria
+	può ricercarsi nelle ridotte dimensioni dell'errore responsabili dell'altissimo valore
+	di $\chi^{(2)}$, ma è anche da considerare che l'ipotesi quadratica è solamente una 
+	prima approssimazione: l'andamento delle spaziature dovrebbe coinvolgere ad esempio 
+	anche termini sinusoidali. Il grafico dei residui potrebbe in effetti suggerire tale 
+	andamento oscillante.
 	
 
-	
 	Si precisa che per calcolare l'errore su tale 
 	minimo si è tenuto conto, nella propagazione degli errori, dei termini di 
 	covarianza tra i parametri del fit parabolico.
@@ -536,7 +552,8 @@ si riporta inoltre anche il grafico dei residui:
 		g = 1.021 \pm 0.005	
 	\]
 	
-	che è ampiamente compatibile con il valore atteso g = 1.
+	che tuttavia non risulta compatibile con il valore atteso g = 1.
+	Lo scarto corrisponde infatti a 4.2$\sigma$.  
 
 	 
 	\subsubsection*{Campo magnetico dimezzato}
@@ -640,9 +657,7 @@ si riporta inoltre anche il grafico dei residui:
 		g = 1.08 \pm 0.02	
 	\]
 	
-	che presenta una compatibilità con il valore atteso pari a $\lambda = 5.27$, pertanto il valore 
-	sperimentale risulta essere incompatibile.
-
+	che presenta uno scarto di 5.27$\sigma$ dal valore atteso, segno di una certa incompatibilità.
 
 	\section*{Conclusioni}
 
