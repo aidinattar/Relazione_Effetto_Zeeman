@@ -445,6 +445,17 @@ si riporta inoltre anche il grafico dei residui:
 		\end{figure}
 	\end{center}
 
+	Anche in questo caso il valore di $\chi^{(2)}$ risulta incompatibile con il suo
+	valore di aspettazione ($\lambda \approx 9.9$). Come detto in precedenza, la scelta
+	del range risulta determinante sul valore del $\chi^{(2)}$, per cui sarebbe forse
+	stato più conveniente da questo punto di vista scegliere di fittare in modo indipendente
+	i due picchi ciascuno con una gaussiana, piuttosto che usare la somma delle due che 
+	limita la libertà di regolazione del range. Tuttavia si è fatta questa scelta per coerenza
+	con il processo di acquisizione dei dati. Infatti dal momento che i dati si distribuiscono
+	con una certa dispersione attorno ai picchi, allora ognuna delle code esercita un'influenza
+	sul picco dell'altra distribuzione.
+
+
 	Ripetuto questo tipo di interpolazione per le coppie di picchi splittati, si è calcolata di volta 
 	in volta la distanza in pixel $\Delta x_{Zee}$ come la differenza tra le ascisse dei centri delle due
 	gaussiane. Tale differenza corrisponde in realtà a due volte lo splitting fisico, per via della 
@@ -569,6 +580,15 @@ si riporta inoltre anche il grafico dei residui:
 		\label{fig:singoloBonMin}
 	\end{figure}
 	\end{center}
+
+	Si osserva che questa situazione corrisponde a uno dei quei casi in cui il valore di
+	$\chi^{(2)}$ risulta ottimale ($\lambda\approx 0.8$), nonostante il fit sia stato effettuato
+	come somma di due gaussiane.
+	Per garantire una buona interpolazione dei dati si è pensato di tenere fissa la $\sigma$
+	della campana pari a quella ottenuta a campo massimo, tuttavia dopo alcuni risultati non
+	particolarmente positivi, si è preferito inserire i parametri del caso $B_{max}$ come
+	dati iniziali riuscendo così a ottenere risultati migliori.
+
 
 	Riportiamo di nuovo un plot dei rapporti $\Delta x_{Zee}$/$\Delta x_{ru}$, usando le $\Delta x_{ru}$
 	calcolate nel caso a campo spento, rispetto alla posizione sul CCD: vediamo come tale quantità resti 
