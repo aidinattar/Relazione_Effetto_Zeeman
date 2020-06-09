@@ -65,15 +65,15 @@
 	radiazione elettromagnetica associta principlamente a transizioni tra 3p e 2p.
 	In particolare siamo interessati alla transizione da $\lambda = $585.3 nm.
 	Tale lampada è inserita all'interno di una cavità magnetica, per cui ci si 
-	aspetta la comparsa di righe di emissione: tuttavia, considerando la 
+	aspetta la comparsa di tre righe di emissione: tuttavia, considerando la 
 	polarizzazione delle righe, possiamo “sopprimere” la transizione centrale
 	orientando il campo magnetico in modo longitudinale alla linea di 
 	osservazione, in modo tale da vedere solo le due righe marginali. 
 	
-	Il raggio di luce emessa passa quindi per una lente condensante, necessaria 
+	Il raggio di luce emessa attraversa una lente condensante, necessaria 
 	per concentrare quanto più possibile il fascio, che passa quindi per una 
 	fenditura e successivamente attraverso un prisma, necessario per ruotare di 
-	$90\deg$ la luce e dividerla nelle sue componenti principali. 
+	$90 ^{\circ}$ la luce e dividerla nelle sue componenti principali. 
 	
 	A questo punto i raggi incidono sulla lamina di Lummer-Gehrcke, dispositivo
 	interferenziale ad alta risoluzione, in modo quasi
@@ -85,7 +85,7 @@
 	%particolare la connessione al PC del laboratorio avviene tramite 
 	%l'esportazione dello schermo via VNC Viewer.
 	
-	L'acquisizione dei dati è avvenutatramite l'interfaccia di controllo dell'
+	L'acquisizione dei dati è avvenuta tramite l'interfaccia di controllo dell'
 	apparato, che permette di controllare le diverse componenti appena citate.
 	
 	Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel.
@@ -99,7 +99,7 @@
 	esterno, che suddivide i livelli energetici permessi per gli elettroni.
 	In tal modo confrontando lo spettro della prima riga di transizione 
 	($\lambda = $585.3 nm, associata ai termini spettroscopici
-	$^1S^0 \xrightarrow[]{}  ^1P^1$ ) a campo magnetico spento e a campo 
+	$^1S^0 \rightarrow {}^1P^1$ ) a campo magnetico spento e a campo 
 	acceso vedremo 
 	il biforcarsi delle campane in due ulteriori picchi. Misurando la
 	distanza che separa i due picchi causati dalla presenza del campo,
@@ -150,7 +150,7 @@
 		\Delta\lambda_{r.u.} = \frac{\lambda^2}{2d}\frac{\sqrt{n^2-\sin(i)^2}}{n^2-\sin(i)^2-n\lambda\frac{dn}{d\lambda}}
 	\end{equation}
 	
-	dove la derivata $dn/d\lambda$ è stata ottenura fittando alcuni punti 
+	dove la derivata $dn/d\lambda$ è stata ottenuta fittando alcuni punti 
 	n($\lambda$) rappresentativi dell'andamento dell'indice di rifrazione
 	della lamina in funzione della lunghezza d'onda. Nello specifico si è
 	scelto il modello della legge di Cauchy fermandosi al primo ordine:
@@ -182,8 +182,8 @@ si riporta inoltre anche il grafico dei residui:
 \end{center}
 
 	I parametri del fit sono :
-	$$ A= 1.4997 \pm 0.0009 \quad B= (42 \pm 3 )10^4 \quad m^2$$
-	Per $\lambda= 585.3 nm$ si ottiene quindi :
+	$$ A= 1.4997 \pm 0.0009 \quad B= (42 \pm 3 )\cdot 10^4 \text{m}^2$$
+	Per $\lambda= 585.3$ nm si ottiene quindi :
 	$$n(\lambda)= 1.512 \pm 0.001  $$
 	$$  \frac{dn}{d\lambda} = (-4.19 \pm 0.03 )\cdot 10^{-5} \text{m}^{-1}$$
 
@@ -194,14 +194,14 @@ si riporta inoltre anche il grafico dei residui:
 	dell'apparato; in particolare occorre regolare la posizione 
 	della sorgente rispetto all'apertura della fenditura.
 	Il primo passaggio è stato quindi impostare l'apertura della fenditura 
-	a $24 \mu m$ ed aquisire un primo spettro a lamina disinserita, con il 
+	a $24 \mu$m ed acquisire un primo spettro a lamina disinserita, con il 
 	CCD orizzontale. Zoomando sui primi 3/4 picchi dello spettro, saremo
 	in grado di individuare il nostro picco di interesse.
 	Successivamente si è regolata ulteriormente la posizione della sorgente 
-	cercando quella che massimizzi l'intensità e la forma del picco di 
+	cercando quella che massimizzasse l'intensità e la forma del picco di 
 	interesse.
-	Si è quindi fissata la posizione del CCD a 0.93 mm e impostato l'apertura 
-	della fenditura a $18 \mu m$.
+	Si è quindi fissata la posizione del CCD a 0.93 mm e impostata l'apertura 
+	della fenditura a $18 \mu$m.
 	Infine si sono regolate le posizioni della lente focale e della lente 
 	condensante, scegliendo come posizioni ottimali rispettivamente 15.36 mm 
 	e 14.62 mm.
@@ -212,14 +212,14 @@ si riporta inoltre anche il grafico dei residui:
 	Dopo la calibrazione si è proseguito con l'acquisizione del primo 
 	spettro a campo magnetico spento: dopo aver selezionato il picco di 
 	interesse si è inserito la lamina di Lummer-Gerhcker, e, selezionato 
-	con i cursori il range dello scanning, si è ruotata il CCD
+	con i cursori il range dello scanning, si è ruotato il CCD
 	in posizione verticale.
 	Infine si è impostato un tempo di integrazione di 600 ms e si è avviato
 	lo scanning, dopo aver salvato il file nell'opportuna cartella.
 
 
 	\paragraph{Analisi dello spettro}
-	Per procedere con l'analisi dello spettro, si è caricata ed eseguita su root la macro ReadZeemanImage.C++. 
+	Per procedere con l'analisi dello spettro, si è caricata ed eseguita su root la macro ReadZeemanImage.C. 
 	Si è ottenuto quindi un istogramma bidimensionale, al quale si è sottratto il segnale di fondo riferendosi alla sua proiezione sull’asse x.
 	Dopo aver sottratto il fondo, migliorando la nitidezza dell'immagine, si sono registrati i limiti della zona del segnale. 
 	In questo modo si è quindi ottenuta anche la proiezione di tale regione sull’asse y, in cui si osservano una serie di picchi, 
@@ -363,7 +363,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		R_{th}(\lambda) = \frac{\lambda}{2\Delta\lambda_{Zee}}	\approx 36000
 	\]
-
 	Per calcolare la risoluzione effettiva dell'apparato sperimentale
 	calcoleremo il rapporto R = $\lambda$ / $\Delta\lambda$ dove 
 	$\Delta\lambda$ è dato dalla FWHM dei fit gaussiani effettuati sui 
@@ -375,7 +374,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		R_{sper} = 49015 \pm 637	\quad > R_{th}	
 	\]
-
 	che è quindi ben compatibile con la richiesta di minima risoluzione
 	necessaria per vedere lo splitting Zeeman con campi magnetici a questo 
 	ordine di grandezza.
@@ -479,7 +477,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		\frac{\Delta x_{Zee}}{\Delta x_{ru}} = 0.3714 \pm 0.0009	
 	\]
-
 	Mostriamo anche un grafico equivalente con l'andamento di $\Delta\lambda_{Zee}$, ossia 
 	$\Delta x_{Zee}$ opportunamente convertito con il fattore F caratteristico della relativa regione
 	dello spettro.
@@ -505,12 +502,12 @@ si riporta inoltre anche il grafico dei residui:
 	Da cui si ricava per media pesata la miglior stima dello shifting Zeeman
 
 	\[
-		\Delta\lambda_{Zee} = (0.01616 \pm 0.00004) nm	
+		\Delta\lambda_{Zee} = (1.616 \pm 0.004) \cdot 10^{-2} nm	
 	\]
 
 	che corrisponde al valore del rapporto precedentemente fornito moltiplicato per $\Delta\lambda_{ru}$.
 
-	si diponde dunque tutti gli elementi per calcolare finalmente il fattore di Landé. In particolare
+	Si dispone dunque di tutti gli elementi per calcolare finalmente il fattore di Landé. In particolare
 
 	\begin{equation}
 		\Delta E_{Zee} = g \mu_B B
@@ -523,9 +520,6 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{equation}
 		g = \frac{hc}{\mu_B B \lambda^2} \frac{\Delta\lambda_{Zee}}{2}
 	\end{equation}
-
-	Applicando quest'ultima formula si sono calcolate delle stime del fattore giromagnetico per ciascun
-	valore dello splitting Zeeman. Si presentano i risultati in grafico.
 
 	\begin{center}
 		\begin{figure}[H]
@@ -545,15 +539,16 @@ si riporta inoltre anche il grafico dei residui:
 		\end{figure}
 	\end{center}
 
-	Si vede subito che la pendenza del fit lineare è compatibile con lo zero entro 1$\sigma$. E' dunque
-	possibile effettuare il calcolo della media pesata, che resituisce il valore finalmente
+	Si vede subito che la pendenza del fit lineare è compatibile con lo zero entro 1$\sigma$. 
+	
+	Si presenta dunque il fattore g ottenuto dal $\Delta\lambda_{zee}$ pesato.
 
 	\[
-		g = 1.021 \pm 0.005	
+		g = 1.02 \pm 0.01
 	\]
 	
-	che tuttavia non risulta compatibile con il valore atteso g = 1.
-	Lo scarto corrisponde infatti a 4.2$\sigma$.  
+	che risulta compatibile con il valore atteso g = 1.
+	Lo scarto corrisponde infatti circa a 2$\sigma$.  
 
 	 
 	\subsubsection*{Campo magnetico dimezzato}
@@ -630,8 +625,6 @@ si riporta inoltre anche il grafico dei residui:
 
 	che corrisponde al valore del rapporto precedentemente fornito moltiplicato per $\Delta\lambda_{ru}$.
 
-	Infine è possibile calcolare il fattore di Landè, di cui riportiamo i risultati in grafico.
-
 	\begin{center}
 		\begin{figure}[H]
 			\centering
@@ -650,18 +643,51 @@ si riporta inoltre anche il grafico dei residui:
 		\end{figure}
 	\end{center}
 
-	Si vede subito che la pendenza del fit lineare è compatibile con lo zero entro 1$\sigma$. E' dunque
-	possibile effettuare il calcolo della media pesata, che resituisce il valore finalmente
+	Si vede subito che la pendenza del fit lineare è compatibile con lo zero entro 1$\sigma$.
+
+	Si presenta dunque il fattore g ottenuto dal $\Delta\lambda_{zee}$ pesato.
 
 	\[
 		g = 1.08 \pm 0.02	
 	\]
 	
-	che presenta uno scarto di 5.27$\sigma$ dal valore atteso, segno di una certa incompatibilità.
+	che presenta uno scarto di circa 4$\sigma$ dal valore atteso, segno di una pessima compatibilità.
+
+	\subsection*{Stima complessiva di g}
+
+	Al termine dell'analisi è quindi giunti a due stime separate di g, una proveniente dall'analisi 
+	a campo massimo e una dall'analisi a campo dimezzato. Entrambe le stime di g si possono considerare
+	compatibili con il valore teorico, alla luce degli scarti in $\sigma$ calcolati precedentemente. 
+	La compatibilità tra i due valori sperimentali, $\lambda = 2.8$, ci permette il calcolo della media
+	pesata:
+
+	\[
+		g = 1.036 \pm 0.009	\quad \sigma_{\%} = 0.88 \%
+	\]
+
+
 
 	\section*{Conclusioni}
 
+	Il fattore giromagnetico calcolato nel caso del campo ridotto risulta impreciso e distante
+	circa 4$\sigma$ dal valore atteso, come già precedentemente espresso. Pertanto la media dei due valori
+	esposta poco sopra risulta difettata da tale contributo. 
+	
+	Alla luce di ciò si è scelto di considerare come miglior stima del valor vero il risultato figlio
+	dell'analisi a campo massimo.
 
+	Presentiamo dunque la nostra stima conclusiva
+
+	\[
+		g = 1.02 \pm 0.01	\quad \sigma_{\%} = 1.04\%
+	\]
+
+	La stima risulta avere buona compatibilità ($\lambda \approx 2$).
+
+	L'esclusione del fattore di campo dimezzato si può imputare a difetti strumentali, oltre che
+	all'imprecisione legata a uno splitting poco definito nel caso di campo magnetico tenue, che rende 
+	lacunoso il fit dei picchi.
+  
 
 	\newpage
 	\appendix
