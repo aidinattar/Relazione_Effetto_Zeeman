@@ -46,7 +46,7 @@
 	\end{itemize}
 	
 	\vspace{3 cm}
-	\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman per atomo di Neon, stima del fattore di Landè} 
+	\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman per  l'atomo di Neon, stima del fattore di Landè} 
 	\end{large}
 	\vspace{8.5cm}
 	
@@ -62,7 +62,7 @@
 	\subsection*{Descrizione dell'apparato} 
 	
 	L'apparato sperimentale si compone di una lampada al Neon, capace di emettere
-	radiazione elettromagnetica associta principlamente a transizioni tra 3p e 2p.
+	radiazione elettromagnetica associata principalmente a transizioni tra 3p e 2p.
 	In particolare siamo interessati alla transizione da $\lambda = $585.3 nm.
 	Tale lampada è inserita all'interno di una cavità magnetica, per cui ci si 
 	aspetta la comparsa di tre righe di emissione: tuttavia, considerando la 
@@ -85,16 +85,14 @@
 	%particolare la connessione al PC del laboratorio avviene tramite 
 	%l'esportazione dello schermo via VNC Viewer.
 	
-	L'acquisizione dei dati è avvenuta tramite l'interfaccia di controllo dell'
-	apparato, che permette di controllare le diverse componenti appena citate.
+	L'acquisizione dei dati è avvenuta tramite l'interfaccia di controllo dell'apparato, che permette di controllare le diverse componenti appena citate.
 	
 	Per l'analisi dati sono stati utilizzati programmi scritti in c++, root ed Excel.
 	
 	\subsection*{Compendio di teoria}
 	
 	L'esperienza è incentrata sull'identificare e misurare lo splitting 
-	Zeeman dei livelli di energia e confrontarli con le previsioni teoriche.
-	L'effetto Zeeman è il fenomeno che si verifica nel momento in cui gli
+	Zeeman dei livelli di energia e confrontarli con le previsioni teoriche. L'effetto Zeeman è il fenomeno che si verifica nel momento in cui gli
 	atomi di una certa sostanza vengono sottoposti a un campo magnetico 
 	esterno, che suddivide i livelli energetici permessi per gli elettroni.
 	In tal modo confrontando lo spettro della prima riga di transizione 
@@ -131,7 +129,7 @@
 	ricavato.
 	
 	Inoltre da opportuni fit dei picchi ricaveremo una stima della larghezza
-	delle campane, da cui ricaveremo il potere risolvente come rapporto
+	delle campane, da cui si ottiene il potere risolvente come rapporto
 	
 	\begin{equation}
 		R = \frac{\lambda}{\Delta\lambda}    
@@ -213,7 +211,7 @@ si riporta inoltre anche il grafico dei residui:
 
 	Dopo la calibrazione si è proseguito con l'acquisizione del primo 
 	spettro a campo magnetico spento: dopo aver selezionato il picco di 
-	interesse si è inserito la lamina di Lummer-Gerhcker, e, selezionato 
+	interesse si è inserito la lamina di Lummer-Gerhcker, e selezionato 
 	con i cursori il range dello scanning, si è ruotato il CCD
 	in posizione verticale.
 	Infine si è impostato un tempo di integrazione di 600 ms e si è avviato
@@ -253,8 +251,7 @@ si riporta inoltre anche il grafico dei residui:
 	\paragraph{Analisi dei picchi}
 
 
-	Per fornire un'analisi estesa dello spettro si è scelto di raggruppare
-	i picchi in 6 terne di picchi consecutivi, e per ciascuna terna
+	Per fornire un'analisi estesa dello spettro si è scelto di suddividerlo  in 6 terne di picchi consecutivi, e per ciascuna terna
 	l'obiettivo è studiare le spaziature tra i picchi e caratterizzarne in
 	qualche modo la larghezza. 
 	In particolare si è scelto di eseguire un fit gaussiano sui picchi
@@ -287,7 +284,7 @@ si riporta inoltre anche il grafico dei residui:
 	Per prima cosa, studiamo l'andamento delle spaziature tra i picchi. 
 	Per ciascuna terna, si sono calcolate le due distanze tra i valori medi
 	delle tre gaussiane, considerandone poi la media aritmetica $\Delta x_{ru}$,
-	disponendo così di un valore univoco per caiscuna terna.
+	disponendo così di un valore univoco per ciascuna terna.
 	In particolare ci si aspetta per queste distanze un andamento quadratico 
 	in funzione della posizione del CCD. Si è effettuata dunque un'interpolazione
 	parabolica, con il fine di stimarne poi l'ordinata di vertice che 
@@ -719,7 +716,7 @@ si riporta inoltre anche il grafico dei residui:
 
 	\subsection*{Stima complessiva di g}
 
-	Al termine dell'analisi è quindi giunti a due stime separate di g, una proveniente dall'analisi 
+	Al termine dell'analisi si è quindi giunti a due stime separate di g, una proveniente dall'analisi 
 	a campo massimo e una dall'analisi a campo dimezzato. Entrambe le stime di g si possono considerare
 	compatibili con il valore teorico, alla luce degli scarti in $\sigma$ calcolati precedentemente. 
 	La compatibilità tra i due valori sperimentali, $\lambda = 2.8$, ci permette il calcolo della media
