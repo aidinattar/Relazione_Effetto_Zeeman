@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.5)  15 MAY 2020 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.5)  18 JUN 2020 17:06
 entering extended mode
 **"c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/relazione.tex"
 ("c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/relazione.tex"
@@ -442,7 +442,20 @@ Package caption Info: wrapfig package is loaded.
 \c@lotdepth=\count322
 \sf@top=\skip68
 \sf@bottom=\skip69
-) ("c:/Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.aux")
+) ("c:/Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.aux"
+
+LaTeX Warning: Label `fig:singoloBoff' multiply defined.
+
+
+LaTeX Warning: Label `fig:singoloBoff' multiply defined.
+
+
+LaTeX Warning: Label `fig:deltaxruBoff' multiply defined.
+
+
+LaTeX Warning: Label `fig:deltaxruBoffres' multiply defined.
+
+)
 \openout1 = `relazione.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -552,7 +565,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<unipd_logo.png, id=19, 562.1pt x 252.142pt>
+<unipd_logo.png, id=31, 562.1pt x 252.142pt>
 File: unipd_logo.png Graphic file (type png)
 <use unipd_logo.png>
 Package pdftex.def Info: unipd_logo.png  used on input line 55.
@@ -575,49 +588,185 @@ Overfull \hbox (1.14893pt too wide) in paragraph at lines 78--83
  []
 
 
-Overfull \hbox (1.57832pt too wide) in paragraph at lines 104--116
+Overfull \hbox (1.57832pt too wide) in paragraph at lines 95--107
 \T1/ptm/m/n/10 L'esperienza � in-cen-tra-ta sul-l'i-den-ti-fi-ca-re e mi-su-ra-re lo split-
  []
 
 
-Overfull \hbox (1.77922pt too wide) in paragraph at lines 149--156
+Overfull \hbox (1.77922pt too wide) in paragraph at lines 140--147
 []\T1/ptm/m/n/10 che sa-r� ben co-per-to dal-la ri-so-lu-zio-ne del-l'ap-pa-ra-to, cio�
  []
 
+<nFit.pdf, id=43, 569.12625pt x 310.15875pt>
+File: nFit.pdf Graphic file (type pdf)
+<use nFit.pdf>
+Package pdftex.def Info: nFit.pdf  used on input line 168.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<nFitRes.pdf, id=44, 569.12625pt x 310.15875pt>
+File: nFitRes.pdf Graphic file (type pdf)
+<use nFitRes.pdf>
+Package pdftex.def Info: nFitRes.pdf  used on input line 178.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
 [2
 
-]
-Overfull \hbox (5.67873pt too wide) in paragraph at lines 220--225
+ <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/nFit.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/nFitRes.pdf, page is rotated 90 degrees>]
+Overfull \hbox (5.67873pt too wide) in paragraph at lines 222--228
  []\T1/ptm/b/n/10 Analisi del-lo spet-tro[] \T1/ptm/m/n/10 Per pro-ce-de-re con l'a-na-li-si del-lo spet-
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 287.
-("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
+<spectrum.pdf, id=151, 569.12625pt x 388.45125pt>
+File: spectrum.pdf Graphic file (type pdf)
+<use spectrum.pdf>
+Package pdftex.def Info: spectrum.pdf  used on input line 232.
+(pdftex.def)             Requested size: 182.12411pt x 124.30693pt.
+<zoomspectrum.pdf, id=152, 569.12625pt x 388.45125pt>
+File: zoomspectrum.pdf Graphic file (type pdf)
+<use zoomspectrum.pdf>
+Package pdftex.def Info: zoomspectrum.pdf  used on input line 241.
+(pdftex.def)             Requested size: 182.12411pt x 124.30693pt.
+<campospento/singolo.pdf, id=153, 569.12625pt x 388.45125pt>
+File: campospento/singolo.pdf Graphic file (type pdf)
+<use campospento/singolo.pdf>
+Package pdftex.def Info: campospento/singolo.pdf  used on input line 265.
+(pdftex.def)             Requested size: 216.27022pt x 147.61299pt.
+[3 <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/spectrum.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/zoomspectrum.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campospento/singolo.pdf, page is rotated 90 degrees>]
+<campospento/deltaxruBoff.pdf, id=295, 569.12625pt x 310.15875pt>
+File: campospento/deltaxruBoff.pdf Graphic file (type pdf)
+<use campospento/deltaxruBoff.pdf>
+Package pdftex.def Info: campospento/deltaxruBoff.pdf  used on input line 321.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campospento/deltaxruBoffres.pdf, id=296, 569.12625pt x 310.15875pt>
+File: campospento/deltaxruBoffres.pdf Graphic file (type pdf)
+<use campospento/deltaxruBoffres.pdf>
+Package pdftex.def Info: campospento/deltaxruBoffres.pdf  used on input line 330.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 360.
+ ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
- [4
+)
+Overfull \hbox (0.94847pt too wide) in paragraph at lines 384--392
+\T1/ptm/m/n/10 Per cal-co-la-re la ri-so-lu-zio-ne ef-fet-ti-va del-l'ap-pa-ra-to spe-ri-men-
+ []
+
+<campospento/ris.pdf, id=298, 569.12625pt x 309.155pt>
+File: campospento/ris.pdf Graphic file (type pdf)
+<use campospento/ris.pdf>
+Package pdftex.def Info: campospento/ris.pdf  used on input line 405.
+(pdftex.def)             Requested size: 216.27022pt x 117.48012pt.
+
+Underfull \hbox (badness 3396) in paragraph at lines 406--406
+[]\T1/ptm/m/n/10 Figura 8: |An-da-men-to del-le ri-so-lu-zio-ni ri-spet-to al-la
+ []
+
+[4 <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campospento/deltaxruBoff.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campospento/deltaxruBoffres.pdf, page is rotated 90 degrees>]
+<campospento/resris.pdf, id=395, 569.12625pt x 309.155pt>
+File: campospento/resris.pdf Graphic file (type pdf)
+<use campospento/resris.pdf>
+Package pdftex.def Info: campospento/resris.pdf  used on input line 414.
+(pdftex.def)             Requested size: 216.27022pt x 117.48012pt.
+<campomax/singolo.pdf, id=396, 569.12625pt x 388.45125pt>
+File: campomax/singolo.pdf Graphic file (type pdf)
+<use campomax/singolo.pdf>
+Package pdftex.def Info: campomax/singolo.pdf  used on input line 462.
+(pdftex.def)             Requested size: 216.27022pt x 147.61299pt.
+<campomax/fit.pdf, id=397, 569.12625pt x 310.15875pt>
+File: campomax/fit.pdf Graphic file (type pdf)
+<use campomax/fit.pdf>
+Package pdftex.def Info: campomax/fit.pdf  used on input line 480.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomax/residuals.pdf, id=398, 569.12625pt x 310.15875pt>
+File: campomax/residuals.pdf Graphic file (type pdf)
+<use campomax/residuals.pdf>
+Package pdftex.def Info: campomax/residuals.pdf  used on input line 489.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+ [5 <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campospento/ris.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campospento/resris.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomax/singolo.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomax/fit.pdf, page is rotated 90 degrees>]
+<campomax/dlambdazee.pdf, id=581, 569.12625pt x 310.15875pt>
+File: campomax/dlambdazee.pdf Graphic file (type pdf)
+<use campomax/dlambdazee.pdf>
+Package pdftex.def Info: campomax/dlambdazee.pdf  used on input line 509.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+File: campomax/residuals.pdf Graphic file (type pdf)
+<use campomax/residuals.pdf>
+Package pdftex.def Info: campomax/residuals.pdf  used on input line 518.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomax/g.pdf, id=582, 569.12625pt x 310.15875pt>
+File: campomax/g.pdf Graphic file (type pdf)
+<use campomax/g.pdf>
+Package pdftex.def Info: campomax/g.pdf  used on input line 549.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomax/g_residuals.pdf, id=583, 569.12625pt x 310.15875pt>
+File: campomax/g_residuals.pdf Graphic file (type pdf)
+<use campomax/g_residuals.pdf>
+Package pdftex.def Info: campomax/g_residuals.pdf  used on input line 558.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomin/singolo.pdf, id=584, 569.12625pt x 388.45125pt>
+File: campomin/singolo.pdf Graphic file (type pdf)
+<use campomin/singolo.pdf>
+Package pdftex.def Info: campomin/singolo.pdf  used on input line 584.
+(pdftex.def)             Requested size: 216.27022pt x 147.61299pt.
+ [6 <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomax/residuals.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomax/dlambdazee.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomax/g.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomax/g_residuals.pdf, page is rotated 90 degrees>]
+<campomin/fit.pdf, id=769, 569.12625pt x 310.15875pt>
+File: campomin/fit.pdf Graphic file (type pdf)
+<use campomin/fit.pdf>
+Package pdftex.def Info: campomin/fit.pdf  used on input line 597.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomin/residuals.pdf, id=770, 569.12625pt x 310.15875pt>
+File: campomin/residuals.pdf Graphic file (type pdf)
+<use campomin/residuals.pdf>
+Package pdftex.def Info: campomin/residuals.pdf  used on input line 606.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+
+Overfull \hbox (0.10957pt too wide) in paragraph at lines 620--623
+[]\T1/ptm/m/n/10 Mostriamo an-che un gra-fi-co equi-va-len-te con l'an-da-men-
+ []
+
+<campomin/dlambdazee.pdf, id=771, 569.12625pt x 310.15875pt>
+File: campomin/dlambdazee.pdf Graphic file (type pdf)
+<use campomin/dlambdazee.pdf>
+Package pdftex.def Info: campomin/dlambdazee.pdf  used on input line 627.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+File: campomin/residuals.pdf Graphic file (type pdf)
+<use campomin/residuals.pdf>
+Package pdftex.def Info: campomin/residuals.pdf  used on input line 636.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomin/g.pdf, id=772, 569.12625pt x 310.15875pt>
+File: campomin/g.pdf Graphic file (type pdf)
+<use campomin/g.pdf>
+Package pdftex.def Info: campomin/g.pdf  used on input line 653.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+<campomin/g_residuals.pdf, id=773, 569.12625pt x 310.15875pt>
+File: campomin/g_residuals.pdf Graphic file (type pdf)
+<use campomin/g_residuals.pdf>
+Package pdftex.def Info: campomin/g_residuals.pdf  used on input line 662.
+(pdftex.def)             Requested size: 216.27022pt x 117.86154pt.
+[7 <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomin/singolo.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomin/fit.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomin/residuals.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomin/dlambdazee.pdf, page is rotated 90 degrees> <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomin/g.pdf, page is rotated 90 degrees>] [8 <c:/Users/User/Desktop/UniPD/Università/III anno/Laboratorio di Fisica/laboratorio/spettroscopia/Zeeman2/campomin/g_residuals.pdf, page is rotated 90 degrees>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 796.
+ [9
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 796.
  ("c:/Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 796.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 796.
 Package rerunfilecheck Info: File `relazione.out' has not changed.
-(rerunfilecheck)             Checksum: 7AB502378A5F87C9DC95C98F60756D93;306.
+(rerunfilecheck)             Checksum: 54881AF43E84B47585077B426ECD6BA8;582.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 14933 strings out of 480896
- 260497 string characters out of 2898649
- 546225 words of memory out of 3000000
- 30532 multiletter control sequences out of 15000+200000
+ 15114 strings out of 480896
+ 264648 string characters out of 2898649
+ 546538 words of memory out of 3000000
+ 30659 multiletter control sequences out of 15000+200000
  579460 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,12n,48p,902b,727s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,12n,48p,902b,789s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.pdf" (4 pages, 231907 bytes).
+Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Laboratorio di Fisica\laboratorio\spettroscopia\Zeeman2\relazione.pdf" (9 pages, 627289 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1112 PDF objects out of 1200 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
