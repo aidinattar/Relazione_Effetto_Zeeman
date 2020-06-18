@@ -166,6 +166,7 @@
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[scale=0.38, angle=0]{nFit.pdf}
+        \setlength{\belowcaptionskip}{-20pt}
 		\caption{ indice di rifrazione}
 		\label{fig:nFit}
 	\end{figure}
@@ -176,6 +177,7 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[scale=0.38, angle=0]{nFitRes.pdf}
+        \setlength{\belowcaptionskip}{-20pt}
 		\caption{ Andamento dei residui}
 		\label{fig:nFitRes}
 	\end{figure}
@@ -229,18 +231,20 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{center}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.32, angle=0]{spectrum.pdf}
+			\includegraphics[scale=0.38, angle=0]{spectrum.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Spettro completo}
-			\label{fig:singoloBoff}
+			\label{fig:spectrum}
 		\end{figure}
 	\end{center}
 
 	\begin{center}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.32, angle=0]{zoomspectrum.pdf}
+			\includegraphics[scale=0.38, angle=0]{zoomspectrum.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Zoom sulle righe in esame}
-			\label{fig:singoloBoff}
+			\label{fig:spectrumzoom}
 		\end{figure}
 	\end{center}
 
@@ -263,6 +267,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campospento/singolo.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{ Esempio di fit gaussiano nel caso senza campo magnetico}
 			\label{fig:singoloBoff}
 		\end{figure}
@@ -319,6 +324,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campospento/deltaxruBoff.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento delle spaziature tra i picchi rispetto alla posizione del CCD}
 			\label{fig:deltaxruBoff}
 		\end{figure}
@@ -328,6 +334,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campospento/deltaxruBoffres.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:deltaxruBoffres}
 		\end{figure}
@@ -403,8 +410,9 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campospento/ris.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento delle risoluzioni rispetto alla posizione sul CCD}
-			\label{fig:deltaxruBoff}
+			\label{fig:deltaxruBoffris}
 		\end{figure}
 	\end{center}
 
@@ -412,13 +420,14 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campospento/resris.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
-			\label{fig:deltaxruBoffres}
+			\label{fig:deltaxruBoffresris}
 		\end{figure}
 	\end{center}
 
 	Il fit sulle risoluzioni presenta una compatibilità di $\chi^{(2)}$ data
-	da $\lambda \approx$ 3, per cui il fit si può considerare buono, e il valore
+	da $\lambda \approx$ 2, per cui il fit si può considerare buono, e il valore
 	della pendenza è compatibile con lo zero entro 1$\sigma$. Questo autorizza il calcolo della media 
 	pesata presentata sopra.
 
@@ -460,10 +469,22 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/singolo.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{ Esempio di fit gaussiano nel caso con campo magnetico B= 4950 Gauss}
 			\label{fig:singoloBonMax}
 		\end{figure}
 	\end{center}
+
+	Anche in questo caso il valore di $\chi^{(2)}$ risulta incompatibile con il suo
+	valore di aspettazione ($\lambda \approx 9.9$). Come detto in precedenza, la scelta
+	del range risulta determinante sul valore del $\chi^{(2)}$, per cui sarebbe forse
+	stato più conveniente da questo punto di vista scegliere di fittare in modo indipendente
+	i due picchi ciascuno con una gaussiana, piuttosto che usare la somma delle due che 
+	limita la libertà di regolazione del range. Tuttavia si è fatta questa scelta per coerenza
+	con il processo di acquisizione dei dati. Infatti dal momento che i dati si distribuiscono
+	con una certa dispersione attorno ai picchi, allora ognuna delle code esercita un'influenza
+	sul picco dell'altra distribuzione.
+
 
 	Ripetuto questo tipo di interpolazione per le coppie di picchi splittati, si è calcolata di volta 
 	in volta la distanza in pixel $\Delta x_{Zee}$ come la differenza tra le ascisse dei centri delle due
@@ -478,6 +499,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/fit.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento del rapporto $\Delta x_{Zee}$/$\Delta x_{ru}$}
 			\label{fig:fit_rapporto}
 		\end{figure}
@@ -487,6 +509,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/residuals.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:fit_rapporto_res}
 		\end{figure}
@@ -507,6 +530,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/dlambdazee.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dello shifting Zeeman}
 			\label{fig:fit_dlambdazee}
 		\end{figure}
@@ -516,6 +540,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/residuals.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:fit_dlambdazee_res}
 		\end{figure}
@@ -547,6 +572,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/g.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento del fattore giromagnetico}
 			\label{fig:g}
 		\end{figure}
@@ -556,6 +582,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomax/g_residuals.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:g_res}
 		\end{figure}
@@ -582,11 +609,20 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.38, angle=0]{campomin/singolo.pdf}
+        \setlength{\belowcaptionskip}{-20pt}
 		\caption{ Esempio di fit gaussiano nel caso con campo magnetico B= 2610 Gauss}
 		\label{fig:singoloBonMin}
 	\end{figure}
 	\end{center}
 
+	Si osserva che questa situazione corrisponde a uno dei quei casi in cui il valore di
+	$\chi^{(2)}$ risulta ottimale ($\lambda\approx 0.8$), nonostante il fit sia stato effettuato
+	come somma di due gaussiane.
+	Per garantire una buona interpolazione dei dati si è pensato di tenere fissa la $\sigma$
+	della campana pari a quella ottenuta a campo massimo, tuttavia dopo alcuni risultati non
+	particolarmente positivi, si è preferito inserire i parametri del caso $B_{max}$ come
+	dati iniziali riuscendo così a ottenere risultati migliori.
+	
 	Riportiamo di nuovo un plot dei rapporti $\Delta x_{Zee}$/$\Delta x_{ru}$, usando le $\Delta x_{ru}$
 	calcolate nel caso a campo spento, rispetto alla posizione sul CCD: vediamo come tale quantità resti 
 	costante.
@@ -595,6 +631,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomin/fit.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento del rapporto $\Delta x_{Zee}$/$\Delta x_{ru}$}
 			\label{fig:fit_rapporto_min}
 		\end{figure}
@@ -604,6 +641,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomin/residuals.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:fit_rapporto_min_res}
 		\end{figure}
@@ -625,6 +663,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomin/dlambdazee.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dello shifting Zeeman}
 			\label{fig:fit_dlambdazee_min}
 		\end{figure}
@@ -634,6 +673,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomin/residuals.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:fit_dlambdazee_min_res}
 		\end{figure}
@@ -651,6 +691,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomin/g.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento del fattore giromagnetico}
 			\label{fig:g_min}
 		\end{figure}
@@ -660,6 +701,7 @@ si riporta inoltre anche il grafico dei residui:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.38, angle=0]{campomin/g_residuals.pdf}
+			\setlength{\belowcaptionskip}{-20pt}
 			\caption{Andamento dei residui}
 			\label{fig:g_res_min}
 		\end{figure}
@@ -707,7 +749,7 @@ si riporta inoltre anche il grafico dei residui:
 	all'imprecisione legata a uno splitting poco definito nel caso di campo magnetico tenue, che rende 
 	lacunoso il fit dei picchi.
   
-  	\newpage
+ 	\newpage
 	\appendix
 	\section{Appendici}
 	\label{appendice}
@@ -740,56 +782,54 @@ si riporta inoltre anche il grafico dei residui:
 		\caption{indicazioni lettura compatibilità}
 		\label{tab:compatibilità}
 	\end{table}
-	\onecolumn
 	
 	
 \subsection{Scelta dei ranges e principali valori }
 \subsubsection{Campo spento}
 \begin{center}
-\begin{tabular} {| c | c | c | c |c|}
-	\hline\\
-	
-set	& Range(pixel)& c (pixel) & F (nm/pixel)\\
-\hline
+\begin{tabular} {ccccc}
+\toprule
+set	& range(pixel)& c (pixel) & F (nm/pixel)\\
+\midrule
 1	&	3330	-	4400	&$	364.2	\pm 0.8$& $0.0001195 \pm 5\cdot 10^{-7} $	\\
 2	& 	4400	-	5250	&$	272.808 \pm 0.6$&$ 0.0001595 \pm 7\cdot 10^{-7}$ \\
 3	&	5250	-	5950	&$	230.143 \pm 0.5$&$0.00018913 \pm8\cdot10^{-7}$\\
 4	&	5950	-	6550	&$	202.179 \pm 0.4	$&$0.0002153 \pm 9\cdot10^{-7}$\\
 5	&	6550	-	7075	&$	180.317	\pm 0.4$& $0.000241 \pm 1\cdot10^{-6} $\\
 6	&	7075	-	7600	&$	165.349	\pm 0.4$& $0.000264\pm1\cdot10^{-6}$\\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 
  \subsubsection{Campo acceso massimo}
 \begin{center}
-\begin{tabular} {| c | c | c | c |c |}
-\hline
-set	& Range (pixcel)& $\Delta\lambda_{Zee} $ (nm) & g \\
-\hline
+\begin{tabular} {ccccc}
+	\toprule
+set	& range (pixel)& $\Delta\lambda_{Zee} $ (nm) & g \\
+\midrule
 1	&	3330	-	4400	&  $0.0161 \pm  1\cdot 10^{-4}$	&$1.02 \pm 0.01$\\  
 2	& 	4400	-	5250	&  $0.01604 \pm 9\cdot 10^{-5}$&$1.01 \pm0.01$\\ 
 3	&	5250	-	5950	&	$0.01602 \pm 9\cdot10^{-5}$&$1.01 \pm 0.01$\\
 4	&	5950	-	6550	&	$0.0163 \pm 1\cdot 10^{-4}$&$1.03 \pm 0.01$\\
 5	&	6550	-	7075	&	$0.0163 \pm1\cdot 10^{-4}$&	$1.03  \pm 0.01$	\\
 6	&	7075	-	7600	&	$0.0161\pm1\cdot 10^{-4}$&	$1.02 \pm 0.01$	\\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 
  \subsubsection{Campo acceso dimezzato}
 \begin{center}
-	\begin{tabular} {| c | c | c | c |c |}
-		\hline
-		set	& Range (pixcel)& $\Delta\lambda_{Zee} $ (nm) & g \\
-		\hline
+	\begin{tabular} {ccccc}
+		\toprule
+		set	& range (pixel)& $\Delta\lambda_{Zee} $ (nm) & g \\
+		\midrule
 		1	&	3330	-	4400	&  $    0.009 \pm  0.0002$	&$1.05 \pm 0.03$\\  
 		2	& 	4400	-	5250	&  $0.0089 \pm 0.0003$&$1.07 \pm0.04$\\ 
 		3	&	5250	-	5950	&	$0.0094\pm 0.0004$&$1.12 \pm 0.05$\\
 		4	&	5950	-	6550	&	$0.0091\pm 0.0002$&$1.09 \pm 0.03$\\
 		5	&	6550	-	7075	&	$0.0094 \pm0.0005$&	$1.13 \pm 0.06$	\\
 		6	&	7075	-	7600	&	$0.0089\pm 0.0007$&	$1.07 \pm 0.08$	\\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{center}
    
