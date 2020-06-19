@@ -46,7 +46,7 @@
 	\end{itemize}
 	
 	\vspace{3 cm}
-	\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman per  l'atomo di Neon, stima del fattore di Landè} 
+	\begin{large}\textsc{\textbf{Scopo dell'esperienza}: studio dell'effetto Zeeman normale per  l'atomo di Neon, stima del fattore di Landè} 
 	\end{large}
 	\vspace{8.5cm}
 	
@@ -61,16 +61,16 @@
 	
 	\subsection*{Descrizione dell'apparato} 
 	
-	L'apparato sperimentale si compone di una lampada al Neon, capace di emettere
+	L'apparato sperimentale si compone di una lampada al Neon capace di emettere
 	radiazione elettromagnetica associata principalmente a transizioni tra 3p e 2p.
-	In particolare siamo interessati alla transizione da $\lambda = $585.3 nm.
+	In particolare siamo interessati alla transizione da $\lambda = $ 585.3 nm.
 	Tale lampada è inserita all'interno di una cavità magnetica, per cui ci si 
 	aspetta la comparsa di tre righe di emissione; tuttavia, considerando la 
 	polarizzazione delle righe, possiamo “sopprimere” la transizione centrale
 	orientando il campo magnetico in modo longitudinale alla linea di 
 	osservazione, in modo tale da vedere solo le due righe marginali. 
 	
-	Il raggio di luce emessa attraversa una lente condensante, necessaria 
+	Il raggio di luce emessa attraversa una lente condensante necessaria 
 	per concentrare quanto più possibile il fascio, che passa quindi per una 
 	fenditura e successivamente attraverso un prisma, necessario per ruotare di 
 	$90 ^{\circ}$ la luce e dividerla nelle sue componenti principali. 
@@ -113,8 +113,6 @@
 	\begin{equation}
 		\Delta E_{Zee} = g_l m \mu_B B = \pm \mu_B B
 	\end{equation}
-	
-	
 	dato che nel nostro caso le due proiezioni del momento angolare totale
 	dello stato di arrivo possibili sono $m = \pm 1$ (0 è escluso grazie all'
 	orientazione del campo magnetico, come accennato sopra).
@@ -123,8 +121,7 @@
 	
 	\begin{equation}
 		\Delta\lambda_{Zee} = \frac{\lambda^2}{hc}\Delta E_{Zee}
-	\end{equation}
-	
+	\end{equation}	
 	rappresenta la formula con cui confronteremo il dato sperimentale
 	ricavato.
 	
@@ -133,8 +130,7 @@
 	
 	\begin{equation}
 		R = \frac{\lambda}{\Delta\lambda}    
-	\end{equation}
-	
+	\end{equation}	
 	che sarà ben coperto dalla risoluzione dell'apparato, cioè dalla
 	risoluzione offerta dalla lamina di Lummer-Gehrcke, che segue l'ordine
 	del rapporto L/$\lambda$, dove L è la lunghezza della lamina.
@@ -146,8 +142,7 @@
 	\begin{equation}
 		\label{eqn:dlru}
 		\Delta\lambda_{r.u.} = \frac{\lambda^2}{2d}\frac{\sqrt{n^2-\sin(i)^2}}{n^2-\sin(i)^2-n\lambda\frac{dn}{d\lambda}}
-	\end{equation}
-	
+	\end{equation}	
 	dove la derivata $dn/d\lambda$ è stata ottenuta fittando alcuni punti 
 	n($\lambda$) rappresentativi dell'andamento dell'indice di rifrazione
 	della lamina in funzione della lunghezza d'onda. Nello specifico si è
@@ -156,8 +151,6 @@
 	\begin{equation}
 		n(\lambda) = A + \frac{B}{\lambda^2}    
 	\end{equation}
-
-
 	ottenendo il seguente andamento:
 	
 \begin{center}
@@ -180,9 +173,6 @@ si riporta inoltre anche il grafico dei residui:
 		\label{fig:nFitRes}
 	\end{figure}
 \end{center}
-
-	I parametri del fit sono :
-	$$ A= 1.4997 \pm 0.0009 \quad B= (42 \pm 3 )\cdot 10^4 \text{m}^2$$
 	Per $\lambda= 585.3$ nm si ottiene quindi :
 	$$n(\lambda)= 1.512 \pm 0.001  $$
 	$$  \frac{dn}{d\lambda} = (-4.19 \pm 0.03 )\cdot 10^{-5} \text{m}^{-1}$$
@@ -299,7 +289,6 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{equation}
 		F = \frac{\Delta\lambda_{ru}}{\Delta x_{ru}}.
 	\end{equation}
-
 	Il fattore di calibrazione F rappresenta il fattore di conversione da pixel, 
 	ossia l'unità di misura caratteristica del CCD, in metri.
 
@@ -354,13 +343,11 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{equation}
 		\sin(2i) = - \frac{\lambda \sqrt{n^2-1}}{d \Delta i}
 	\end{equation}
-
 	da cui si è potuto ottenere una stima dell'angolo i, in particolare
 
 	\[
 		i = (1.568 \pm 0.003)\text{rad} = ( 89.8 \pm 0.2 ) ^{\circ}
 	\]
-
 	Il valore è compatibile con l'approssimazione a 90°, e inserendolo in \ref{eqn:dlru}
 	si otterrà la miglior stima del range di lunghezza d'onda efficace usata
 	nel calcolo dei fattori di calibrazione.
@@ -370,7 +357,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		\Delta\lambda_{ru} = (0.04353 \pm 0.00008) nm 
 	\]	
-
 
 	\paragraph{Calcolo della risoluzione}
 
@@ -548,7 +534,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		\Delta\lambda_{Zee} = (1.616 \pm 0.004) \cdot 10^{-2} nm	
 	\]
-
 	che corrisponde al valore del rapporto precedentemente fornito moltiplicato per $\Delta\lambda_{ru}$.
 
 	Si dispone dunque di tutti gli elementi per calcolare finalmente il fattore di Landé. In particolare
@@ -556,7 +541,6 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{equation}
 		\Delta E_{Zee} = g \mu_B B
 	\end{equation}
-
 	dove $\mu_B$ è il magnetone di Bohr.
 	Dal momento che $\Delta E = h\Delta\nu = hc\Delta(1/\lambda) = (hc / \lambda^2) \Delta\lambda$, 
 	allora vale 
@@ -564,7 +548,6 @@ si riporta inoltre anche il grafico dei residui:
 	\begin{equation}
 		g = \frac{hc}{\mu_B B \lambda^2} \frac{\Delta\lambda_{Zee}}{2}
 	\end{equation}
-
 	\begin{center}
 		\begin{figure}[H]
 			\centering
@@ -591,8 +574,7 @@ si riporta inoltre anche il grafico dei residui:
 
 	\[
 		g = 1.02 \pm 0.01
-	\]
-	
+	\]	
 	che risulta compatibile con il valore atteso g = 1.
 	Lo scarto corrisponde infatti circa a 2$\sigma$.  
 
@@ -651,7 +633,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		\frac{\Delta x_{Zee}}{\Delta x_{ru}} = 0.207 \pm 0.003	
 	\]
-
 	Mostriamo anche un grafico equivalente con l'andamento di $\Delta\lambda_{Zee}$, ossia 
 	$\Delta x_{Zee}$ opportunamente convertito con il fattore F caratteristico della relativa regione
 	dello spettro.
@@ -681,7 +662,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		\Delta\lambda_{Zee} = (0.0090 \pm 0.0001) nm	
 	\]
-
 	che corrisponde al valore del rapporto precedentemente fornito moltiplicato per $\Delta\lambda_{ru}$.
 
 	\begin{center}
@@ -711,7 +691,6 @@ si riporta inoltre anche il grafico dei residui:
 	\[
 		g = 1.08 \pm 0.02	
 	\]
-	
 	che presenta uno scarto di circa 4$\sigma$ dal valore atteso, segno di una pessima compatibilità.
 
 	\subsection*{Stima complessiva di g}
@@ -750,8 +729,6 @@ si riporta inoltre anche il grafico dei residui:
 	\appendix
 	\section{Appendici}
 	\label{appendice}
-	\subsection{Costruzione dell'errore sulle misure}
-	\label{Calcerr}
 
 	\subsection{Tabella delle compatibilità}
 	\medskip
